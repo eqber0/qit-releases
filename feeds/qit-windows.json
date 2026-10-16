@@ -1,22 +1,27 @@
 {
-  "version": "0.1.3",
+  "version": "0.2.0",
   "date": "2026-10-16",
-  "notes": "qriD artık açılırken yanında komut penceresi açmıyor.",
-  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-windows-v0.1.3",
+  "notes": "İlk ortak sürüm: macOS ve Windows aynı numarayla.\n\nWindows: tek qiT tepsi simgesi; qliP, qriD ve qorD modül olarak açılıp kapanır (qliP şimdilik kendi simgesini de gösterir). qorD Windows'ta da var. Güncellemeleri qiT denetler.\nmacOS: 0.1.7'den beri değişiklik yok.",
+  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-v0.2.0",
   "windows": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-windows-v0.1.3/qiT-Setup-x64.exe",
-    "sha256": "30586c28bb4956df8717fd9268c4104b17d077c0104bb29c84d4a77de65dbd43",
-    "size": 58781788
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.2.0/qiT-Setup-x64.exe",
+    "sha256": "a0eb8faee58cfc51dfbbce930c1fb32ae59f3680cb25c9ae5fa652087afb9e82",
+    "size": 66484230
   },
   "assets": [
     {
       "name": "qriD-Setup-x64.exe",
-      "url": "https://github.com/eqber0/qit-releases/releases/download/qit-windows-v0.1.3/qriD-Setup-x64.exe",
-      "sha256": "30586c28bb4956df8717fd9268c4104b17d077c0104bb29c84d4a77de65dbd43",
-      "size": 58781788
+      "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.2.0/qriD-Setup-x64.exe",
+      "sha256": "a0eb8faee58cfc51dfbbce930c1fb32ae59f3680cb25c9ae5fa652087afb9e82",
+      "size": 66484230
     }
   ],
   "history": [
+    {
+      "version": "0.2.0",
+      "date": "2026-10-16",
+      "notes": "İlk ortak sürüm: macOS ve Windows aynı numarayla.\n\nWindows: tek qiT tepsi simgesi; qliP, qriD ve qorD modül olarak açılıp kapanır (qliP şimdilik kendi simgesini de gösterir). qorD Windows'ta da var. Güncellemeleri qiT denetler.\nmacOS: 0.1.7'den beri değişiklik yok."
+    },
     {
       "version": "0.1.3",
       "date": "2026-10-16",

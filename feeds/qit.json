@@ -1,14 +1,19 @@
 {
-  "version": "0.1.7",
+  "version": "0.2.0",
   "date": "2026-10-16",
-  "notes": "Yeni modül qorD: medya tuşlarını seçtiğin oynatıcıya (Müzik, Spotify, Doppler, VOX) yönlendirir. Ayarlar › Modüller'den açılır.",
+  "notes": "İlk ortak sürüm: macOS ve Windows aynı numarayla.\n\nWindows: tek qiT tepsi simgesi; qliP, qriD ve qorD modül olarak açılıp kapanır (qliP şimdilik kendi simgesini de gösterir). qorD Windows'ta da var. Güncellemeleri qiT denetler.\nmacOS: 0.1.7'den beri değişiklik yok.",
   "macos": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.1.7/qiT-macOS-0.1.7.zip",
-    "sha256": "82269b4eb4649fff4c063e3febde937a4c6318c93ce1ef109d846cc97e6e9fa1",
-    "size": 5538707,
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.2.0/qiT-macOS-0.2.0.zip",
+    "sha256": "f439dba55eb7ca7713fbec5d7f2ad800c6eeed5569ab4570638c7d3ad07334bc",
+    "size": 5538690,
     "minimumSystemVersion": "15.2"
   },
   "history": [
+    {
+      "version": "0.2.0",
+      "date": "2026-10-16",
+      "notes": "İlk ortak sürüm: macOS ve Windows aynı numarayla.\n\nWindows: tek qiT tepsi simgesi; qliP, qriD ve qorD modül olarak açılıp kapanır (qliP şimdilik kendi simgesini de gösterir). qorD Windows'ta da var. Güncellemeleri qiT denetler.\nmacOS: 0.1.7'den beri değişiklik yok."
+    },
     {
       "version": "0.1.7",
       "date": "2026-10-16",
