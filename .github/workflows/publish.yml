@@ -1,0 +1,66 @@
+name: publish
+
+# qiT CI'ı (gizli depo: eqber0/qit) bir uygulamanın derlenen sürümünü deploy key ile `staging-<uygulama>`
+# dalına iter. Dalın kökünde: APP (ör. qlip), TAG (ör. qlip-v0.3.5), TITLE, notes.txt, feed.json ve dosyalar.
+# Bu iş akışı dosyaları feed.json'daki sha256 ile doğrular, Release'i oluşturur, sonra
+# feed.json'u main'e feeds/<APP>.json olarak yazar. Uygulamalar bu feed'i okur.
+on:
+  push:
+    branches: ["staging-*"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          path: staging
+
+      - name: Doğrula
+        working-directory: staging
+        run: |
+          APP=$(cat APP); TAG=$(cat TAG); TITLE=$(cat TITLE)
+          [[ "$APP" =~ ^[a-z][a-z0-9-]*$ ]] || { echo "APP geçersiz: $APP"; exit 1; }
+          test "${{ github.ref_name }}" = "staging-$APP"
+          [[ "$TAG" == "$APP-v"* ]] || { echo "TAG $APP-v ile başlamalı: $TAG"; exit 1; }
+          test "$(jq -r .version feed.json)" = "${TAG#"$APP-v"}"
+          # feed.json'da url + sha256 taşıyan her nesne bir dosyadır (qliP: macos/windows, qriD: assets[]).
+          jq -r '.. | objects | select(has("url") and has("sha256")) | "\(.url) \(.sha256)"' feed.json > expected.txt
+          test -s expected.txt
+          while read -r url sha; do
+            f=$(basename "$url")
+            [[ "$url" == "https://github.com/${{ github.repository }}/releases/download/$TAG/$f" ]] \
+              || { echo "Beklenmeyen adres: $url"; exit 1; }
+            test -f "$f" || { echo "Eksik dosya: $f"; exit 1; }
+            test "$(sha256sum "$f" | cut -d' ' -f1)" = "$sha" || { echo "sha256 uyuşmuyor: $f"; exit 1; }
+            echo "$f" >> assets.txt
+          done < expected.txt
+          { echo "APP=$APP"; echo "TAG=$TAG"; echo "TITLE=$TITLE"; } >> "$GITHUB_ENV"
+
+      - name: GitHub Release
+        working-directory: staging
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release delete "$TAG" -y --cleanup-tag 2>/dev/null || true
+          mapfile -t files < assets.txt
+          gh release create "$TAG" "${files[@]}" --target main --title "$TITLE" --notes-file notes.txt --latest=false
+
+      - name: Feed
+        run: |
+          git clone -q "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" main
+          cd main
+          mkdir -p feeds
+          cp ../staging/feed.json "feeds/$APP.json"
+          git add "feeds/$APP.json"
+          git -c user.name="qiT releases" -c user.email="releases@qit.invalid" commit -q -m "$TAG feed"
+          git push -q origin main
+          echo "https://raw.githubusercontent.com/${{ github.repository }}/main/feeds/$APP.json"
