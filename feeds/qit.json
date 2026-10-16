@@ -1,14 +1,19 @@
 {
-  "version": "0.1.3",
+  "version": "0.1.4",
   "date": "2026-10-16",
-  "notes": "qriD: bölge düzenleyici artık ekranda birebir (çizdiğin kutu pencerenin oturacağı yer); qriD'in bütün ayarları qiT Ayarları › qriD sayfasında.",
+  "notes": "qiT Ayarları › qriD açılırken oluşan çökme düzeltildi.",
   "macos": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.1.3/qiT-macOS-0.1.3.zip",
-    "sha256": "fd616be65647c342f877da452fbaaa560616c0b783de861c9131bdb748172890",
-    "size": 4930626,
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.1.4/qiT-macOS-0.1.4.zip",
+    "sha256": "4c97ee7c36a70a7ad9fa8f4c0014353d8db6c82314a3241ceac9ff7367e587f8",
+    "size": 4931222,
     "minimumSystemVersion": "15.2"
   },
   "history": [
+    {
+      "version": "0.1.4",
+      "date": "2026-10-16",
+      "notes": "qiT Ayarları › qriD açılırken oluşan çökme düzeltildi."
+    },
     {
       "version": "0.1.3",
       "date": "2026-10-16",
