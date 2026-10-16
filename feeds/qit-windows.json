@@ -1,0 +1,26 @@
+{
+  "version": "0.1.0",
+  "date": "2026-10-16",
+  "notes": "qiT for Windows ilk sürüm: qliP ve qriD tek kurulumda.",
+  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-windows-v0.1.0",
+  "windows": {
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-windows-v0.1.0/qiT-Setup-x64.exe",
+    "sha256": "254438cfe230b8e35c8027a00d5fd3a7930890f4a9f1902e7e4eaf9f3e8c8e21",
+    "size": 60361861
+  },
+  "assets": [
+    {
+      "name": "qriD-Setup-x64.exe",
+      "url": "https://github.com/eqber0/qit-releases/releases/download/qit-windows-v0.1.0/qriD-Setup-x64.exe",
+      "sha256": "254438cfe230b8e35c8027a00d5fd3a7930890f4a9f1902e7e4eaf9f3e8c8e21",
+      "size": 60361861
+    }
+  ],
+  "history": [
+    {
+      "version": "0.1.0",
+      "date": "2026-10-16",
+      "notes": "qiT for Windows ilk sürüm: qliP ve qriD tek kurulumda."
+    }
+  ]
+}
