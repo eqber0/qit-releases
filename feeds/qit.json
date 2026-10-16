@@ -1,14 +1,19 @@
 {
-  "version": "0.1.1",
+  "version": "0.1.2",
   "date": "2026-10-16",
-  "notes": "qiT for macOS: Güncellemeleri Denetle artık yeni sürümü indirip kurar; TR/EN arayüz; qriD Layouts sayfası düzeltildi.",
+  "notes": "⌘⇧S artık qriD açıkken de çalışıyor. Düzenleyicide renk seçici kare; dikdörtgen ve ok daha ince, dikdörtgen köşeleri hafif yuvarlak.",
   "macos": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.1.1/qiT-macOS-0.1.1.zip",
-    "sha256": "f185475f8ea8731234fc97baed24b0754c6917e0c01f4a4eaa76c5f8df168ffd",
-    "size": 4895044,
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.1.2/qiT-macOS-0.1.2.zip",
+    "sha256": "d77529641a0ddd79880075f111eb3f8cc1e3846ee1aff69498ea7403d6293485",
+    "size": 4896078,
     "minimumSystemVersion": "15.2"
   },
   "history": [
+    {
+      "version": "0.1.2",
+      "date": "2026-10-16",
+      "notes": "⌘⇧S artık qriD açıkken de çalışıyor. Düzenleyicide renk seçici kare; dikdörtgen ve ok daha ince, dikdörtgen köşeleri hafif yuvarlak."
+    },
     {
       "version": "0.1.1",
       "date": "2026-10-16",
