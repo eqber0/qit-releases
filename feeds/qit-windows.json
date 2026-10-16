@@ -1,15 +1,20 @@
 {
-  "version": "0.3.1",
+  "version": "0.3.2",
   "date": "2026-10-16",
-  "notes": "qiT 0.3.1\n- Windows: qliP, qriD ve qorD artık qiT'in içinde çalışan tek uygulama; ayrı exe'ler kurulumdan kaldırıldı.\n- Windows: qliP Rust ile yeniden yazıldı; ayarların, kısayolların ve geçmişin korunur.\n- Windows: tek Ayarlar penceresi, her modül için bir sayfa; qiT moru ve aynı düzen.\n- Windows: qriD bölgeleri — Ayarlar › qriD › Düzenler ve Shift + sürükle ile yerleştirme.\n- Windows: tepsi paneli (sol tık): qliP eylemleri ve son çekimler, qriD hızlı yerleşimleri, qorD oynatıcı kontrolleri.\n- Windows: kayıt sürerken tepsi simgesinde gösterge, menüde Durdur/Duraklat.\n- Windows: ilk açılışta karşılama ekranı.",
-  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-v0.3.1",
+  "notes": "qiT 0.3.2\n- Windows qriD: Shift + sürükle ile bölgeler artık anında görünüyor; pencere bırakınca hemen yerleşiyor.\n- Windows qriD: tam ekran düzen düzenleyici — Ayarlar › qriD › Düzenler'de ekranı seç, bölgeleri gerçek konumlarında düzenle (Enter kaydeder, Esc vazgeçer).\n- Windows qriD: düzen seçilmemişse ya da silinmişse varsayılan düzen kullanılır.",
+  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-v0.3.2",
   "windows": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.3.1/qiT-Setup-x64.exe",
-    "sha256": "181d316327b627047c67c502badd41a3bfdd8b038255537ba386694591379d76",
-    "size": 5260656,
-    "signature": "0ccee1216b8909960369d14b3dbac9895449ed1d105ab144cb854288c3e188f943876f7169802f5a2a84f6ee70839c089fd53fba87fb8651ee1ca272dc33b201"
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.3.2/qiT-Setup-x64.exe",
+    "sha256": "162e9893465005442c62ab3f4c4c89841c8b558f084b684b08a170ff8fdd4f90",
+    "size": 5270237,
+    "signature": "cb6f96fbde1b55cea1cda2981b8a6ca79a462b7a771aa53121c25ba691472b9f84a33325673861b1619ca9c76937165da8801ed8e28e6c626d63d014ce854d0a"
   },
   "history": [
+    {
+      "version": "0.3.2",
+      "date": "2026-10-16",
+      "notes": "qiT 0.3.2\n- Windows qriD: Shift + sürükle ile bölgeler artık anında görünüyor; pencere bırakınca hemen yerleşiyor.\n- Windows qriD: tam ekran düzen düzenleyici — Ayarlar › qriD › Düzenler'de ekranı seç, bölgeleri gerçek konumlarında düzenle (Enter kaydeder, Esc vazgeçer).\n- Windows qriD: düzen seçilmemişse ya da silinmişse varsayılan düzen kullanılır."
+    },
     {
       "version": "0.3.1",
       "date": "2026-10-16",
