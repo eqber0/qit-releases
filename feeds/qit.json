@@ -1,14 +1,19 @@
 {
-  "version": "0.1.4",
+  "version": "0.1.5",
   "date": "2026-10-16",
-  "notes": "qiT Ayarları › qriD açılırken oluşan çökme düzeltildi.",
+  "notes": "Yeni sürümler artık yayınlandığı anda görünür (feed GitHub API'sinden okunur); qriD'den Sparkle kaldırıldı.",
   "macos": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.1.4/qiT-macOS-0.1.4.zip",
-    "sha256": "4c97ee7c36a70a7ad9fa8f4c0014353d8db6c82314a3241ceac9ff7367e587f8",
-    "size": 4931222,
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.1.5/qiT-macOS-0.1.5.zip",
+    "sha256": "476a79a8bed065fd97fce2e718a612aa16f83e1ca1258e9ec14746ba952f84d5",
+    "size": 4921380,
     "minimumSystemVersion": "15.2"
   },
   "history": [
+    {
+      "version": "0.1.5",
+      "date": "2026-10-16",
+      "notes": "Yeni sürümler artık yayınlandığı anda görünür (feed GitHub API'sinden okunur); qriD'den Sparkle kaldırıldı."
+    },
     {
       "version": "0.1.4",
       "date": "2026-10-16",
