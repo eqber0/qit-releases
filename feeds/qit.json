@@ -1,0 +1,18 @@
+{
+  "version": "0.1.1",
+  "date": "2026-10-16",
+  "notes": "qiT for macOS: Güncellemeleri Denetle artık yeni sürümü indirip kurar; TR/EN arayüz; qriD Layouts sayfası düzeltildi.",
+  "macos": {
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.1.1/qiT-macOS-0.1.1.zip",
+    "sha256": "f185475f8ea8731234fc97baed24b0754c6917e0c01f4a4eaa76c5f8df168ffd",
+    "size": 4895044,
+    "minimumSystemVersion": "15.2"
+  },
+  "history": [
+    {
+      "version": "0.1.1",
+      "date": "2026-10-16",
+      "notes": "qiT for macOS: Güncellemeleri Denetle artık yeni sürümü indirip kurar; TR/EN arayüz; qriD Layouts sayfası düzeltildi."
+    }
+  ]
+}
