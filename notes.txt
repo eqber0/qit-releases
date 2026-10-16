@@ -1,0 +1,2 @@
+Güncellemeler artık qiT'nin ortak sürüm deposundan (eqber0/qit-releases) geliyor. Başka değişiklik yok.
+
