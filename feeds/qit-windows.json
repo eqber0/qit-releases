@@ -1,24 +1,20 @@
 {
-  "version": "0.3.0",
+  "version": "0.3.1",
   "date": "2026-10-16",
-  "notes": "qiT 0.3.0\n- Güncellemeler artık ed25519 ile imzalı; qiT imzasız ya da değiştirilmiş paketi kurmaz.\n- Windows: qliP, qiT içinde kendi tepsi ikonu ve güncelleyicisi olmadan çalışır; kayıt sürerken ikon görünür. qiT'ten kapatılınca kaydı bitirip düzgün kapanır.\n- macOS: qriD Swift 6'ya taşındı (davranış değişikliği yok).",
-  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-v0.3.0",
+  "notes": "qiT 0.3.1\n- Windows: qliP, qriD ve qorD artık qiT'in içinde çalışan tek uygulama; ayrı exe'ler kurulumdan kaldırıldı.\n- Windows: qliP Rust ile yeniden yazıldı; ayarların, kısayolların ve geçmişin korunur.\n- Windows: tek Ayarlar penceresi, her modül için bir sayfa; qiT moru ve aynı düzen.\n- Windows: qriD bölgeleri — Ayarlar › qriD › Düzenler ve Shift + sürükle ile yerleştirme.\n- Windows: tepsi paneli (sol tık): qliP eylemleri ve son çekimler, qriD hızlı yerleşimleri, qorD oynatıcı kontrolleri.\n- Windows: kayıt sürerken tepsi simgesinde gösterge, menüde Durdur/Duraklat.\n- Windows: ilk açılışta karşılama ekranı.",
+  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-v0.3.1",
   "windows": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.3.0/qiT-Setup-x64.exe",
-    "sha256": "1a23b0f805473a2455f5d4104d541e19ad8ef970b4fc53923659a51fc457cddc",
-    "size": 66513969,
-    "signature": "a711af63d0653c7b9694a7e2dececc4e6253f4fc199ed7aa9d7afc4ae4dd9fede504e29a5dd627ec36b06d1680f2241d50c349ad74c21514b0fa539c17a7f309"
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.3.1/qiT-Setup-x64.exe",
+    "sha256": "181d316327b627047c67c502badd41a3bfdd8b038255537ba386694591379d76",
+    "size": 5260656,
+    "signature": "0ccee1216b8909960369d14b3dbac9895449ed1d105ab144cb854288c3e188f943876f7169802f5a2a84f6ee70839c089fd53fba87fb8651ee1ca272dc33b201"
   },
-  "assets": [
-    {
-      "name": "qriD-Setup-x64.exe",
-      "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.3.0/qriD-Setup-x64.exe",
-      "sha256": "1a23b0f805473a2455f5d4104d541e19ad8ef970b4fc53923659a51fc457cddc",
-      "size": 66513969,
-      "signature": "a711af63d0653c7b9694a7e2dececc4e6253f4fc199ed7aa9d7afc4ae4dd9fede504e29a5dd627ec36b06d1680f2241d50c349ad74c21514b0fa539c17a7f309"
-    }
-  ],
   "history": [
+    {
+      "version": "0.3.1",
+      "date": "2026-10-16",
+      "notes": "qiT 0.3.1\n- Windows: qliP, qriD ve qorD artık qiT'in içinde çalışan tek uygulama; ayrı exe'ler kurulumdan kaldırıldı.\n- Windows: qliP Rust ile yeniden yazıldı; ayarların, kısayolların ve geçmişin korunur.\n- Windows: tek Ayarlar penceresi, her modül için bir sayfa; qiT moru ve aynı düzen.\n- Windows: qriD bölgeleri — Ayarlar › qriD › Düzenler ve Shift + sürükle ile yerleştirme.\n- Windows: tepsi paneli (sol tık): qliP eylemleri ve son çekimler, qriD hızlı yerleşimleri, qorD oynatıcı kontrolleri.\n- Windows: kayıt sürerken tepsi simgesinde gösterge, menüde Durdur/Duraklat.\n- Windows: ilk açılışta karşılama ekranı."
+    },
     {
       "version": "0.3.0",
       "date": "2026-10-16",
