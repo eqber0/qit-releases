@@ -1,22 +1,27 @@
 {
-  "version": "0.1.0",
+  "version": "0.1.1",
   "date": "2026-10-16",
-  "notes": "qiT for Windows ilk sürüm: qliP ve qriD tek kurulumda.",
-  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-windows-v0.1.0",
+  "notes": "Düzenleyicide renk seçici kare; dikdörtgen ve ok daha ince, dikdörtgen köşeleri hafif yuvarlak.",
+  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-windows-v0.1.1",
   "windows": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-windows-v0.1.0/qiT-Setup-x64.exe",
-    "sha256": "900998cc020c6484416b94ee45d81a952ad14bd468464aef8b8e80f3f7c3ce2e",
-    "size": 58786175
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-windows-v0.1.1/qiT-Setup-x64.exe",
+    "sha256": "5fa8074f60417ee33f59f6ffe4846941fb5f50eba5f4ab9573cec2e38820a875",
+    "size": 58808544
   },
   "assets": [
     {
       "name": "qriD-Setup-x64.exe",
-      "url": "https://github.com/eqber0/qit-releases/releases/download/qit-windows-v0.1.0/qriD-Setup-x64.exe",
-      "sha256": "900998cc020c6484416b94ee45d81a952ad14bd468464aef8b8e80f3f7c3ce2e",
-      "size": 58786175
+      "url": "https://github.com/eqber0/qit-releases/releases/download/qit-windows-v0.1.1/qriD-Setup-x64.exe",
+      "sha256": "5fa8074f60417ee33f59f6ffe4846941fb5f50eba5f4ab9573cec2e38820a875",
+      "size": 58808544
     }
   ],
   "history": [
+    {
+      "version": "0.1.1",
+      "date": "2026-10-16",
+      "notes": "Düzenleyicide renk seçici kare; dikdörtgen ve ok daha ince, dikdörtgen köşeleri hafif yuvarlak."
+    },
     {
       "version": "0.1.0",
       "date": "2026-10-16",
