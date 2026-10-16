@@ -5,15 +5,15 @@
   "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-windows-v0.1.0",
   "windows": {
     "url": "https://github.com/eqber0/qit-releases/releases/download/qit-windows-v0.1.0/qiT-Setup-x64.exe",
-    "sha256": "b4dbcdb608db09b0455b86db9ca204a2fd111dc63232740c5c0e8d8bcedda504",
-    "size": 58791125
+    "sha256": "900998cc020c6484416b94ee45d81a952ad14bd468464aef8b8e80f3f7c3ce2e",
+    "size": 58786175
   },
   "assets": [
     {
       "name": "qriD-Setup-x64.exe",
       "url": "https://github.com/eqber0/qit-releases/releases/download/qit-windows-v0.1.0/qriD-Setup-x64.exe",
-      "sha256": "b4dbcdb608db09b0455b86db9ca204a2fd111dc63232740c5c0e8d8bcedda504",
-      "size": 58791125
+      "sha256": "900998cc020c6484416b94ee45d81a952ad14bd468464aef8b8e80f3f7c3ce2e",
+      "size": 58786175
     }
   ],
   "history": [
