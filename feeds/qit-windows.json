@@ -1,22 +1,29 @@
 {
-  "version": "0.2.0",
+  "version": "0.3.0",
   "date": "2026-10-16",
-  "notes": "İlk ortak sürüm: macOS ve Windows aynı numarayla.\n\nWindows: tek qiT tepsi simgesi; qliP, qriD ve qorD modül olarak açılıp kapanır (qliP şimdilik kendi simgesini de gösterir). qorD Windows'ta da var. Güncellemeleri qiT denetler.\nmacOS: 0.1.7'den beri değişiklik yok.",
-  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-v0.2.0",
+  "notes": "qiT 0.3.0\n- Güncellemeler artık ed25519 ile imzalı; qiT imzasız ya da değiştirilmiş paketi kurmaz.\n- Windows: qliP, qiT içinde kendi tepsi ikonu ve güncelleyicisi olmadan çalışır; kayıt sürerken ikon görünür. qiT'ten kapatılınca kaydı bitirip düzgün kapanır.\n- macOS: qriD Swift 6'ya taşındı (davranış değişikliği yok).",
+  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-v0.3.0",
   "windows": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.2.0/qiT-Setup-x64.exe",
-    "sha256": "a0eb8faee58cfc51dfbbce930c1fb32ae59f3680cb25c9ae5fa652087afb9e82",
-    "size": 66484230
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.3.0/qiT-Setup-x64.exe",
+    "sha256": "1a23b0f805473a2455f5d4104d541e19ad8ef970b4fc53923659a51fc457cddc",
+    "size": 66513969,
+    "signature": "a711af63d0653c7b9694a7e2dececc4e6253f4fc199ed7aa9d7afc4ae4dd9fede504e29a5dd627ec36b06d1680f2241d50c349ad74c21514b0fa539c17a7f309"
   },
   "assets": [
     {
       "name": "qriD-Setup-x64.exe",
-      "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.2.0/qriD-Setup-x64.exe",
-      "sha256": "a0eb8faee58cfc51dfbbce930c1fb32ae59f3680cb25c9ae5fa652087afb9e82",
-      "size": 66484230
+      "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.3.0/qriD-Setup-x64.exe",
+      "sha256": "1a23b0f805473a2455f5d4104d541e19ad8ef970b4fc53923659a51fc457cddc",
+      "size": 66513969,
+      "signature": "a711af63d0653c7b9694a7e2dececc4e6253f4fc199ed7aa9d7afc4ae4dd9fede504e29a5dd627ec36b06d1680f2241d50c349ad74c21514b0fa539c17a7f309"
     }
   ],
   "history": [
+    {
+      "version": "0.3.0",
+      "date": "2026-10-16",
+      "notes": "qiT 0.3.0\n- Güncellemeler artık ed25519 ile imzalı; qiT imzasız ya da değiştirilmiş paketi kurmaz.\n- Windows: qliP, qiT içinde kendi tepsi ikonu ve güncelleyicisi olmadan çalışır; kayıt sürerken ikon görünür. qiT'ten kapatılınca kaydı bitirip düzgün kapanır.\n- macOS: qriD Swift 6'ya taşındı (davranış değişikliği yok)."
+    },
     {
       "version": "0.2.0",
       "date": "2026-10-16",
