@@ -1,14 +1,19 @@
 {
-  "version": "0.1.5",
+  "version": "0.1.6",
   "date": "2026-10-16",
-  "notes": "Yeni sürümler artık yayınlandığı anda görünür (feed GitHub API'sinden okunur); qriD'den Sparkle kaldırıldı.",
+  "notes": "qriD ayarları (Kısayollar, Tutturma Bölgeleri, Genel) qiT tasarımında yeniden yazıldı; Ekstralar penceresindeki seçenekler Genel'de.",
   "macos": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.1.5/qiT-macOS-0.1.5.zip",
-    "sha256": "476a79a8bed065fd97fce2e718a612aa16f83e1ca1258e9ec14746ba952f84d5",
-    "size": 4921380,
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.1.6/qiT-macOS-0.1.6.zip",
+    "sha256": "234bc0259b97c23f1331f804caf7d255025d3e1171b52d0ad077341095033f19",
+    "size": 5228291,
     "minimumSystemVersion": "15.2"
   },
   "history": [
+    {
+      "version": "0.1.6",
+      "date": "2026-10-16",
+      "notes": "qriD ayarları (Kısayollar, Tutturma Bölgeleri, Genel) qiT tasarımında yeniden yazıldı; Ekstralar penceresindeki seçenekler Genel'de."
+    },
     {
       "version": "0.1.5",
       "date": "2026-10-16",
