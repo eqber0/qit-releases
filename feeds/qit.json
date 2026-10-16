@@ -1,14 +1,19 @@
 {
-  "version": "0.1.6",
+  "version": "0.1.7",
   "date": "2026-10-16",
-  "notes": "qriD ayarları (Kısayollar, Tutturma Bölgeleri, Genel) qiT tasarımında yeniden yazıldı; Ekstralar penceresindeki seçenekler Genel'de.",
+  "notes": "Yeni modül qorD: medya tuşlarını seçtiğin oynatıcıya (Müzik, Spotify, Doppler, VOX) yönlendirir. Ayarlar › Modüller'den açılır.",
   "macos": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.1.6/qiT-macOS-0.1.6.zip",
-    "sha256": "234bc0259b97c23f1331f804caf7d255025d3e1171b52d0ad077341095033f19",
-    "size": 5228291,
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.1.7/qiT-macOS-0.1.7.zip",
+    "sha256": "82269b4eb4649fff4c063e3febde937a4c6318c93ce1ef109d846cc97e6e9fa1",
+    "size": 5538707,
     "minimumSystemVersion": "15.2"
   },
   "history": [
+    {
+      "version": "0.1.7",
+      "date": "2026-10-16",
+      "notes": "Yeni modül qorD: medya tuşlarını seçtiğin oynatıcıya (Müzik, Spotify, Doppler, VOX) yönlendirir. Ayarlar › Modüller'den açılır."
+    },
     {
       "version": "0.1.6",
       "date": "2026-10-16",
