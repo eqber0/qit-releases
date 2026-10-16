@@ -1,0 +1,53 @@
+{
+  "version": "0.3.5",
+  "date": "2026-10-16",
+  "notes": "Güncellemeler artık qiT'nin ortak sürüm deposundan (eqber0/qit-releases) geliyor. Başka değişiklik yok.",
+  "macos": {
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qlip-v0.3.5/qliP-macOS-0.3.5.zip",
+    "sha256": "bd3fc3bea95812f78f6bddbb3e8d8cc2dbe735fb77df3eb49299a63752f52608",
+    "size": 2005007,
+    "minimumSystemVersion": "15.2"
+  },
+  "windows": {
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qlip-v0.3.5/qliP-Windows-x64-0.3.5.zip",
+    "sha256": "71b110cdaa8605cfde96e17df49910ccae1f860fef6d9091bfc43ed62b2dd35b",
+    "size": 79292873
+  },
+  "history": [
+    {
+      "version": "0.3.5",
+      "date": "2026-10-16",
+      "notes": "Güncellemeler artık qiT'nin ortak sürüm deposundan (eqber0/qit-releases) geliyor. Başka değişiklik yok."
+    },
+    {
+      "version": "0.3.4",
+      "date": "2026-10-16",
+      "notes": "macOS: seçim artık iki monitöre yayılabilir; iki ekranın parçaları tek görüntüde birleşir."
+    },
+    {
+      "version": "0.3.3",
+      "date": "2026-10-16",
+      "notes": "Yeni çekim sesi: kısa, tok bir tık (macOS ve Windows)."
+    },
+    {
+      "version": "0.3.2",
+      "date": "2026-10-16",
+      "notes": "macOS: seçim ekranı açılınca imleç artıya döner (önceden öndeki uygulamanın imleci kalıyordu)."
+    },
+    {
+      "version": "0.3.1",
+      "date": "2026-10-15",
+      "notes": "Seçim ekranı sadeleşti: sağ altta birleşen iki küçük çubuk, ikonlu eylem çubuğu, Renk/Ok/Dikdörtgen + ⋯ menüsü; mod çubuğu seçimden sonra gizlenir."
+    },
+    {
+      "version": "0.3.0",
+      "date": "2026-10-15",
+      "notes": "qliP'in ilk sürümü: yeni ad ve ikon, yeniden tasarlanan Ayarlar, macOS menü çubuğu paneli ve Windows tepsi menüsü. capture-lite 0.2.0 kendini güncelleyemez; qliP'i elle kurun."
+    },
+    {
+      "version": "0.2.0",
+      "date": "2026-10-15",
+      "notes": "İlk sürüm: ekran görüntüsü (bölge, pencere, tam ekran), düzenleyici, ekran kaydı (mikrofon, sistem sesi, kamera, GIF), OCR, geçmiş ve otomatik güncelleme."
+    }
+  ]
+}
