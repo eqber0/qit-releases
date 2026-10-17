@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="tr">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="qiT: macOS ve Windows için küçük araçlar, tek anahtar. qliP, qriD ve qorD modülleri.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20100%20100%22%20width%3D%22256%22%20height%3D%22256%22%3E%20%20%3C%21--%20qiT%20app%20icon%3A%20the%20q%20is%20a%20toggle%20switch%20%28module%20on%29%2C%20knob%20in%20the%20accent%20colour.%20--%3E%20%20%3Cdefs%3E%20%20%20%20%3ClinearGradient%20id%3D%22mor%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%221%22%3E%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23A07BFF%22/%3E%20%20%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%234316B8%22/%3E%20%20%20%20%3C/linearGradient%3E%20%20%3C/defs%3E%20%20%3Crect%20x%3D%228%22%20y%3D%228%22%20width%3D%2284%22%20height%3D%2284%22%20rx%3D%2219%22%20fill%3D%22url%28%23mor%29%22/%3E%20%20%3Crect%20x%3D%228.5%22%20y%3D%228.5%22%20width%3D%2283%22%20height%3D%2283%22%20rx%3D%2218.5%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-opacity%3D%22.2%22/%3E%20%20%3Cg%20transform%3D%22translate%282%20-2%29%22%3E%20%20%20%20%3Cg%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-width%3D%229%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%20%20%20%20%20%20%3Crect%20x%3D%2220%22%20y%3D%2224%22%20width%3D%2256%22%20height%3D%2234%22%20rx%3D%2212%22/%3E%20%20%20%20%20%20%3Cpath%20d%3D%22M76%2036V80%22/%3E%20%20%20%20%3C/g%3E%20%20%20%20%3Ccircle%20cx%3D%2259%22%20cy%3D%2241%22%20r%3D%228.5%22%20fill%3D%22%23FF7AD9%22/%3E%20%20%3C/g%3E%3C/svg%3E">
+<title>qiT: küçük araçlar, tek anahtar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: sticky nav, hero with a live desktop stage (modules are switches you can flip), module tabs, download with OS detect, release log, FAQ. */
+:root{
+  --bg:#F6F6F8; --bg2:#ECEBF2; --surface:#FFFFFF; --ink:#15151C; --ink2:#4A4A5A; --ink3:#6B6B7E;
+  --line:rgba(21,21,28,.12); --violet:#5A2FD6; --violet2:#7C54F0; --orchid:#C2189B; --glow:rgba(124,84,240,.22);
+  --ok:#0E8F5B; --desk1:#E4DEF7; --desk2:#F3D9EE; --win:#FFFFFF; --bar:rgba(255,255,255,.7);
+  --f-display:'Bricolage Grotesque','Segoe UI',system-ui,sans-serif;
+  --f-body:'Geist',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --f-mono:'Geist Mono',ui-monospace,'SF Mono',Consolas,monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0D0D14; --bg2:#14141F; --surface:#181824; --ink:#F4F4F6; --ink2:#B8B8C8; --ink3:#8C8CA0;
+  --line:rgba(244,244,246,.12); --violet:#A07BFF; --violet2:#7C54F0; --orchid:#FF7AD9; --glow:rgba(160,123,255,.28);
+  --ok:#4FD69C; --desk1:#2A1F55; --desk2:#4A1E48; --win:#1F1F2E; --bar:rgba(20,20,31,.7); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0D0D14; --bg2:#14141F; --surface:#181824; --ink:#F4F4F6; --ink2:#B8B8C8; --ink3:#8C8CA0;
+  --line:rgba(244,244,246,.12); --violet:#A07BFF; --violet2:#7C54F0; --orchid:#FF7AD9; --glow:rgba(160,123,255,.28);
+  --ok:#4FD69C; --desk1:#2A1F55; --desk2:#4A1E48; --win:#1F1F2E; --bar:rgba(20,20,31,.7); color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 var(--f-body);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--bg)}
+a{color:inherit}
+.wrap{max-width:1160px;margin:0 auto}
+h1,h2,h3{font-family:var(--f-display);margin:0;text-wrap:balance;letter-spacing:-.02em;line-height:1.05}
+h2{font-size:clamp(30px,4.4vw,48px);font-weight:800}
+h3{font-size:22px;font-weight:700;letter-spacing:-.01em}
+p{margin:0}
+.eyebrow{font:500 12px/1 var(--f-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--violet)}
+:focus-visible{outline:2px solid var(--orchid);outline-offset:3px;border-radius:6px}
+kbd{font:500 12px/1 var(--f-mono);padding:4px 7px;border-radius:6px;border:1px solid var(--line);border-bottom-width:2px;background:var(--surface);color:var(--ink2)}
+button{font:inherit;color:inherit;cursor:pointer}
+
+/* nav */
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line);margin-inline:calc(-1*max(16px,env(safe-area-inset-left,0px)));padding-inline:max(16px,env(safe-area-inset-left,0px))}
+nav .wrap{display:flex;align-items:center;gap:28px;height:64px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font:800 22px var(--f-display);letter-spacing:-.02em}
+.brand svg{width:30px;height:30px}
+nav .links{display:flex;gap:22px;margin-left:auto;font-size:14.5px;color:var(--ink2)}
+nav .links a{text-decoration:none;padding:6px 2px}
+nav .links a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:0 20px;border-radius:12px;border:1px solid var(--line);background:var(--surface);text-decoration:none;font-weight:500;transition:transform .18s,box-shadow .18s,background .18s}
+.btn:hover{transform:translateY(-2px)}
+.btn.pri{background:linear-gradient(180deg,#A07BFF,#4316B8);color:#fff;border-color:transparent;box-shadow:0 10px 30px -8px rgba(90,47,214,.6),inset 0 1px 0 rgba(255,255,255,.3)}
+.btn.pri:hover{box-shadow:0 16px 36px -8px rgba(90,47,214,.75),inset 0 1px 0 rgba(255,255,255,.3)}
+.btn svg{width:18px;height:18px}
+
+/* hero */
+.hero{padding-block:72px 40px;position:relative}
+.hero::before{content:"";position:absolute;inset:-120px -20vw auto;height:640px;background:radial-gradient(60% 60% at 70% 30%,var(--glow),transparent 70%);pointer-events:none;z-index:-1}
+.hero-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:48px;align-items:center}
+.hero h1{font-size:clamp(44px,7vw,84px);font-weight:800}
+.hero h1 em{font-style:normal;color:var(--orchid)}
+.hero .lead{margin-top:22px;font-size:18px;color:var(--ink2);max-width:46ch}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.meta{margin-top:16px;font:400 13px var(--f-mono);color:var(--ink3)}
+.meta b{color:var(--ink2);font-weight:500}
+
+/* stage */
+.stage-wrap{position:relative}
+.stage{position:relative;aspect-ratio:16/11;border-radius:20px;overflow:hidden;border:1px solid var(--line);
+  background:radial-gradient(80% 90% at 20% 10%,var(--desk1),transparent 70%),radial-gradient(70% 80% at 90% 90%,var(--desk2),transparent 70%),var(--bg2);
+  box-shadow:0 40px 80px -30px rgba(40,20,120,.45);touch-action:none;user-select:none;-webkit-user-select:none}
+.menubar{position:absolute;inset:0 0 auto;height:30px;background:var(--bar);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);display:flex;align-items:center;gap:10px;padding:0 12px;font-size:12px;color:var(--ink2);z-index:5;border-bottom:1px solid var(--line)}
+.menubar .sp{flex:1}
+.menubar svg{width:16px;height:16px}
+.np{display:flex;align-items:center;gap:8px;padding:3px 10px 3px 6px;border-radius:99px;background:var(--surface);border:1px solid var(--line);font-size:11.5px;opacity:0;transform:translateY(-4px) scale(.96);transition:.3s;pointer-events:none;white-space:nowrap}
+.np.on{opacity:1;transform:none;pointer-events:auto}
+.np .eq{display:flex;gap:2px;align-items:flex-end;height:12px}
+.np .eq i{width:2px;background:var(--orchid);border-radius:2px;height:4px}
+.np.play .eq i{animation:eq .9s ease-in-out infinite}
+.np.play .eq i:nth-child(2){animation-delay:.2s}.np.play .eq i:nth-child(3){animation-delay:.4s}
+@keyframes eq{50%{height:12px}}
+.np button{border:0;background:none;padding:0 2px;font-size:11px;color:var(--ink2);min-width:20px;min-height:20px}
+.win{position:absolute;left:30%;top:22%;width:40%;height:46%;background:var(--win);border-radius:12px;border:1px solid var(--line);box-shadow:0 18px 40px -12px rgba(0,0,0,.4);cursor:grab;z-index:3;display:flex;flex-direction:column;overflow:hidden}
+.win.drag{cursor:grabbing;box-shadow:0 26px 50px -10px rgba(0,0,0,.5)}
+.win.snap{transition:left .28s cubic-bezier(.3,1.2,.4,1),top .28s cubic-bezier(.3,1.2,.4,1),width .28s cubic-bezier(.3,1.2,.4,1),height .28s cubic-bezier(.3,1.2,.4,1)}
+.win .tb{display:flex;align-items:center;gap:6px;padding:9px 10px;border-bottom:1px solid var(--line)}
+.win .tb i{width:9px;height:9px;border-radius:50%;background:var(--line)}
+.win .tb i:first-child{background:#FF5F57}.win .tb i:nth-child(2){background:#FEBC2E}.win .tb i:nth-child(3){background:#28C840}
+.win .body{padding:12px;display:grid;gap:7px}
+.win .body s{display:block;height:7px;border-radius:4px;background:var(--line);text-decoration:none}
+.win .body s:nth-child(1){width:70%;background:var(--violet);opacity:.7}.win .body s:nth-child(3){width:85%}.win .body s:nth-child(4){width:50%}
+.zone{position:absolute;border-radius:12px;background:color-mix(in srgb,var(--violet2) 28%,transparent);border:2px solid var(--violet2);opacity:0;transition:opacity .15s,left .12s,top .12s,width .12s,height .12s;z-index:2;pointer-events:none}
+.zone.show{opacity:1}
+.hint{position:absolute;left:50%;bottom:12px;transform:translateX(-50%);font:500 11.5px var(--f-mono);color:var(--ink2);background:var(--bar);padding:6px 12px;border-radius:99px;border:1px solid var(--line);z-index:5;white-space:nowrap;max-width:92%;overflow:hidden;text-overflow:ellipsis}
+.sel{position:absolute;border:1.5px dashed var(--orchid);background:color-mix(in srgb,var(--orchid) 12%,transparent);z-index:6;opacity:0;pointer-events:none;left:0;top:0;width:0;height:0}
+.sel span{position:absolute;right:0;bottom:-22px;font:500 11px var(--f-mono);background:var(--ink);color:var(--bg);padding:2px 6px;border-radius:4px}
+.flash{position:absolute;inset:0;background:#fff;opacity:0;z-index:7;pointer-events:none}
+.toast{position:absolute;right:12px;bottom:46px;z-index:8;display:flex;align-items:center;gap:10px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:8px 12px 8px 8px;font-size:12.5px;box-shadow:0 14px 30px -10px rgba(0,0,0,.4);transform:translateX(120%);transition:transform .4s cubic-bezier(.2,.9,.3,1)}
+.toast.on{transform:none}
+.toast .th{width:40px;height:28px;border-radius:6px;background:linear-gradient(135deg,var(--violet2),var(--orchid))}
+.toast b{display:block;font-weight:600}.toast small{color:var(--ink3);font:400 11px var(--f-mono)}
+
+/* tray panel */
+.panel{position:absolute;right:-14px;top:50px;width:236px;z-index:9;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:12px;box-shadow:0 30px 60px -20px rgba(30,10,100,.5)}
+.panel header{display:flex;align-items:center;gap:8px;padding:2px 4px 10px;font:700 15px var(--f-display)}
+.panel header svg{width:20px;height:20px}
+.panel header span{margin-left:auto;font:400 11px var(--f-mono);color:var(--ink3)}
+.mrow{display:flex;align-items:center;gap:10px;padding:9px 6px;border-top:1px solid var(--line);width:100%;background:none;border-left:0;border-right:0;border-bottom:0;text-align:left;border-radius:0}
+.mrow b{display:block;font:700 15px var(--f-display);line-height:1.1}
+.mrow small{font-size:11.5px;color:var(--ink3)}
+.mrow .grow{flex:1;min-width:0}
+.sw{position:relative;width:42px;height:24px;border-radius:99px;background:var(--line);transition:background .2s;flex:none}
+.sw::after{content:"";position:absolute;left:3px;top:3px;width:18px;height:18px;border-radius:50%;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.35);transition:transform .25s cubic-bezier(.3,1.4,.5,1),background .2s}
+.mrow[aria-checked="true"] .sw{background:var(--violet2)}
+.mrow[aria-checked="true"] .sw::after{transform:translateX(18px);background:var(--orchid-knob,#FF7AD9)}
+.mrow:hover b{color:var(--violet)}
+
+/* sections */
+section{padding-block:96px}
+.sec-head{display:grid;gap:14px;margin-bottom:44px;max-width:640px}
+.sec-head p{color:var(--ink2);font-size:17px}
+.strip{display:flex;flex-wrap:wrap;gap:10px 28px;padding:22px 0;border-block:1px solid var(--line);font:400 13px var(--f-mono);color:var(--ink3)}
+.strip b{color:var(--ink);font-weight:500}
+
+/* modules */
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
+.tab{min-height:44px;padding:0 18px;border-radius:12px;border:1px solid var(--line);background:transparent;font:700 17px var(--f-display);transition:.2s;display:flex;align-items:center;gap:8px}
+.tab:hover{border-color:var(--violet2)}
+.tab[aria-selected="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.tab .new{font:500 10px var(--f-mono);letter-spacing:.08em;text-transform:uppercase;background:var(--orchid);color:#fff;padding:2px 6px;border-radius:5px}
+.mod{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:48px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:40px}
+.mod[hidden]{display:none}
+.mod h3{font-size:clamp(34px,5vw,56px);font-weight:800}
+.mod .tag{margin-top:10px;font-size:18px;color:var(--ink2)}
+.mod ul{list-style:none;padding:0;margin:24px 0 0;display:grid;gap:12px}
+.mod li{display:flex;gap:12px;color:var(--ink2);font-size:15.5px}
+.mod li::before{content:"";flex:none;width:8px;height:8px;margin-top:9px;border-radius:50%;background:var(--orchid)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.chip{font:500 12px var(--f-mono);padding:6px 10px;border-radius:8px;background:var(--bg2);color:var(--ink2)}
+.vis{aspect-ratio:4/3;border-radius:16px;background:var(--bg2);border:1px solid var(--line);position:relative;overflow:hidden;display:grid;place-items:center}
+.vis svg{width:100%;height:100%}
+.vis .cap{position:absolute;left:12px;bottom:10px;font:400 11px var(--f-mono);color:var(--ink3)}
+.soon{display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;margin-top:16px;padding:20px 24px;border:1.5px dashed var(--line);border-radius:18px;color:var(--ink2)}
+.soon b{font:700 18px var(--f-display);color:var(--ink)}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.step{padding:28px;border-radius:20px;background:var(--surface);border:1px solid var(--line);display:grid;gap:12px;align-content:start}
+.step .ic{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(180deg,#A07BFF,#4316B8);color:#fff}
+.step .ic svg{width:22px;height:22px}
+.step p{color:var(--ink2);font-size:15px}
+
+/* download */
+.dl{background:var(--surface);border:1px solid var(--line);border-radius:28px;padding:40px;position:relative;overflow:hidden}
+.dl::before{content:"";position:absolute;inset:auto -10% -60% auto;width:60%;aspect-ratio:1;background:radial-gradient(closest-side,var(--glow),transparent);pointer-events:none}
+.os{display:inline-grid;grid-template-columns:1fr 1fr;padding:4px;border-radius:14px;background:var(--bg2);border:1px solid var(--line);margin:24px 0}
+.os button{min-height:44px;padding:0 24px;border-radius:10px;border:0;background:none;font-weight:500;color:var(--ink2);transition:.2s}
+.os button[aria-selected="true"]{background:var(--surface);color:var(--ink);box-shadow:0 2px 8px rgba(0,0,0,.15)}
+.dl-body{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:32px;position:relative}
+.dl-main .name{font:500 13px var(--f-mono);color:var(--ink3);margin-top:12px;word-break:break-all}
+.req{display:grid;gap:10px;align-content:start;font-size:14.5px;color:var(--ink2)}
+.req div{display:flex;justify-content:space-between;gap:16px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+.req b{font-weight:500;color:var(--ink);text-align:right}
+.ver{display:inline-flex;align-items:center;gap:8px;font:500 13px var(--f-mono);color:var(--ok)}
+.ver::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 4px color-mix(in srgb,var(--ok) 25%,transparent)}
+
+/* releases */
+.rel{display:grid;gap:0;border-top:1px solid var(--line)}
+.rel details{border-bottom:1px solid var(--line)}
+.rel summary{list-style:none;display:grid;grid-template-columns:110px 110px minmax(0,1fr) auto;gap:16px;align-items:center;padding:18px 4px;cursor:pointer;min-height:56px}
+.rel summary::-webkit-details-marker{display:none}
+.rel summary:hover .t{color:var(--violet)}
+.rel .v{font:700 20px var(--f-display)}
+.rel .d{font:400 13px var(--f-mono);color:var(--ink3)}
+.rel .t{color:var(--ink2);font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.rel .chev{width:18px;height:18px;transition:transform .2s;color:var(--ink3)}
+.rel details[open] .chev{transform:rotate(90deg)}
+.rel .more{padding:0 4px 22px 126px;display:grid;gap:14px;color:var(--ink2);font-size:15px}
+.rel .more ul{margin:0;padding-left:18px;display:grid;gap:6px}
+.rel .files{display:flex;flex-wrap:wrap;gap:8px}
+.rel .files a{font:500 12.5px var(--f-mono);padding:8px 12px;border-radius:8px;border:1px solid var(--line);text-decoration:none;background:var(--surface)}
+.rel .files a:hover{border-color:var(--violet2);color:var(--violet)}
+.tagnew{font:500 10px var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ok);margin-left:8px;vertical-align:middle}
+
+/* faq */
+.faq{max-width:760px;border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{cursor:pointer;list-style:none;padding:20px 4px;font:700 19px var(--f-display);display:flex;justify-content:space-between;gap:16px;min-height:56px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font:400 26px var(--f-body);color:var(--violet);transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq p{padding:0 4px 22px;color:var(--ink2);max-width:62ch}
+
+footer{border-top:1px solid var(--line);padding-block:40px;color:var(--ink3);font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:16px 32px;align-items:center}
+footer .sp{flex:1}
+footer a{color:var(--ink2)}
+
+.reveal{opacity:1;transform:none;transition:opacity .6s,transform .6s}
+.js .reveal.pre{opacity:.001;transform:translateY(18px)}
+
+@media (max-width:900px){
+  .hero-grid,.mod,.dl-body{grid-template-columns:minmax(0,1fr)}
+  .mod{padding:24px;gap:28px}.dl{padding:24px}
+  .panel{position:relative;right:auto;top:auto;width:100%;margin-top:14px}
+  .steps{grid-template-columns:minmax(0,1fr)}
+  nav .links a:not(.keep){display:none}
+  .rel summary{grid-template-columns:90px minmax(0,1fr) auto}.rel .t{display:none}
+  .rel .more{padding-left:4px}
+  section{padding-block:64px}
+  .soon{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="qglyph" viewBox="12 16 72 72"><g fill="none" stroke="currentColor" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"><rect x="20" y="24" width="56" height="34" rx="12"/><path d="M76 36V80"/></g><circle cx="59" cy="41" r="8.5" fill="#FF7AD9"/></symbol>
+</svg>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="qiT ana sayfa"><svg viewBox="0 0 100 100" aria-hidden="true"><defs><linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#A07BFF"/><stop offset="1" stop-color="#4316B8"/></linearGradient></defs><rect x="8" y="8" width="84" height="84" rx="19" fill="url(#g1)"/><g transform="translate(2 -2)"><g fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"><rect x="20" y="24" width="56" height="34" rx="12"/><path d="M76 36V80"/></g><circle cx="59" cy="41" r="8.5" fill="#FF7AD9"/></g></svg>qiT</a>
+    <div class="links">
+      <a href="#moduller">Modüller</a><a href="#nasil">Nasıl çalışır</a><a href="#surumler">Sürümler</a><a href="#sss">SSS</a>
+    </div>
+    <a class="btn pri keep" href="#indir" style="min-height:40px;padding:0 16px">İndir</a>
+  </div>
+</nav>
+
+<main id="top">
+<header class="hero wrap">
+  <div class="hero-grid">
+    <div>
+      <p class="eyebrow">macOS · Windows · tek sürüm</p>
+      <h1 style="margin-top:18px">Küçük araçlar.<br>Tek <em>anahtar</em>.</h1>
+      <p class="lead">qiT menü çubuğunda ve sistem tepsisinde yaşayan bir araç seti. Ekran görüntüsü, pencere yerleştirme ve medya tuşları ayrı ayrı modüller; ihtiyacın olanı aç, gerisi kapalı kalsın.</p>
+      <div class="cta">
+        <a class="btn pri" id="heroDl" href="#indir"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0 5-5m-5 5-5-5M4 20h16"/></svg><span id="heroDlText">qiT'i indir</span></a>
+        <a class="btn" href="#moduller">Modülleri gez</a>
+      </div>
+      <p class="meta"><span class="ver" id="verTag">v0.3.2</span> &nbsp;·&nbsp; <b id="heroSize">5,8 MB</b> &nbsp;·&nbsp; <span id="heroReq">macOS 15.2+</span></p>
+    </div>
+
+    <div class="stage-wrap">
+      <div class="stage" id="stage" aria-label="Etkileşimli masaüstü örneği">
+        <div class="menubar">
+          <svg viewBox="0 0 72 72" aria-hidden="true" style="color:var(--ink)"><use href="#qglyph"/></svg>
+          <span>Finder</span>
+          <div class="np on play" id="np"><div class="eq"><i></i><i></i><i></i></div><span id="npTitle">Spotify · Gece Yolculuğu</span><button id="npBtn" aria-label="Oynat / duraklat">⏸</button></div>
+          <span class="sp"></span><span>Cmt 21:04</span>
+        </div>
+        <div class="zone" id="zone"></div>
+        <div class="win" id="win" tabindex="0" role="group" aria-label="Sürüklenebilir pencere">
+          <div class="tb"><i></i><i></i><i></i></div>
+          <div class="body"><s></s><s></s><s></s><s></s></div>
+        </div>
+        <div class="sel" id="sel"><span id="selDim">1280×720</span></div>
+        <div class="flash" id="flash"></div>
+        <div class="toast" id="toast"><div class="th"></div><div><b>Panoya kopyalandı</b><small id="toastDim">1280×720 · PNG</small></div></div>
+        <div class="hint" id="hint">Pencereyi sürükle, kenara yaklaştır</div>
+      </div>
+
+      <div class="panel" role="group" aria-label="qiT modül paneli">
+        <header><svg viewBox="0 0 72 72" aria-hidden="true"><use href="#qglyph"/></svg>qiT<span id="panelVer">0.3.2</span></header>
+        <button class="mrow" role="switch" aria-checked="true" data-m="qrid"><span class="grow"><b>qriD</b><small>Pencere yerleştirme</small></span><span class="sw"></span></button>
+        <button class="mrow" role="switch" aria-checked="true" data-m="qlip"><span class="grow"><b>qliP</b><small>Ekran görüntüsü</small></span><span class="sw"></span></button>
+        <button class="mrow" role="switch" aria-checked="true" data-m="qord"><span class="grow"><b>qorD</b><small>Medya tuşları</small></span><span class="sw"></span></button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap"><div class="strip" id="strip">
+  <span>Güncellemeler <b>ed25519 imzalı</b></span><span>Paket <b>sha256 denetimli</b></span><span><b>Tek</b> Ayarlar penceresi</span><span>macOS <b>Swift 6</b> · Windows <b>Rust</b></span>
+</div></div>
+
+<section id="moduller" class="wrap">
+  <div class="sec-head reveal">
+    <p class="eyebrow">Modüller</p>
+    <h2>Her araç ayrı bir anahtar</h2>
+    <p>Modüller qiT'in içinde çalışır; ayrı kurulum, ayrı güncelleyici yok. Yeni bir modül eklendiğinde bu listeye kendiliğinden girer.</p>
+  </div>
+  <div class="tabs" role="tablist" id="tabs"></div>
+  <div id="modPanels"></div>
+  <div class="soon reveal"><div><b>Sıradaki modül yolda</b><p>Her yeni modül aynı sürümle, iki platforma birlikte gelir.</p></div><a class="btn" href="#surumler">Sürüm notları</a></div>
+</section>
+
+<section id="nasil" class="wrap" style="padding-top:0">
+  <div class="sec-head reveal"><p class="eyebrow">Nasıl çalışır</p><h2>Kur, aç, unut</h2></div>
+  <div class="steps">
+    <div class="step reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0 5-5m-5 5-5-5M4 20h16"/></svg></div><h3>qiT'i kur</h3><p>macOS'ta zip'i aç, Windows'ta kurulum dosyasını çalıştır. Menü çubuğunda ya da tepside bir simge belirir.</p></div>
+    <div class="step reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="10" rx="5"/><circle cx="16" cy="12" r="2.5"/></svg></div><h3>Modülleri aç</h3><p>Ayarlar › Modüller'den ihtiyacın olan araçları aç. Her modülün ayarı aynı pencerede kendi sayfasında.</p></div>
+    <div class="step reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7M21 4v5h-5"/></svg></div><h3>Güncel kal</h3><p>qiT yeni sürümü kendisi bulur. İndirilen paket sha256 ve ed25519 imzasıyla doğrulanır, imza tutmazsa kurulmaz.</p></div>
+  </div>
+</section>
+
+<section id="indir" class="wrap" style="padding-top:0">
+  <div class="dl reveal">
+    <p class="eyebrow">İndir</p>
+    <h2 style="margin-top:14px">qiT <span id="dlVer">0.3.2</span></h2>
+    <div class="os" role="tablist" aria-label="Platform"><button role="tab" id="osMac" aria-selected="true">macOS</button><button role="tab" id="osWin" aria-selected="false">Windows</button></div>
+    <div class="dl-body">
+      <div class="dl-main">
+        <a class="btn pri" id="dlBtn" href="https://github.com/eqber0/qit-releases/releases/latest" style="min-height:52px;padding:0 26px;font-size:17px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0 5-5m-5 5-5-5M4 20h16"/></svg><span id="dlBtnText">macOS için indir</span></a>
+        <p class="name" id="dlName">qiT-macOS-0.3.2.zip</p>
+        <p class="meta" style="margin-top:6px"><span id="dlDate">16 Ekim 2026</span> · <a href="https://github.com/eqber0/qit-releases/releases">tüm sürümler</a></p>
+      </div>
+      <div class="req" id="req"></div>
+    </div>
+  </div>
+</section>
+
+<section id="surumler" class="wrap" style="padding-top:0">
+  <div class="sec-head reveal"><p class="eyebrow">Sürümler</p><h2>Ne zaman ne değişti</h2><p>Liste GitHub sürümlerinden okunur. Her satırdan o sürümün dosyalarını doğrudan indirebilirsin.</p></div>
+  <div class="rel reveal" id="rel"></div>
+</section>
+
+<section id="sss" class="wrap" style="padding-top:0">
+  <div class="sec-head reveal"><p class="eyebrow">SSS</p><h2>Sık sorulanlar</h2></div>
+  <div class="faq reveal">
+    <details><summary>Modülleri ayrı indirebilir miyim?</summary><p>Hayır. qliP, qriD ve qorD yalnız qiT'in içinde gelir. qiT'i kurup Ayarlar › Modüller'den istediğini açarsın.</p></details>
+    <details><summary>macOS ve Windows aynı özelliklere mi sahip?</summary><p>Hedef bu: her düzeltme ve özellik iki platformda birlikte yapılır. Biri yetişmezse sürüm notunda yazılır ve bir sonraki sürümde tamamlanır.</p></details>
+    <details><summary>Güncellemeler güvenli mi?</summary><p>qiT yalnız kendi sürüm deposundan güncellenir. İndirilen paketin sha256'sı denetlenir ve paket ed25519 ile imzalıdır; imza tutmazsa kurulmaz.</p></details>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="#top" style="font-size:18px"><svg viewBox="0 0 72 72" style="width:22px;height:22px;color:var(--ink)" aria-hidden="true"><use href="#qglyph"/></svg>qiT</a>
+    <span>Bilgehan Yılmaz tarafından geliştirildi</span>
+    <span class="sp"></span>
+    <a href="https://github.com/eqber0/qit-releases/releases">Sürümler</a>
+    <a href="https://github.com/eqber0/qit-releases">GitHub</a>
+  </div>
+</footer>
+
+<script>
+document.documentElement.classList.add('js');
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const REPO='eqber0/qit-releases';
+
+/* ---- modules: add an entry here (later: modules.json) and the page grows a tab, a card and a switch ---- */
+const MODULES=[
+ {id:'qrid',name:'qriD',tag:'Pencereleri kısayolla ya da sürükleyerek yerleştir.',
+  points:['Ekran kenarına sürükle, bölge önizlemesini gör, bırak: pencere oturur.','Yarım, çeyrek, üçte bir, tam ekran: hepsi için kısayol.','Kendi bölge düzenlerini tam ekran düzenleyicide çiz.'],
+  chips:['macOS','Windows'],cap:'Shift + sürükle',
+  art:`<svg viewBox="0 0 400 300"><rect x="20" y="20" width="360" height="260" rx="14" fill="none" stroke="currentColor" stroke-opacity=".25"/><rect x="30" y="30" width="170" height="240" rx="10" fill="#7C54F0" fill-opacity=".25" stroke="#7C54F0" stroke-width="2"/><rect x="210" y="30" width="160" height="115" rx="10" fill="none" stroke="currentColor" stroke-opacity=".3" stroke-dasharray="5 5"/><rect x="210" y="155" width="160" height="115" rx="10" fill="none" stroke="currentColor" stroke-opacity=".3" stroke-dasharray="5 5"/><circle cx="100" cy="90" r="8" fill="#FF7AD9"/></svg>`},
+ {id:'qlip',name:'qliP',tag:'Ekran görüntüsü, kayıt, GIF ve OCR.',
+  points:['Alan seç, görüntü panoya düşsün.','Ekranı kaydet ya da GIF yap.','OCR ile görüntüdeki yazıyı kopyala.','Son çekimler tepsi panelinde hazır.'],
+  chips:['macOS','Windows','Türkçe arayüz'],cap:'Ctrl + Shift + S (Windows)',
+  art:`<svg viewBox="0 0 400 300"><rect x="20" y="20" width="360" height="260" rx="14" fill="none" stroke="currentColor" stroke-opacity=".25"/><rect x="90" y="70" width="220" height="150" rx="6" fill="#FF7AD9" fill-opacity=".14" stroke="#FF7AD9" stroke-width="2" stroke-dasharray="7 5"/><g stroke="#FF7AD9" stroke-width="4" stroke-linecap="round"><path d="M90 92V70h22M288 70h22v22M310 198v22h-22M112 220H90v-22"/></g></svg>`},
+ {id:'qord',name:'qorD',tag:'Medya tuşları hep istediğin oynatıcıya gitsin.',
+  points:['Müzik, Spotify, Doppler ya da VOX\'u seç.','Oynat, duraklat, sonraki: tuşlar seçtiğin uygulamayı yönetir.','Oynatıcı seçimi ve kontroller qiT panelinde.'],
+  chips:['macOS','Windows'],cap:'⏯ ⏭ ⏮',isNew:true,
+  art:`<svg viewBox="0 0 400 300"><rect x="60" y="100" width="280" height="100" rx="50" fill="none" stroke="currentColor" stroke-opacity=".3"/><circle cx="110" cy="150" r="28" fill="#7C54F0"/><path d="M102 138l22 12-22 12z" fill="#fff"/><g fill="#FF7AD9"><rect x="170" y="140" width="6" height="20" rx="3"/><rect x="184" y="128" width="6" height="44" rx="3"/><rect x="198" y="136" width="6" height="28" rx="3"/><rect x="212" y="120" width="6" height="60" rx="3"/><rect x="226" y="134" width="6" height="32" rx="3"/><rect x="240" y="142" width="6" height="16" rx="3"/></g></svg>`}
+];
+
+/* ---- release data (fallback copy of the GitHub API; the page refreshes it live when it can reach api.github.com) ---- */
+let RELEASES=[
+ {tag:'qit-v0.3.2',date:'2026-10-16',notes:['Windows qriD: Shift + sürükle ile bölgeler artık anında görünüyor; pencere bırakınca hemen yerleşiyor.','Windows qriD: tam ekran düzen düzenleyici. Ayarlar › qriD › Düzenler\'de bölgeleri gerçek konumlarında düzenle.','Windows qriD: düzen seçilmemişse ya da silinmişse varsayılan düzen kullanılır.'],
+  assets:[{name:'qiT-macOS-0.3.2.zip',size:5796881,url:'https://github.com/eqber0/qit-releases/releases/download/qit-v0.3.2/qiT-macOS-0.3.2.zip'},{name:'qiT-Setup-x64.exe',size:5270237,url:'https://github.com/eqber0/qit-releases/releases/download/qit-v0.3.2/qiT-Setup-x64.exe'}]},
+ {tag:'qit-v0.3.1',date:'2026-10-16',notes:['Windows: qliP, qriD ve qorD artık qiT\'in içinde çalışan tek uygulama.','Windows: qliP Rust ile yeniden yazıldı; ayarların, kısayolların ve geçmişin korunur.','Windows: tek Ayarlar penceresi, her modül için bir sayfa.'],
+  assets:[{name:'qiT-macOS-0.3.1.zip',size:5796860,url:'https://github.com/eqber0/qit-releases/releases/download/qit-v0.3.1/qiT-macOS-0.3.1.zip'},{name:'qiT-Setup-x64.exe',size:5260656,url:'https://github.com/eqber0/qit-releases/releases/download/qit-v0.3.1/qiT-Setup-x64.exe'}]},
+ {tag:'qit-v0.3.0',date:'2026-10-16',notes:['Güncellemeler artık ed25519 ile imzalı; qiT imzasız ya da değiştirilmiş paketi kurmaz.','Windows: qliP, kendi tepsi ikonu ve güncelleyicisi olmadan qiT içinde çalışır.','macOS: qriD Swift 6\'ya taşındı.'],
+  assets:[{name:'qiT-macOS-0.3.0.zip',size:5796909,url:'https://github.com/eqber0/qit-releases/releases/download/qit-v0.3.0/qiT-macOS-0.3.0.zip'},{name:'qiT-Setup-x64.exe',size:66513969,url:'https://github.com/eqber0/qit-releases/releases/download/qit-v0.3.0/qiT-Setup-x64.exe'}]},
+ {tag:'qit-v0.2.0',date:'2026-10-16',notes:['İlk ortak sürüm: macOS ve Windows aynı numarayla.','Windows: tek qiT tepsi simgesi; qliP, qriD ve qorD modül olarak açılıp kapanır.'],
+  assets:[{name:'qiT-macOS-0.2.0.zip',size:5538690,url:'https://github.com/eqber0/qit-releases/releases/download/qit-v0.2.0/qiT-macOS-0.2.0.zip'},{name:'qiT-Setup-x64.exe',size:66484230,url:'https://github.com/eqber0/qit-releases/releases/download/qit-v0.2.0/qiT-Setup-x64.exe'}]}
+];
+
+const fmtMB=b=>(b/1048576).toFixed(1).replace('.',',')+' MB';
+const fmtDate=d=>new Date(d+'T12:00:00').toLocaleDateString('tr-TR',{day:'numeric',month:'long',year:'numeric'});
+const ver=r=>r.tag.replace('qit-v','');
+const pick=(r,os)=>r.assets.find(a=>os==='mac'?/macOS.*\.zip$/i.test(a.name):/Setup.*\.exe$/i.test(a.name));
+let os=/Win/i.test(navigator.platform||navigator.userAgent)?'win':'mac';
+const REQ={mac:[['Sistem','macOS 15.2 veya üstü'],['Dosya','.zip, içinde qiT.app'],['Kurulum','Uygulamalar klasörüne sürükle']],
+           win:[['Sistem','Windows 10 (2004+) / 11'],['İşlemci','x64'],['Kurulum','Tek NSIS kurulum dosyası']]};
+
+/* ---- render ---- */
+function renderModules(){
+  const tabs=$('#tabs'), pan=$('#modPanels');
+  tabs.innerHTML=MODULES.map((m,i)=>`<button class="tab" role="tab" id="t-${m.id}" aria-selected="${i===0}" aria-controls="p-${m.id}" data-id="${m.id}">${m.name}${m.isNew?'<span class="new">yeni</span>':''}</button>`).join('');
+  pan.innerHTML=MODULES.map((m,i)=>`<div class="mod" id="p-${m.id}" role="tabpanel" aria-labelledby="t-${m.id}" ${i?'hidden':''}>
+    <div><h3>${m.name}</h3><p class="tag">${m.tag}</p><ul>${m.points.map(p=>`<li>${p}</li>`).join('')}</ul><div class="chips">${m.chips.map(c=>`<span class="chip">${c}</span>`).join('')}</div></div>
+    <div class="vis">${m.art}<span class="cap">${m.cap}</span></div></div>`).join('');
+  tabs.addEventListener('click',e=>{const b=e.target.closest('.tab');if(b)selectTab(b.dataset.id)});
+  tabs.addEventListener('keydown',e=>{if(!/Arrow/.test(e.key))return;const ids=MODULES.map(m=>m.id);const cur=ids.indexOf(document.activeElement.dataset?.id);if(cur<0)return;const n=ids[(cur+(e.key==='ArrowRight'?1:ids.length-1))%ids.length];selectTab(n);$('#t-'+n).focus()});
+}
+function selectTab(id){MODULES.forEach(m=>{const on=m.id===id;$('#t-'+m.id).setAttribute('aria-selected',on);$('#p-'+m.id).hidden=!on})}
+
+function renderDownload(){
+  const r=RELEASES[0], a=pick(r,os);
+  $('#dlVer').textContent=ver(r); $('#panelVer').textContent=ver(r); $('#verTag').textContent='v'+ver(r);
+  $('#dlDate').textContent=fmtDate(r.date);
+  const label=os==='mac'?'macOS':'Windows';
+  $('#osMac').setAttribute('aria-selected',os==='mac'); $('#osWin').setAttribute('aria-selected',os==='win');
+  $('#dlBtnText').textContent=label+' için indir';
+  $('#dlBtn').href=a?a.url:'https://github.com/'+REPO+'/releases/latest';
+  $('#dlName').textContent=a?`${a.name} · ${fmtMB(a.size)}`:'';
+  $('#heroDlText').textContent=label+' için indir';
+  $('#heroSize').textContent=a?fmtMB(a.size):'';
+  $('#heroReq').textContent=REQ[os][0][1];
+  $('#req').innerHTML=REQ[os].map(([k,v])=>`<div><span>${k}</span><b>${v}</b></div>`).join('');
+}
+function renderReleases(){
+  $('#rel').innerHTML=RELEASES.map((r,i)=>`<details ${i===0?'open':''}><summary><span class="v">${ver(r)}${i===0?'<span class="tagnew">güncel</span>':''}</span><span class="d">${fmtDate(r.date)}</span><span class="t">${r.notes[0]||''}</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg></summary>
+   <div class="more"><ul>${r.notes.map(n=>`<li>${n}</li>`).join('')}</ul><div class="files">${r.assets.map(a=>`<a href="${a.url}">${a.name} · ${fmtMB(a.size)}</a>`).join('')}</div></div></details>`).join('');
+}
+$('#osMac').onclick=()=>{os='mac';renderDownload()}; $('#osWin').onclick=()=>{os='win';renderDownload()};
+$('#heroDl').onclick=()=>{};
+
+renderModules(); renderDownload(); renderReleases();
+
+/* live refresh from GitHub (silently keeps the fallback above if the request is blocked) */
+fetch(`https://api.github.com/repos/${REPO}/releases?per_page=30`).then(r=>r.ok?r.json():Promise.reject()).then(list=>{
+  const rs=list.filter(r=>/^qit-v/.test(r.tag_name)&&!r.draft&&!r.prerelease).map(r=>({tag:r.tag_name,date:r.published_at.slice(0,10),
+    notes:(r.body||'').split('\n').map(l=>l.replace(/^\s*[-*]\s*/,'').trim()).filter(l=>l&&!/^qiT \d/.test(l)),
+    assets:r.assets.map(a=>({name:a.name,size:a.size,url:a.browser_download_url}))}));
+  if(rs.length){RELEASES=rs;renderDownload();renderReleases()}
+}).catch(()=>{});
+
+/* ---- hero stage ---- */
+const state={qrid:true,qlip:true,qord:true};
+const stage=$('#stage'), win=$('#win'), zone=$('#zone'), hint=$('#hint');
+const ZONES={left:[0,0,.5,1],right:[.5,0,.5,1],full:[0,0,1,1],tl:[0,0,.5,.5],tr:[.5,0,.5,.5],bl:[0,.5,.5,.5],br:[.5,.5,.5,.5]};
+const MB=30;
+function setBox(el,b){const W=stage.clientWidth,H=stage.clientHeight-MB;el.style.left=(b[0]*W)+'px';el.style.top=(MB+b[1]*H)+'px';el.style.width=(b[2]*W)+'px';el.style.height=(b[3]*H)+'px'}
+function zoneAt(x,y){const W=stage.clientWidth,H=stage.clientHeight,e=Math.min(64,W*.12);
+  const l=x<e,r=x>W-e,t=y<MB+e,b=y>H-e;
+  if(t&&l)return 'tl';if(t&&r)return 'tr';if(b&&l)return 'bl';if(b&&r)return 'br';
+  if(l)return 'left';if(r)return 'right';if(t)return 'full';return null}
+let drag=null,curZone=null;
+const px=()=>({w:stage.clientWidth,h:stage.clientHeight});
+function resetWin(){win.classList.add('snap');win.style.left='30%';win.style.top='22%';win.style.width='40%';win.style.height='46%'}
+win.addEventListener('pointerdown',e=>{
+  win.setPointerCapture(e.pointerId);win.classList.remove('snap');win.classList.add('drag');
+  const s=stage.getBoundingClientRect(),w=win.getBoundingClientRect();
+  drag={dx:e.clientX-w.left,dy:e.clientY-w.top,s,w:w.width,h:w.height};
+  win.style.width=w.width+'px';win.style.height=w.height+'px';win.style.left=(w.left-s.left)+'px';win.style.top=(w.top-s.top)+'px';
+});
+win.addEventListener('pointermove',e=>{
+  if(!drag)return;
+  const {s}=drag;let x=e.clientX-s.left-drag.dx,y=e.clientY-s.top-drag.dy;
+  x=Math.max(0,Math.min(s.width-drag.w,x));y=Math.max(MB,Math.min(s.height-drag.h,y));
+  win.style.left=x+'px';win.style.top=y+'px';
+  if(state.qrid){const z=zoneAt(e.clientX-s.left,e.clientY-s.top);if(z!==curZone){curZone=z;if(z){setBox(zone,ZONES[z]);zone.classList.add('show')}else zone.classList.remove('show')}}
+});
+const endDrag=()=>{
+  if(!drag)return;drag=null;win.classList.remove('drag');zone.classList.remove('show');
+  if(state.qrid&&curZone){win.classList.add('snap');setBox(win,ZONES[curZone]);hint.textContent='qriD yerleştirdi: '+({left:'sol yarı',right:'sağ yarı',full:'tam ekran',tl:'sol üst',tr:'sağ üst',bl:'sol alt',br:'sağ alt'})[curZone]+'. Çift tıkla, geri al.'}
+  curZone=null};
+win.addEventListener('pointerup',endDrag);win.addEventListener('pointercancel',endDrag);
+win.addEventListener('dblclick',()=>{resetWin();hint.textContent=state.qrid?'Pencereyi sürükle, kenara yaklaştır':'qriD kapalı: pencere serbest kalır'});
+win.addEventListener('keydown',e=>{const k={ArrowLeft:'left',ArrowRight:'right',ArrowUp:'full'}[e.key];if(k&&state.qrid){win.classList.add('snap');setBox(win,ZONES[k]);e.preventDefault()}});
+
+/* qliP: auto capture sequence */
+let capBusy=false;
+function capture(){
+  if(!state.qlip||capBusy)return;capBusy=true;
+  const sel=$('#sel'),S=stage.getBoundingClientRect(),W=S.width,H=S.height;
+  const x=W*.14,y=H*.28,w=W*.5,h=H*.42;
+  Object.assign(sel.style,{left:x+'px',top:y+'px',width:'0px',height:'0px',opacity:1,transition:'none'});
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{
+    sel.style.transition='width .55s cubic-bezier(.3,.8,.3,1),height .55s cubic-bezier(.3,.8,.3,1)';
+    sel.style.width=w+'px';sel.style.height=h+'px';
+    $('#selDim').textContent=Math.round(w*2.2)+'×'+Math.round(h*2.2);
+  }));
+  setTimeout(()=>{const f=$('#flash');f.style.transition='none';f.style.opacity=.85;requestAnimationFrame(()=>{f.style.transition='opacity .35s';f.style.opacity=0});sel.style.opacity=0;
+    $('#toastDim').textContent=$('#selDim').textContent+' · PNG';$('#toast').classList.add('on')},800);
+  setTimeout(()=>{$('#toast').classList.remove('on');capBusy=false},3200);
+}
+hint.addEventListener('click',()=>{});
+stage.addEventListener('dblclick',e=>{if(e.target===stage||e.target.closest('.menubar')===null&&!e.target.closest('.win'))capture()});
+
+/* qorD */
+const np=$('#np'),npBtn=$('#npBtn');let playing=true;
+const PLAYERS=['Spotify · Gece Yolculuğu','Müzik · Sabah Listesi','VOX · Canlı Konser'];let pi=0;
+npBtn.onclick=()=>{playing=!playing;np.classList.toggle('play',playing);npBtn.textContent=playing?'⏸':'▶'};
+$('#npTitle').onclick=()=>{pi=(pi+1)%PLAYERS.length;$('#npTitle').textContent=PLAYERS[pi]};
+$('#npTitle').style.cursor='pointer';$('#npTitle').title='Oynatıcıyı değiştir';
+
+/* switches */
+$$('.mrow').forEach(b=>b.addEventListener('click',()=>{
+  const m=b.dataset.m,on=b.getAttribute('aria-checked')!=='true';b.setAttribute('aria-checked',on);state[m]=on;
+  if(m==='qord')np.classList.toggle('on',on);
+  if(m==='qrid'){hint.textContent=on?'Pencereyi sürükle, kenara yaklaştır':'qriD kapalı: pencere serbest kalır';if(!on){zone.classList.remove('show')}}
+  if(m==='qlip'){hint.textContent=on?'Boş alana çift tıkla: ekran görüntüsü al':'qliP kapalı';if(on)setTimeout(capture,250)}
+}));
+setBox(win,[.3,.1,.4,.5]);
+addEventListener('resize',()=>{if(!win.style.left.endsWith('%')&&!drag){}});
+setTimeout(()=>{if(state.qlip)capture()},1600);
+setInterval(()=>{if(!drag&&state.qlip&&!capBusy&&hint.textContent.startsWith('Pencereyi'))hint.textContent='Pencereyi sürükle · boş alana çift tıkla: ekran görüntüsü'},4000);
+
+/* reveal on scroll (content is visible by default; only animates when observer is available) */
+if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion:reduce)').matches){
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.remove('pre');io.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px'});
+  $$('.reveal').forEach(el=>{const r=el.getBoundingClientRect();if(r.top>innerHeight){el.classList.add('pre');io.observe(el)}});
+}
+</script>
+</html>
