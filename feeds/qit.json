@@ -1,15 +1,20 @@
 {
-  "version": "0.3.3",
+  "version": "0.4.0",
   "date": "2026-10-17",
-  "notes": "qriD: ekranı kaplayan pencere 10 sn sonra sürüklenince eski boyuta dönmüyor (macOS ve Windows)",
+  "notes": "- Yeni modül qroL: fare tekerleği trackpad gibi yumuşak kayar (macOS ve Windows). Hız, yumuşaklık, ters yön, Shift ile yatay kaydırma ve dokunulmayan uygulamalar Ayarlar › qroL'da.\n- qroL yeni modül olduğu için kapalı başlar: Ayarlar › Modüller'den aç. macOS'ta Erişilebilirlik izni ister; Mos gibi başka bir kaydırma uygulaması açıksa kapat.",
   "macos": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.3.3/qiT-macOS-0.3.3.zip",
-    "sha256": "7619f2d7cbb76444bb86fe9ffc70b9e5cfa9ef9c1d3bdce5d437528a58036199",
-    "size": 5814221,
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.4.0/qiT-macOS-0.4.0.zip",
+    "sha256": "130ccb984689ce2df067f7950bb64ee2d5deac63eac62ff0879cccb4768b01eb",
+    "size": 6012292,
     "minimumSystemVersion": "15.2",
-    "signature": "689f79921d77048ad7bb497c040d87057f2032545c2744d9dadcab6d0b0fe249635ac07e23dbe7bac9b5f8a3667262a353ba2f4091e025c097626e7170b35108"
+    "signature": "045fd3687456f6465572808ce38b1cd0eab0dac7c523be9ccd2c00411e536a372aee96ce5db97640541dff2357b84ed56cf987d8bbf1a92e372e760f104c8006"
   },
   "history": [
+    {
+      "version": "0.4.0",
+      "date": "2026-10-17",
+      "notes": "- Yeni modül qroL: fare tekerleği trackpad gibi yumuşak kayar (macOS ve Windows). Hız, yumuşaklık, ters yön, Shift ile yatay kaydırma ve dokunulmayan uygulamalar Ayarlar › qroL'da.\n- qroL yeni modül olduğu için kapalı başlar: Ayarlar › Modüller'den aç. macOS'ta Erişilebilirlik izni ister; Mos gibi başka bir kaydırma uygulaması açıksa kapat."
+    },
     {
       "version": "0.3.3",
       "date": "2026-10-17",
