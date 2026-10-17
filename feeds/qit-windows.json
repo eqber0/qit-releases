@@ -1,15 +1,20 @@
 {
-  "version": "0.3.2",
-  "date": "2026-10-16",
-  "notes": "qiT 0.3.2\n- Windows qriD: Shift + sürükle ile bölgeler artık anında görünüyor; pencere bırakınca hemen yerleşiyor.\n- Windows qriD: tam ekran düzen düzenleyici — Ayarlar › qriD › Düzenler'de ekranı seç, bölgeleri gerçek konumlarında düzenle (Enter kaydeder, Esc vazgeçer).\n- Windows qriD: düzen seçilmemişse ya da silinmişse varsayılan düzen kullanılır.",
-  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-v0.3.2",
+  "version": "0.3.3",
+  "date": "2026-10-17",
+  "notes": "qriD: ekranı kaplayan pencere 10 sn sonra sürüklenince eski boyuta dönmüyor (macOS ve Windows)",
+  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-v0.3.3",
   "windows": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.3.2/qiT-Setup-x64.exe",
-    "sha256": "162e9893465005442c62ab3f4c4c89841c8b558f084b684b08a170ff8fdd4f90",
-    "size": 5270237,
-    "signature": "cb6f96fbde1b55cea1cda2981b8a6ca79a462b7a771aa53121c25ba691472b9f84a33325673861b1619ca9c76937165da8801ed8e28e6c626d63d014ce854d0a"
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.3.3/qiT-Setup-x64.exe",
+    "sha256": "a090ebd75f66e9235fb097620e6ffdcd14cbed95819e77128961ef5d5c2c2eb5",
+    "size": 5268970,
+    "signature": "f102b02dd66fb3b31e5b921aa7a7db73eb751d0efd355b5d54c2467ebb4e9ca0c07d511844963f57019466886df8e300c857a1ad5b2d6d2d1bca2926e9811809"
   },
   "history": [
+    {
+      "version": "0.3.3",
+      "date": "2026-10-17",
+      "notes": "qriD: ekranı kaplayan pencere 10 sn sonra sürüklenince eski boyuta dönmüyor (macOS ve Windows)"
+    },
     {
       "version": "0.3.2",
       "date": "2026-10-16",
