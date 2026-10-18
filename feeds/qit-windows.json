@@ -1,15 +1,20 @@
 {
-  "version": "0.5.3",
+  "version": "0.5.4",
   "date": "2026-10-19",
-  "notes": "qonV düzeltmesi: Windows'ta tarayıcı sekmesi ya da pencere sürüklerken Shift'e basmak qonV ve qriD'yi kilitliyordu. Tekerlek artık yalnız uygun bir dosya sürüklenirken açılır; dönüştürülecek hedefi olmayan dosyada dönüştürme tekerleği açılmaz.",
-  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-v0.5.3",
+  "notes": "Windows: Ayarlar'da qonV, qroL ve qorD sayfaları artık kayar; uzun sayfaların altı kesilmiyor.",
+  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-v0.5.4",
   "windows": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.5.3/qiT-Setup-x64.exe",
-    "sha256": "91064d447a977e0cb8d8f1654ffba1f5afd31066894be92091966c016eef8f65",
-    "size": 5754727,
-    "signature": "ef9bda89abec3f1150baccf835068f102339fe7dd04bd58ab24a7f33cbfde4ecb53c9a8b323ceebb1968b9b2f07b4d768eb289d731f37118ffcb073fc7f2120d"
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.5.4/qiT-Setup-x64.exe",
+    "sha256": "7b74c05319b801d722949a3bc15597a72e668144997b6b671c19e27a5c8bcda1",
+    "size": 5766185,
+    "signature": "e828c3a5a47197f327919da4e113d8f7ed4f07fcf4d840980d249611957a78b6e7b5e574e60b2b7367f82e7b3ad48e43318960919940fb3c1ab48e7b1c66e305"
   },
   "history": [
+    {
+      "version": "0.5.4",
+      "date": "2026-10-19",
+      "notes": "Windows: Ayarlar'da qonV, qroL ve qorD sayfaları artık kayar; uzun sayfaların altı kesilmiyor."
+    },
     {
       "version": "0.5.3",
       "date": "2026-10-19",

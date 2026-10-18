@@ -1,15 +1,20 @@
 {
-  "version": "0.5.3",
+  "version": "0.5.4",
   "date": "2026-10-19",
-  "notes": "qonV düzeltmesi: Windows'ta tarayıcı sekmesi ya da pencere sürüklerken Shift'e basmak qonV ve qriD'yi kilitliyordu. Tekerlek artık yalnız uygun bir dosya sürüklenirken açılır; dönüştürülecek hedefi olmayan dosyada dönüştürme tekerleği açılmaz.",
+  "notes": "Windows: Ayarlar'da qonV, qroL ve qorD sayfaları artık kayar; uzun sayfaların altı kesilmiyor.",
   "macos": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.5.3/qiT-macOS-0.5.3.zip",
-    "sha256": "2a54b132e53ca616faf2d24a98fa09e7d9210754f44ccd496c1852f72e8a7fa2",
-    "size": 6914583,
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.5.4/qiT-macOS-0.5.4.zip",
+    "sha256": "3bc22edf1a057b648ee8bf9c162a3b97da5a086e06b7c1df2c8952d87c833f51",
+    "size": 6914615,
     "minimumSystemVersion": "15.2",
-    "signature": "613c9ceb97a6230e0aad6d67fe3a9533c46a7ee24275fcb535a60829634c8b399cbe2fdf6d72592985ac2370eeb0a14aded2d5b70f550d722e4f78aa3125ee00"
+    "signature": "86abb519128f24a09e9cde90b4a3f051ea227ebb2048dac7a0e8a39d444d4971a52e6668d6c2de0f86fc2d619c130842e05bfd02a3caa84e69b71f5e611b200d"
   },
   "history": [
+    {
+      "version": "0.5.4",
+      "date": "2026-10-19",
+      "notes": "Windows: Ayarlar'da qonV, qroL ve qorD sayfaları artık kayar; uzun sayfaların altı kesilmiyor."
+    },
     {
       "version": "0.5.3",
       "date": "2026-10-19",
