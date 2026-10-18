@@ -1,15 +1,20 @@
 {
-  "version": "0.5.0",
+  "version": "0.5.1",
   "date": "2026-10-18",
-  "notes": "Yeni modül qonV: dosyayı sürüklerken Shift'e basınca imlecin altında açılan tekerlekten biçim değiştir (görüntü, PDF, video, ses). Command/Ctrl ile işlemler: boyutlandır, kırp, sıkıştır (yalnız küçülüyorsa yazar), metadata sil, döndür, arka planı sil, PDF birleştir/böl, videonun sesini çıkar/sessize al. Arka plan silme macOS'ta Vision ile; Windows'ta model isteğe bağlı indirilir (121 MB). Modül Ayarlar › Modüller'den açılır.",
-  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-v0.5.0",
+  "notes": "qonV'nin logosu yenilendi: diğer modüller gibi bir q, gözü dönüştürmeyi anlatan dönen halka.",
+  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-v0.5.1",
   "windows": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.5.0/qiT-Setup-x64.exe",
-    "sha256": "42ea9ceaa7dc6df1e3efaff153351dd5aed37d62d9bcc71aaa31cf34ecc9dd88",
-    "size": 5720418,
-    "signature": "ac1ea0ebf44b6de2a8eead8fece565ac688e71b0a8257029655055e12ddc34453eb38e087f07bb44d9f625b3a78694017ee0010f2fb1bb56e9a4ec5f0c243b04"
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.5.1/qiT-Setup-x64.exe",
+    "sha256": "5863b0fd0ae2011ef0b8bd75b6a5b4e4150d430045ff397ed8f46cee5878a405",
+    "size": 5721951,
+    "signature": "916179d1a12ae04b294bc85c3a656a6230c80ceaa12f1109e71c2d6a9d377e8ac7adcb96a37be6325094b694c2c99b2ff0d2b2b3f8a893b4abdb64cc0896e70d"
   },
   "history": [
+    {
+      "version": "0.5.1",
+      "date": "2026-10-18",
+      "notes": "qonV'nin logosu yenilendi: diğer modüller gibi bir q, gözü dönüştürmeyi anlatan dönen halka."
+    },
     {
       "version": "0.5.0",
       "date": "2026-10-18",
