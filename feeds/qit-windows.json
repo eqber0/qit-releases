@@ -1,15 +1,20 @@
 {
-  "version": "0.4.0",
-  "date": "2026-10-17",
-  "notes": "- Yeni modül qroL: fare tekerleği trackpad gibi yumuşak kayar (macOS ve Windows). Hız, yumuşaklık, ters yön, Shift ile yatay kaydırma ve dokunulmayan uygulamalar Ayarlar › qroL'da.\n- qroL yeni modül olduğu için kapalı başlar: Ayarlar › Modüller'den aç. macOS'ta Erişilebilirlik izni ister; Mos gibi başka bir kaydırma uygulaması açıksa kapat.",
-  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-v0.4.0",
+  "version": "0.5.0",
+  "date": "2026-10-18",
+  "notes": "Yeni modül qonV: dosyayı sürüklerken Shift'e basınca imlecin altında açılan tekerlekten biçim değiştir (görüntü, PDF, video, ses). Command/Ctrl ile işlemler: boyutlandır, kırp, sıkıştır (yalnız küçülüyorsa yazar), metadata sil, döndür, arka planı sil, PDF birleştir/böl, videonun sesini çıkar/sessize al. Arka plan silme macOS'ta Vision ile; Windows'ta model isteğe bağlı indirilir (121 MB). Modül Ayarlar › Modüller'den açılır.",
+  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-v0.5.0",
   "windows": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.4.0/qiT-Setup-x64.exe",
-    "sha256": "01c477290931bf1f7d2c33bb0550814fe60a405a609e9d358155e2ea49fa6900",
-    "size": 5315256,
-    "signature": "a868db519f7a5a17a18cc6870e80598692a358e889417626ba88dc2b8fa8e23002ee73bff2dfca1db674f9b246c4d8e7f512123d1c945c413b88e2fd466b7f0c"
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.5.0/qiT-Setup-x64.exe",
+    "sha256": "42ea9ceaa7dc6df1e3efaff153351dd5aed37d62d9bcc71aaa31cf34ecc9dd88",
+    "size": 5720418,
+    "signature": "ac1ea0ebf44b6de2a8eead8fece565ac688e71b0a8257029655055e12ddc34453eb38e087f07bb44d9f625b3a78694017ee0010f2fb1bb56e9a4ec5f0c243b04"
   },
   "history": [
+    {
+      "version": "0.5.0",
+      "date": "2026-10-18",
+      "notes": "Yeni modül qonV: dosyayı sürüklerken Shift'e basınca imlecin altında açılan tekerlekten biçim değiştir (görüntü, PDF, video, ses). Command/Ctrl ile işlemler: boyutlandır, kırp, sıkıştır (yalnız küçülüyorsa yazar), metadata sil, döndür, arka planı sil, PDF birleştir/böl, videonun sesini çıkar/sessize al. Arka plan silme macOS'ta Vision ile; Windows'ta model isteğe bağlı indirilir (121 MB). Modül Ayarlar › Modüller'den açılır."
+    },
     {
       "version": "0.4.0",
       "date": "2026-10-17",

@@ -1,15 +1,20 @@
 {
-  "version": "0.4.0",
-  "date": "2026-10-17",
-  "notes": "- Yeni modül qroL: fare tekerleği trackpad gibi yumuşak kayar (macOS ve Windows). Hız, yumuşaklık, ters yön, Shift ile yatay kaydırma ve dokunulmayan uygulamalar Ayarlar › qroL'da.\n- qroL yeni modül olduğu için kapalı başlar: Ayarlar › Modüller'den aç. macOS'ta Erişilebilirlik izni ister; Mos gibi başka bir kaydırma uygulaması açıksa kapat.",
+  "version": "0.5.0",
+  "date": "2026-10-18",
+  "notes": "Yeni modül qonV: dosyayı sürüklerken Shift'e basınca imlecin altında açılan tekerlekten biçim değiştir (görüntü, PDF, video, ses). Command/Ctrl ile işlemler: boyutlandır, kırp, sıkıştır (yalnız küçülüyorsa yazar), metadata sil, döndür, arka planı sil, PDF birleştir/böl, videonun sesini çıkar/sessize al. Arka plan silme macOS'ta Vision ile; Windows'ta model isteğe bağlı indirilir (121 MB). Modül Ayarlar › Modüller'den açılır.",
   "macos": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.4.0/qiT-macOS-0.4.0.zip",
-    "sha256": "130ccb984689ce2df067f7950bb64ee2d5deac63eac62ff0879cccb4768b01eb",
-    "size": 6012292,
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.5.0/qiT-macOS-0.5.0.zip",
+    "sha256": "317eba29d34fb7cea5b6b6d1923bb92112f51bf8458c96eca27164d3c89916a9",
+    "size": 6748669,
     "minimumSystemVersion": "15.2",
-    "signature": "045fd3687456f6465572808ce38b1cd0eab0dac7c523be9ccd2c00411e536a372aee96ce5db97640541dff2357b84ed56cf987d8bbf1a92e372e760f104c8006"
+    "signature": "e03b87863fc1eb5c289bf8265a6f2165e79d10077474e98e68a7fb1628e7f7bf709c0c454981c714c9430fba63e0e23623289ee8664c4062c12c64a56e1c1a00"
   },
   "history": [
+    {
+      "version": "0.5.0",
+      "date": "2026-10-18",
+      "notes": "Yeni modül qonV: dosyayı sürüklerken Shift'e basınca imlecin altında açılan tekerlekten biçim değiştir (görüntü, PDF, video, ses). Command/Ctrl ile işlemler: boyutlandır, kırp, sıkıştır (yalnız küçülüyorsa yazar), metadata sil, döndür, arka planı sil, PDF birleştir/böl, videonun sesini çıkar/sessize al. Arka plan silme macOS'ta Vision ile; Windows'ta model isteğe bağlı indirilir (121 MB). Modül Ayarlar › Modüller'den açılır."
+    },
     {
       "version": "0.4.0",
       "date": "2026-10-17",
