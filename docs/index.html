@@ -2,7 +2,7 @@
 <html lang="tr">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="qiT: macOS ve Windows için küçük araçlar, tek anahtar. qliP, qriD, qorD ve qroL modülleri.">
+<meta name="description" content="qiT: macOS ve Windows için küçük araçlar, tek anahtar. qliP, qriD, qorD, qroL ve qonV modülleri.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20100%20100%22%20width%3D%22256%22%20height%3D%22256%22%3E%20%20%3C%21--%20qiT%20app%20icon%3A%20the%20q%20is%20a%20toggle%20switch%20%28module%20on%29%2C%20knob%20in%20the%20accent%20colour.%20--%3E%20%20%3Cdefs%3E%20%20%20%20%3ClinearGradient%20id%3D%22mor%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%221%22%3E%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23A07BFF%22/%3E%20%20%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%234316B8%22/%3E%20%20%20%20%3C/linearGradient%3E%20%20%3C/defs%3E%20%20%3Crect%20x%3D%228%22%20y%3D%228%22%20width%3D%2284%22%20height%3D%2284%22%20rx%3D%2219%22%20fill%3D%22url%28%23mor%29%22/%3E%20%20%3Crect%20x%3D%228.5%22%20y%3D%228.5%22%20width%3D%2283%22%20height%3D%2283%22%20rx%3D%2218.5%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-opacity%3D%22.2%22/%3E%20%20%3Cg%20transform%3D%22translate%282%20-2%29%22%3E%20%20%20%20%3Cg%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-width%3D%229%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%20%20%20%20%20%20%3Crect%20x%3D%2220%22%20y%3D%2224%22%20width%3D%2256%22%20height%3D%2234%22%20rx%3D%2212%22/%3E%20%20%20%20%20%20%3Cpath%20d%3D%22M76%2036V80%22/%3E%20%20%20%20%3C/g%3E%20%20%20%20%3Ccircle%20cx%3D%2259%22%20cy%3D%2241%22%20r%3D%228.5%22%20fill%3D%22%23FF7AD9%22/%3E%20%20%3C/g%3E%3C/svg%3E">
 <title>qiT: küçük araçlar, tek anahtar</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -266,11 +266,12 @@ footer a{color:var(--ink2)}
       </div>
 
       <div class="panel" role="group" aria-label="qiT modül paneli">
-        <header><svg viewBox="0 0 72 72" aria-hidden="true"><use href="#qglyph"/></svg>qiT<span id="panelVer">0.4.0</span></header>
+        <header><svg viewBox="0 0 72 72" aria-hidden="true"><use href="#qglyph"/></svg>qiT<span id="panelVer">0.5.1</span></header>
         <button class="mrow" role="switch" aria-checked="true" data-m="qrid"><span class="grow"><b>qriD</b><small>Pencere yerleştirme</small></span><span class="sw"></span></button>
         <button class="mrow" role="switch" aria-checked="true" data-m="qlip"><span class="grow"><b>qliP</b><small>Ekran görüntüsü</small></span><span class="sw"></span></button>
         <button class="mrow" role="switch" aria-checked="true" data-m="qord"><span class="grow"><b>qorD</b><small>Medya tuşları</small></span><span class="sw"></span></button>
         <button class="mrow" role="switch" aria-checked="true" data-m="qrol"><span class="grow"><b>qroL</b><small>Yumuşak kaydırma</small></span><span class="sw"></span></button>
+        <button class="mrow" role="switch" aria-checked="true" data-m="qonv"><span class="grow"><b>qonV</b><small>Dosya dönüştürme</small></span><span class="sw"></span></button>
       </div>
     </div>
   </div>
@@ -324,7 +325,7 @@ footer a{color:var(--ink2)}
 <section id="sss" class="wrap" style="padding-top:0">
   <div class="sec-head reveal"><p class="eyebrow">SSS</p><h2>Sık sorulanlar</h2></div>
   <div class="faq reveal">
-    <details><summary>Modülleri ayrı indirebilir miyim?</summary><p>Hayır. qliP, qriD, qorD ve qroL yalnız qiT'in içinde gelir. qiT'i kurup Ayarlar › Modüller'den istediğini açarsın.</p></details>
+    <details><summary>Modülleri ayrı indirebilir miyim?</summary><p>Hayır. qliP, qriD, qorD, qroL ve qonV yalnız qiT'in içinde gelir. qiT'i kurup Ayarlar › Modüller'den istediğini açarsın.</p></details>
     <details><summary>macOS ve Windows aynı özelliklere mi sahip?</summary><p>Hedef bu: her düzeltme ve özellik iki platformda birlikte yapılır. Biri yetişmezse sürüm notunda yazılır ve bir sonraki sürümde tamamlanır.</p></details>
     <details><summary>Güncellemeler güvenli mi?</summary><p>qiT yalnız kendi sürüm deposundan güncellenir. İndirilen paketin sha256'sı denetlenir ve paket ed25519 ile imzalıdır; imza tutmazsa kurulmaz.</p></details>
   </div>
@@ -362,12 +363,20 @@ const MODULES=[
   art:`<svg viewBox="0 0 400 300"><rect x="60" y="100" width="280" height="100" rx="50" fill="none" stroke="currentColor" stroke-opacity=".3"/><circle cx="110" cy="150" r="28" fill="#7C54F0"/><path d="M102 138l22 12-22 12z" fill="#fff"/><g fill="#FF7AD9"><rect x="170" y="140" width="6" height="20" rx="3"/><rect x="184" y="128" width="6" height="44" rx="3"/><rect x="198" y="136" width="6" height="28" rx="3"/><rect x="212" y="120" width="6" height="60" rx="3"/><rect x="226" y="134" width="6" height="32" rx="3"/><rect x="240" y="142" width="6" height="16" rx="3"/></g></svg>`},
  {id:'qrol',name:'qroL',tag:'Fare tekerleği trackpad gibi yumuşak kaysın.',
   points:['Tekerleğin her çentiği sayfayı akıcı bir hareketle kaydırır.','Hız, yumuşaklık ve ters yön ayarlanır; touchpad\'e dokunulmaz.','Shift basılıyken yana kaydır, istediğin uygulamayı dışarıda bırak.'],
-  chips:['macOS','Windows'],cap:'Fare tekerleği',isNew:true,
-  art:`<svg viewBox="0 0 400 300"><rect x="150" y="60" width="100" height="160" rx="50" fill="none" stroke="currentColor" stroke-opacity=".3" stroke-width="3"/><rect x="192" y="88" width="16" height="36" rx="8" fill="#FF7AD9"/><g fill="none" stroke="#7C54F0" stroke-width="4" stroke-linecap="round"><path d="M290 110q20 30 0 60" stroke-opacity=".35"/><path d="M310 95q32 45 0 90" stroke-opacity=".6"/><path d="M330 80q44 60 0 120"/><path d="M200 40l-12 12M200 40l12 12M200 240l-12-12M200 240l12-12"/></g></svg>`}
+  chips:['macOS','Windows'],cap:'Fare tekerleği',
+  art:`<svg viewBox="0 0 400 300"><rect x="150" y="60" width="100" height="160" rx="50" fill="none" stroke="currentColor" stroke-opacity=".3" stroke-width="3"/><rect x="192" y="88" width="16" height="36" rx="8" fill="#FF7AD9"/><g fill="none" stroke="#7C54F0" stroke-width="4" stroke-linecap="round"><path d="M290 110q20 30 0 60" stroke-opacity=".35"/><path d="M310 95q32 45 0 90" stroke-opacity=".6"/><path d="M330 80q44 60 0 120"/><path d="M200 40l-12 12M200 40l12 12M200 240l-12-12M200 240l12-12"/></g></svg>`},
+ {id:'qonv',name:'qonV',tag:'Dosyayı sürüklerken bir tuşa bas, biçimini değiştir.',
+  points:['Sürüklerken Shift: imlecin altında açılan tekerlekten JPG, PNG, HEIC, PDF, MP4, M4A…','Command (Windows\'ta Ctrl): boyutlandır, kırp, sıkıştır, metadata sil, döndür.','Arka planı tek dokunuşla sil; görüntü boyutu aynı kalır.','PDF birleştir ve böl, videonun sesini çıkar. Kaynak dosyaya hiç dokunulmaz.'],
+  chips:['macOS','Windows'],cap:'Sürükle + Shift',isNew:true,
+  art:`<svg viewBox="0 0 400 300"><g fill="none" stroke-width="22"><circle cx="200" cy="150" r="96" stroke="currentColor" stroke-opacity=".12"/><path d="M200 54a96 96 0 0 1 83 48" stroke="#7C54F0" stroke-linecap="round"/></g><g fill="none" stroke="currentColor" stroke-opacity=".3" stroke-width="3"><path d="M200 54v-6M283 102l5-3M283 198l5 3M200 246v6M117 198l-5 3M117 102l-5-3"/></g><g font-family="system-ui,sans-serif" font-size="15" font-weight="600" text-anchor="middle" fill="currentColor" fill-opacity=".75"><text x="256" y="66" fill="#7C54F0" fill-opacity="1">PNG</text><text x="318" y="155">PDF</text><text x="256" y="246">HEIC</text><text x="144" y="246">MP4</text><text x="82" y="155">M4A</text><text x="144" y="66">JPG</text></g><circle cx="200" cy="150" r="40" fill="currentColor" fill-opacity=".06"/><circle cx="200" cy="150" r="9" fill="#FF7AD9"/></svg>`}
 ];
 
 /* ---- release data (fallback copy of the GitHub API; the page refreshes it live when it can reach api.github.com) ---- */
 let RELEASES=[
+ {tag:'qit-v0.5.1',date:'2026-10-18',notes:['qonV\'nin logosu yenilendi: diğer modüller gibi bir q, gözü dönüştürmeyi anlatan dönen halka.'],
+  assets:[{name:'qiT-macOS-0.5.1.zip',size:6750242,url:'https://github.com/eqber0/qit-releases/releases/download/qit-v0.5.1/qiT-macOS-0.5.1.zip'},{name:'qiT-Setup-x64.exe',size:5721951,url:'https://github.com/eqber0/qit-releases/releases/download/qit-v0.5.1/qiT-Setup-x64.exe'}]},
+ {tag:'qit-v0.5.0',date:'2026-10-18',notes:['Yeni modül qonV: dosyayı sürüklerken Shift\'e bas, imlecin altında açılan tekerlekten biçimini değiştir (görüntü, PDF, video, ses).','Command (Windows\'ta Ctrl) ile işlemler: boyutlandır, kırp, sıkıştır (yalnız küçülüyorsa yazar), metadata sil, döndür, arka planı sil, PDF birleştir ve böl.','Arka plan silme macOS\'ta Vision ile; Windows\'ta model isteğe bağlı indirilir (121 MB). qonV kapalı başlar: Ayarlar › Modüller\'den aç.'],
+  assets:[{name:'qiT-macOS-0.5.0.zip',size:6748669,url:'https://github.com/eqber0/qit-releases/releases/download/qit-v0.5.0/qiT-macOS-0.5.0.zip'},{name:'qiT-Setup-x64.exe',size:5720418,url:'https://github.com/eqber0/qit-releases/releases/download/qit-v0.5.0/qiT-Setup-x64.exe'}]},
  {tag:'qit-v0.4.0',date:'2026-10-17',notes:['Yeni modül qroL: fare tekerleği trackpad gibi yumuşak kayar (macOS ve Windows). Hız, yumuşaklık, ters yön, Shift ile yatay kaydırma ve dokunulmayan uygulamalar Ayarlar › qroL\'da.','qroL yeni modül olduğu için kapalı başlar: Ayarlar › Modüller\'den aç. macOS\'ta Erişilebilirlik izni ister; Mos gibi başka bir kaydırma uygulaması açıksa kapat.'],
   assets:[{name:'qiT-macOS-0.4.0.zip',size:6012292,url:'https://github.com/eqber0/qit-releases/releases/download/qit-v0.4.0/qiT-macOS-0.4.0.zip'},{name:'qiT-Setup-x64.exe',size:5315256,url:'https://github.com/eqber0/qit-releases/releases/download/qit-v0.4.0/qiT-Setup-x64.exe'}]},
  {tag:'qit-v0.3.2',date:'2026-10-16',notes:['Windows qriD: Shift + sürükle ile bölgeler artık anında görünüyor; pencere bırakınca hemen yerleşiyor.','Windows qriD: tam ekran düzen düzenleyici. Ayarlar › qriD › Düzenler\'de bölgeleri gerçek konumlarında düzenle.','Windows qriD: düzen seçilmemişse ya da silinmişse varsayılan düzen kullanılır.'],
@@ -432,7 +441,7 @@ fetch(`https://api.github.com/repos/${REPO}/releases?per_page=30`).then(r=>r.ok?
 }).catch(()=>{});
 
 /* ---- hero stage ---- */
-const state={qrid:true,qlip:true,qord:true,qrol:true};
+const state={qrid:true,qlip:true,qord:true,qrol:true,qonv:true};
 const stage=$('#stage'), win=$('#win'), zone=$('#zone'), hint=$('#hint');
 const ZONES={left:[0,0,.5,1],right:[.5,0,.5,1],full:[0,0,1,1],tl:[0,0,.5,.5],tr:[.5,0,.5,.5],bl:[0,.5,.5,.5],br:[.5,.5,.5,.5]};
 const MB=30;
@@ -495,6 +504,7 @@ $('#npTitle').style.cursor='pointer';$('#npTitle').title='Oynatıcıyı değişt
 $$('.mrow').forEach(b=>b.addEventListener('click',()=>{
   const m=b.dataset.m,on=b.getAttribute('aria-checked')!=='true';b.setAttribute('aria-checked',on);state[m]=on;
   if(m==='qord')np.classList.toggle('on',on);
+  if(m==='qonv')hint.textContent=on?'qonV açık: dosyayı sürüklerken Shift\'e bas':'qonV kapalı';
   if(m==='qrol')hint.textContent=on?'qroL açık: fare tekerleği yumuşak kayar':'qroL kapalı: tekerlek çentik çentik kayar';
   if(m==='qrid'){hint.textContent=on?'Pencereyi sürükle, kenara yaklaştır':'qriD kapalı: pencere serbest kalır';if(!on){zone.classList.remove('show')}}
   if(m==='qlip'){hint.textContent=on?'Boş alana çift tıkla: ekran görüntüsü al':'qliP kapalı';if(on)setTimeout(capture,250)}
