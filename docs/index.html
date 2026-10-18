@@ -266,7 +266,7 @@ footer a{color:var(--ink2)}
       </div>
 
       <div class="panel" role="group" aria-label="qiT modül paneli">
-        <header><svg viewBox="0 0 72 72" aria-hidden="true"><use href="#qglyph"/></svg>qiT<span id="panelVer">0.5.2</span></header>
+        <header><svg viewBox="0 0 72 72" aria-hidden="true"><use href="#qglyph"/></svg>qiT<span id="panelVer">0.5.3</span></header>
         <button class="mrow" role="switch" aria-checked="true" data-m="qrid"><span class="grow"><b>qriD</b><small>Pencere yerleştirme</small></span><span class="sw"></span></button>
         <button class="mrow" role="switch" aria-checked="true" data-m="qlip"><span class="grow"><b>qliP</b><small>Ekran görüntüsü</small></span><span class="sw"></span></button>
         <button class="mrow" role="switch" aria-checked="true" data-m="qord"><span class="grow"><b>qorD</b><small>Medya tuşları</small></span><span class="sw"></span></button>
@@ -373,6 +373,8 @@ const MODULES=[
 
 /* ---- release data (fallback copy of the GitHub API; the page refreshes it live when it can reach api.github.com) ---- */
 let RELEASES=[
+ {tag:'qit-v0.5.3',date:'2026-10-19',notes:['qonV düzeltmesi: Windows\'ta tarayıcı sekmesi ya da pencere sürüklerken Shift\'e basmak qonV ve qriD\'yi kilitliyordu.','qonV: tekerlek artık yalnız uygun bir dosya sürüklenirken açılır; dönüştürülecek hedefi olmayan dosyada dönüştürme tekerleği açılmaz.'],
+  assets:[{name:'qiT-macOS-0.5.3.zip',size:6914583,url:'https://github.com/eqber0/qit-releases/releases/download/qit-v0.5.3/qiT-macOS-0.5.3.zip'},{name:'qiT-Setup-x64.exe',size:5754727,url:'https://github.com/eqber0/qit-releases/releases/download/qit-v0.5.3/qiT-Setup-x64.exe'}]},
  {tag:'qit-v0.5.2',date:'2026-10-18',notes:['qonV: Arka planı sil artık bir panel açar. Otomatik sonuç hazır gelir (Enter ile direkt uygula); istersen parçaya tıklayıp tut/sil, Sil ve Geri getir fırçalarıyla düzelt.','qonV: tekerlek açıkken diğer tuşa basınca dönüştürme ve işlem tekerleği yerinde değişir.','qonV: tekerlekteki yazılar artık taşmıyor.'],
   assets:[{name:'qiT-macOS-0.5.2.zip',size:6914689,url:'https://github.com/eqber0/qit-releases/releases/download/qit-v0.5.2/qiT-macOS-0.5.2.zip'},{name:'qiT-Setup-x64.exe',size:5751563,url:'https://github.com/eqber0/qit-releases/releases/download/qit-v0.5.2/qiT-Setup-x64.exe'}]},
  {tag:'qit-v0.5.1',date:'2026-10-18',notes:['qonV\'nin logosu yenilendi: diğer modüller gibi bir q, gözü dönüştürmeyi anlatan dönen halka.'],
