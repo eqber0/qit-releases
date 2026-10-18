@@ -1,15 +1,20 @@
 {
-  "version": "0.5.2",
-  "date": "2026-10-18",
-  "notes": "qonV: Arka planı sil artık bir panel açar; otomatik sonuç hazır gelir (Enter ile direkt uygula), istersen parçaya tıklayıp tut/sil, Sil ve Geri getir fırçalarıyla düzelt, geri al ve önce/sonra. Tekerlek açıkken diğer tuşa basınca dönüştürme ve işlem tekerleği yerinde değişir. Tekerlekteki yazılar artık taşmıyor.",
-  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-v0.5.2",
+  "version": "0.5.3",
+  "date": "2026-10-19",
+  "notes": "qonV düzeltmesi: Windows'ta tarayıcı sekmesi ya da pencere sürüklerken Shift'e basmak qonV ve qriD'yi kilitliyordu. Tekerlek artık yalnız uygun bir dosya sürüklenirken açılır; dönüştürülecek hedefi olmayan dosyada dönüştürme tekerleği açılmaz.",
+  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-v0.5.3",
   "windows": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.5.2/qiT-Setup-x64.exe",
-    "sha256": "e46607f33dc6752e3f6ba3929ded425f8053cad5855c4c4318be4c1c3f14df58",
-    "size": 5751563,
-    "signature": "c409b10b658acf482e4ce50542ecc2e04168900c6b00eb1c313ea659723ef2096850e0c6132b93bfed9e46628f6373a3b822168fd1604be2901fd64938d0310b"
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.5.3/qiT-Setup-x64.exe",
+    "sha256": "91064d447a977e0cb8d8f1654ffba1f5afd31066894be92091966c016eef8f65",
+    "size": 5754727,
+    "signature": "ef9bda89abec3f1150baccf835068f102339fe7dd04bd58ab24a7f33cbfde4ecb53c9a8b323ceebb1968b9b2f07b4d768eb289d731f37118ffcb073fc7f2120d"
   },
   "history": [
+    {
+      "version": "0.5.3",
+      "date": "2026-10-19",
+      "notes": "qonV düzeltmesi: Windows'ta tarayıcı sekmesi ya da pencere sürüklerken Shift'e basmak qonV ve qriD'yi kilitliyordu. Tekerlek artık yalnız uygun bir dosya sürüklenirken açılır; dönüştürülecek hedefi olmayan dosyada dönüştürme tekerleği açılmaz."
+    },
     {
       "version": "0.5.2",
       "date": "2026-10-18",
