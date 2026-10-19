@@ -1,15 +1,20 @@
 {
-  "version": "0.5.4",
+  "version": "0.5.5",
   "date": "2026-10-19",
-  "notes": "Windows: Ayarlar'da qonV, qroL ve qorD sayfaları artık kayar; uzun sayfaların altı kesilmiyor.",
+  "notes": "qroL düzeltmesi (macOS): Logi Options+ yumuşak kaydırması açık farelerde (ör. MX Master 3S) ters yön ve yumuşatma artık uygulanıyor; aşağı kaydırınca sayfa yeniden aşağı gidiyor.\nmacOS: menüdeki Güncellemeleri Denetle, Ayarlar'ı Güncellemeler sayfasında açar.\nWindows: Logi Options+ gibi yazılımların gönderdiği ve 120'nin katı olmayan tekerlek olayları qroL'den hâlâ dokunulmadan geçer.",
   "macos": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.5.4/qiT-macOS-0.5.4.zip",
-    "sha256": "3bc22edf1a057b648ee8bf9c162a3b97da5a086e06b7c1df2c8952d87c833f51",
-    "size": 6914615,
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.5.5/qiT-macOS-0.5.5.zip",
+    "sha256": "2ae23562078ebfe7256c506d399c48c27c12412a7e6a45e9fd336ca8a26642ed",
+    "size": 6915453,
     "minimumSystemVersion": "15.2",
-    "signature": "86abb519128f24a09e9cde90b4a3f051ea227ebb2048dac7a0e8a39d444d4971a52e6668d6c2de0f86fc2d619c130842e05bfd02a3caa84e69b71f5e611b200d"
+    "signature": "7fb53e8f5d41b4824b61b5f3723dc250e9cf682a2644c70266c20dccf71ea182f0e95ac1d639b72eb5abbe90596997f8bdd2b6bf26920a3706291f38d0330b0c"
   },
   "history": [
+    {
+      "version": "0.5.5",
+      "date": "2026-10-19",
+      "notes": "qroL düzeltmesi (macOS): Logi Options+ yumuşak kaydırması açık farelerde (ör. MX Master 3S) ters yön ve yumuşatma artık uygulanıyor; aşağı kaydırınca sayfa yeniden aşağı gidiyor.\nmacOS: menüdeki Güncellemeleri Denetle, Ayarlar'ı Güncellemeler sayfasında açar.\nWindows: Logi Options+ gibi yazılımların gönderdiği ve 120'nin katı olmayan tekerlek olayları qroL'den hâlâ dokunulmadan geçer."
+    },
     {
       "version": "0.5.4",
       "date": "2026-10-19",

@@ -1,15 +1,20 @@
 {
-  "version": "0.5.4",
+  "version": "0.5.5",
   "date": "2026-10-19",
-  "notes": "Windows: Ayarlar'da qonV, qroL ve qorD sayfaları artık kayar; uzun sayfaların altı kesilmiyor.",
-  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-v0.5.4",
+  "notes": "qroL düzeltmesi (macOS): Logi Options+ yumuşak kaydırması açık farelerde (ör. MX Master 3S) ters yön ve yumuşatma artık uygulanıyor; aşağı kaydırınca sayfa yeniden aşağı gidiyor.\nmacOS: menüdeki Güncellemeleri Denetle, Ayarlar'ı Güncellemeler sayfasında açar.\nWindows: Logi Options+ gibi yazılımların gönderdiği ve 120'nin katı olmayan tekerlek olayları qroL'den hâlâ dokunulmadan geçer.",
+  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-v0.5.5",
   "windows": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.5.4/qiT-Setup-x64.exe",
-    "sha256": "7b74c05319b801d722949a3bc15597a72e668144997b6b671c19e27a5c8bcda1",
-    "size": 5766185,
-    "signature": "e828c3a5a47197f327919da4e113d8f7ed4f07fcf4d840980d249611957a78b6e7b5e574e60b2b7367f82e7b3ad48e43318960919940fb3c1ab48e7b1c66e305"
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.5.5/qiT-Setup-x64.exe",
+    "sha256": "1bc08e157ab685cd4f2f32a33303b9c4bfafb62b5e64f22aaa12f95baf87ee22",
+    "size": 5765078,
+    "signature": "026e622f74103ff91fc95815733d798baf0c340b89935d0a1f6fd42a3d8b248d09e0b528dda867a95e344e05ff9d16a7bf8ac50116cfb5a5c3cf687acdbac90a"
   },
   "history": [
+    {
+      "version": "0.5.5",
+      "date": "2026-10-19",
+      "notes": "qroL düzeltmesi (macOS): Logi Options+ yumuşak kaydırması açık farelerde (ör. MX Master 3S) ters yön ve yumuşatma artık uygulanıyor; aşağı kaydırınca sayfa yeniden aşağı gidiyor.\nmacOS: menüdeki Güncellemeleri Denetle, Ayarlar'ı Güncellemeler sayfasında açar.\nWindows: Logi Options+ gibi yazılımların gönderdiği ve 120'nin katı olmayan tekerlek olayları qroL'den hâlâ dokunulmadan geçer."
+    },
     {
       "version": "0.5.4",
       "date": "2026-10-19",
