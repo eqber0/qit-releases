@@ -1,15 +1,20 @@
 {
-  "version": "0.5.6",
+  "version": "0.5.7",
   "date": "2026-10-19",
-  "notes": "Karşılama ekranı: modül ve izin listesi artık kayar; modül sayısı arttığında alttaki düğmeler kaybolmuyor (macOS ve Windows).\nWindows: modül kapatırken ayarlar, tepsi ve panel artık donmuyor; modül arka planda kapanıyor.\nmacOS qorD: müzik çaların kumanda izni arka planda okunuyor; modülü açıp kapatırken ya da paneli açarken takılma giderildi.",
+  "notes": "qliP (macOS): ekran görüntüsü panoya artık PNG olarak kopyalanıyor; TIFF kabul etmeyen uygulama ve sitelere de yapıştırılabiliyor. Retina çekimler ekrandaki boyutunda yapışır.",
   "macos": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.5.6/qiT-macOS-0.5.6.zip",
-    "sha256": "81d6df85d8b82f5b87acb4059d5a7a5f69c1759c16d3b99e99cdf172bd3e1ee4",
-    "size": 6922768,
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.5.7/qiT-macOS-0.5.7.zip",
+    "sha256": "f336d76eaab969a1c92a49a345e19b169633dd7154db883bc2334b674aa5c0a0",
+    "size": 6924662,
     "minimumSystemVersion": "15.2",
-    "signature": "99eae3cd26a1ada127eebae2a06aa47ed774f1d40192639468918ab62b156f3e8ab9a6875a7e7081eb7793ad03d2aa8a0faa052fcc52f5d3ac26a5c375d7180e"
+    "signature": "94039f3457f9f08bd0dc05e8cb8b066c023fa533a537b494defa13bd8bc0839655887a44a06a2648584469fe37f401d571bbc46241daa7f182fc69987c57490d"
   },
   "history": [
+    {
+      "version": "0.5.7",
+      "date": "2026-10-19",
+      "notes": "qliP (macOS): ekran görüntüsü panoya artık PNG olarak kopyalanıyor; TIFF kabul etmeyen uygulama ve sitelere de yapıştırılabiliyor. Retina çekimler ekrandaki boyutunda yapışır."
+    },
     {
       "version": "0.5.6",
       "date": "2026-10-19",
