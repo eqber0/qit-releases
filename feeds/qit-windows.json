@@ -1,15 +1,20 @@
 {
-  "version": "0.5.5",
+  "version": "0.5.6",
   "date": "2026-10-19",
-  "notes": "qroL düzeltmesi (macOS): Logi Options+ yumuşak kaydırması açık farelerde (ör. MX Master 3S) ters yön ve yumuşatma artık uygulanıyor; aşağı kaydırınca sayfa yeniden aşağı gidiyor.\nmacOS: menüdeki Güncellemeleri Denetle, Ayarlar'ı Güncellemeler sayfasında açar.\nWindows: Logi Options+ gibi yazılımların gönderdiği ve 120'nin katı olmayan tekerlek olayları qroL'den hâlâ dokunulmadan geçer.",
-  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-v0.5.5",
+  "notes": "Karşılama ekranı: modül ve izin listesi artık kayar; modül sayısı arttığında alttaki düğmeler kaybolmuyor (macOS ve Windows).\nWindows: modül kapatırken ayarlar, tepsi ve panel artık donmuyor; modül arka planda kapanıyor.\nmacOS qorD: müzik çaların kumanda izni arka planda okunuyor; modülü açıp kapatırken ya da paneli açarken takılma giderildi.",
+  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-v0.5.6",
   "windows": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.5.5/qiT-Setup-x64.exe",
-    "sha256": "1bc08e157ab685cd4f2f32a33303b9c4bfafb62b5e64f22aaa12f95baf87ee22",
-    "size": 5765078,
-    "signature": "026e622f74103ff91fc95815733d798baf0c340b89935d0a1f6fd42a3d8b248d09e0b528dda867a95e344e05ff9d16a7bf8ac50116cfb5a5c3cf687acdbac90a"
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.5.6/qiT-Setup-x64.exe",
+    "sha256": "27d2ab60c7cb3bff0a91080623bd431c8c7cf38dbfd78c525f31ad34ec29ef8c",
+    "size": 5773882,
+    "signature": "59011049225bb01e46a3432a5d9a455c76dcd19bf7e2eb3b0410258e7e9de6410ebd0205056f54b42ced22044a0402b65e0dab0515115b6fac3425ea1e7cc400"
   },
   "history": [
+    {
+      "version": "0.5.6",
+      "date": "2026-10-19",
+      "notes": "Karşılama ekranı: modül ve izin listesi artık kayar; modül sayısı arttığında alttaki düğmeler kaybolmuyor (macOS ve Windows).\nWindows: modül kapatırken ayarlar, tepsi ve panel artık donmuyor; modül arka planda kapanıyor.\nmacOS qorD: müzik çaların kumanda izni arka planda okunuyor; modülü açıp kapatırken ya da paneli açarken takılma giderildi."
+    },
     {
       "version": "0.5.5",
       "date": "2026-10-19",
