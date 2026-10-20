@@ -1,0 +1,107 @@
+{
+  "repo": "eqber0/qit-releases",
+  "tap": "eqber0/qit",
+  "fallbackVersion": "0.5.8",
+  "modules": [
+    {
+      "id": "qlip", "name": "qliP", "icon": "assets/icons/qlip.png",
+      "tagline": "Ekran görüntüsü, ekran kaydı, GIF ve OCR.",
+      "description": "Bir alan seç, görüntü panoya PNG olarak düşsün. Aynı kısayolla ekranı kaydet, GIF yap ya da görüntüdeki yazıyı kopyala. Arayüz Türkçe, hafif ve hızlı.",
+      "platforms": ["macOS", "Windows"],
+      "features": [
+        "Alan seç, görüntü panoya kopyalanır; Retina çekimler ekrandaki boyutunda yapışır",
+        "Ekran kaydı ve GIF",
+        "OCR: görüntüdeki yazıyı seçip kopyala",
+        "Düzenleyici: geri al, yinele, oranı koru",
+        "Son çekimler qiT panelinde hazır"
+      ],
+      "keys": [["⌘⇧S", "Çekim (macOS)"], ["Ctrl+Shift+S", "Çekim (Windows)"], ["Space + sürükle", "Seçimi taşı"]],
+      "demo": "capture", "shot": "assets/shots/section-qlip", "settings": "assets/shots/settings-qlip"
+    },
+    {
+      "id": "qrid", "name": "qriD", "icon": "assets/icons/qrid.png",
+      "tagline": "Pencereleri kısayolla ya da sürükleyerek yerleştir.",
+      "description": "Pencereyi ekran kenarına sürükle, bölge önizlemesini gör, bırak: oturur. Yarım, çeyrek, üçte bir ve tam ekran için kısayollar var; kendi bölge düzenlerini de çizebilirsin.",
+      "platforms": ["macOS", "Windows"],
+      "features": [
+        "Kenara ya da köşeye sürükle, önizleme, bırak",
+        "Yarım, çeyrek, üçte bir, tam ekran: hepsi için kısayol",
+        "Kendi bölge düzenlerini tam ekran düzenleyicide çiz",
+        "Rectangle ayarlarını (RectangleConfig.json) içe ve dışa aktar"
+      ],
+      "keys": [["Kenara sürükle", "Bölge önizlemesi"], ["Kısayol", "Yarım, çeyrek, tam"]],
+      "demo": "snap", "settings": "assets/shots/settings-qrid"
+    },
+    {
+      "id": "qord", "name": "qorD", "icon": "assets/icons/qord.png",
+      "tagline": "Medya tuşları hep istediğin oynatıcıya gitsin.",
+      "description": "Oynat, duraklat, sonraki ve önceki tuşları en son açtığın uygulamaya değil, seçtiğin oynatıcıya gider. Seçim qiT panelinden değişir.",
+      "platforms": ["macOS", "Windows"],
+      "features": [
+        "Müzik, Spotify, Doppler ya da VOX: oynatıcıyı sen seç",
+        "Tuşlar her zaman seçtiğin uygulamayı yönetir",
+        "Oynatıcı seçimi ve kontroller qiT panelinde"
+      ],
+      "keys": [["⏯", "Oynat / duraklat"], ["⏭", "Sonraki"], ["⏮", "Önceki"]],
+      "demo": "media", "settings": "assets/shots/settings-qord"
+    },
+    {
+      "id": "qrol", "name": "qroL", "icon": "assets/icons/qrol.png",
+      "tagline": "Fare tekerleği trackpad gibi yumuşak kaysın.",
+      "description": "Tekerleğin her çentiği akıcı bir kaydırmaya dönüşür. Trackpad, Magic Mouse ve hassas touchpad'e dokunulmaz; yalnız çentikli fare tekerleği yumuşatılır.",
+      "platforms": ["macOS", "Windows"],
+      "features": [
+        "Dikey ve yatay kaydırma ayrı ayrı açılıp kapanır",
+        "Hız, yumuşaklık ve ters yön ayarı",
+        "Yatay kaydırma için tuş; geçici kapatma tuşu",
+        "İstediğin uygulamayı dışarıda bırak"
+      ],
+      "keys": [["Shift + tekerlek", "Yana kaydır"]],
+      "demo": "scroll", "settings": "assets/shots/settings-qrol"
+    },
+    {
+      "id": "qonv", "name": "qonV", "icon": "assets/icons/qonv.png", "isNew": true,
+      "tagline": "Dosyayı sürüklerken bir tuşa bas, biçimini değiştir.",
+      "description": "Dosyayı sürüklerken Shift'e dokun: imlecin altında bir tekerlek açılır, biçimi seç. Kaynak dosyaya hiç dokunulmaz; çıktı her zaman yeni dosyadır.",
+      "platforms": ["macOS", "Windows"],
+      "features": [
+        "Biçim tekerleği: JPG, PNG, HEIC, PDF, MP4, M4A ve daha fazlası",
+        "İşlem tekerleği: boyutlandır, kırp, sıkıştır, metadata sil, döndür",
+        "Arka planı tek dokunuşla sil",
+        "PDF birleştir ve böl, videonun sesini çıkar"
+      ],
+      "keys": [["Sürükle + Shift", "Biçim tekerleği"], ["Sürükle + ⌘ / Ctrl", "İşlem tekerleği"]],
+      "demo": "convert", "settings": "assets/shots/settings-qonv"
+    },
+    {
+      "id": "qale", "name": "qalE", "icon": "assets/icons/qale.png", "isNew": true,
+      "tagline": "Harici monitörün parlaklığı, sesi, çözünürlüğü.",
+      "description": "Harici monitörü DDC ile yönetir: parlaklık, ses ve giriş. Ekranı yazılımla siyaha kadar karartır, ekran düzenini kaydeder ve uykudan dönünce korur.",
+      "platforms": ["macOS"], "soon": ["Windows"],
+      "features": [
+        "Parlaklık, ses ve giriş seçimi (DDC)",
+        "Yazılımla siyaha kadar karartma",
+        "Çözünürlük, döndürme ve favori modlar panelden",
+        "Ekran düzeni kaydı; uykudan dönünce korunur",
+        "XDR ek parlaklık ve esnek HiDPI (macOS)"
+      ],
+      "keys": [["Parlaklık tuşları", "Harici ekranı da yönetir"]],
+      "demo": "display", "shot": "assets/shots/section-qale", "settings": "assets/shots/settings-qale"
+    },
+    {
+      "id": "qast", "name": "qasT", "icon": "assets/icons/qast.png", "isNew": true,
+      "tagline": "Jest, tuş ve fare ile işleri tetikle.",
+      "description": "Bir şey yaparsın (kısayol, fare tuşu, ekran köşesi, yazdığın kısaltma), qasT bir iş yapar. Kurallar uygulama başına farklı olabilir ve düz JSON olarak içe ve dışa aktarılır.",
+      "platforms": ["macOS"],
+      "features": [
+        "Klavye kısayolu, tuş dizisi ve yazılan kısaltma tetikleri",
+        "Fare tuşları, ekran kenarı ve köşe tetikleri",
+        "Eylem zinciri: kısayol gönder, uygulama aç, URL, metin yapıştır, betik",
+        "Uygulama başına kural; çakışan kısayollar için uyarı",
+        "Kuralları JSON olarak içe ve dışa aktar"
+      ],
+      "keys": [[";;mail", "Kısaltmayı metne çevir"], ["Ekran köşesi", "Eylem tetikle"]],
+      "demo": "trigger", "settings": "assets/shots/settings-qast"
+    }
+  ]
+}

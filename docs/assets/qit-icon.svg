@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="256" height="256">
+  <!-- qiT app icon: the q is a toggle switch (module on), knob in the accent colour. -->
+  <defs>
+    <linearGradient id="mor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#A07BFF"/>
+      <stop offset="1" stop-color="#4316B8"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="84" height="84" rx="19" fill="url(#mor)"/>
+  <rect x="8.5" y="8.5" width="83" height="83" rx="18.5" fill="none" stroke="#fff" stroke-opacity=".2"/>
+  <g transform="translate(2 -2)">
+    <g fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="20" y="24" width="56" height="34" rx="12"/>
+      <path d="M76 36V80"/>
+    </g>
+    <circle cx="59" cy="41" r="8.5" fill="#FF7AD9"/>
+  </g>
+</svg>
