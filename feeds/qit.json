@@ -1,15 +1,20 @@
 {
-  "version": "0.5.8",
+  "version": "0.5.9",
   "date": "2026-10-20",
-  "notes": "Yeni modüller: qasT (yalnız macOS; jest, tuş, fare ve sistem olaylarıyla tetiklenen kurallar) ve qalE (ekran yönetimi: parlaklık, çözünürlük, düzen). Ortak girdi dinleyicisi. Menüde gösterilecek modüller Ayarlar › Modüller'den seçilir. Ayarlar öndeyken ⌘Q çalışır. Düzeltmeler: açılışta eksik kütüphane çökmesi, qalE açıkken tıklamaların engellenmesi.",
+  "notes": "Düzeltme: qalE açıkken gerçek fare tıklamalarının kaybolması ve qiT'in donması giderildi (ortak girdi dinleyicisi artık ana iş parçacığında değil).",
   "macos": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.5.8/qiT-macOS-0.5.8.zip",
-    "sha256": "f2d079b21d787bcaed8ab4403dc83d7a5b39cd8db7098467303a57779cd48f10",
-    "size": 11089976,
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.5.9/qiT-macOS-0.5.9.zip",
+    "sha256": "09506afdc4a8a655c34744d5bab086a1056c9a4f6ccef9cd24f6b88e82b5cca6",
+    "size": 11119660,
     "minimumSystemVersion": "15.2",
-    "signature": "a1457fe7e33b40b3e1673b01c19712f5620b4d757d52a1b00bafde7128c806f5849194c40bfe22f896dc5e4d7977870bde06c7ebeda0dc38998762a5cb04c10e"
+    "signature": "019a703d6858f47a61ab122dac7e43ac8cd11096c876563236015cfcf1e99c5b5e86a3fcb5bec375ff4404e6f0be28ecf7c1a0b6d071013dc95fc091c93dd10b"
   },
   "history": [
+    {
+      "version": "0.5.9",
+      "date": "2026-10-20",
+      "notes": "Düzeltme: qalE açıkken gerçek fare tıklamalarının kaybolması ve qiT'in donması giderildi (ortak girdi dinleyicisi artık ana iş parçacığında değil)."
+    },
     {
       "version": "0.5.8",
       "date": "2026-10-20",

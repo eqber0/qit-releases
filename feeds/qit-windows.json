@@ -1,15 +1,20 @@
 {
-  "version": "0.5.8",
+  "version": "0.5.9",
   "date": "2026-10-20",
-  "notes": "Yeni modüller: qasT (yalnız macOS; jest, tuş, fare ve sistem olaylarıyla tetiklenen kurallar) ve qalE (ekran yönetimi: parlaklık, çözünürlük, düzen). Ortak girdi dinleyicisi. Menüde gösterilecek modüller Ayarlar › Modüller'den seçilir. Ayarlar öndeyken ⌘Q çalışır. Düzeltmeler: açılışta eksik kütüphane çökmesi, qalE açıkken tıklamaların engellenmesi.",
-  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-v0.5.8",
+  "notes": "Düzeltme: qalE açıkken gerçek fare tıklamalarının kaybolması ve qiT'in donması giderildi (ortak girdi dinleyicisi artık ana iş parçacığında değil).",
+  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-v0.5.9",
   "windows": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.5.8/qiT-Setup-x64.exe",
-    "sha256": "38099b26768c04ec5ceef09a26214a348cad8c02a9ec9a105d64cc9d16fc7fa5",
-    "size": 5772702,
-    "signature": "503562c6698966deac6e91316af37d704ea2e97c3032d147277cc3837bfec542f514dca3c531a6ce1c5a41cb4f7fa04cfa4053d7e6ce0729a417e551bd27de02"
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.5.9/qiT-Setup-x64.exe",
+    "sha256": "076540d27561a7bf3e0016b3f885da08262dde5fc26617c1904c1ce1f673c94c",
+    "size": 5776412,
+    "signature": "5764b948bf61986def2629c60a0f84816f4a6c8aeadef990ec7ccee40b1e327c076984f0efdb790042c3c251aca7f2c69ec563ba92d832c4b031a1a4e74f4d00"
   },
   "history": [
+    {
+      "version": "0.5.9",
+      "date": "2026-10-20",
+      "notes": "Düzeltme: qalE açıkken gerçek fare tıklamalarının kaybolması ve qiT'in donması giderildi (ortak girdi dinleyicisi artık ana iş parçacığında değil)."
+    },
     {
       "version": "0.5.8",
       "date": "2026-10-20",
