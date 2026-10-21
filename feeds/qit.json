@@ -1,15 +1,20 @@
 {
-  "version": "0.5.10",
-  "date": "2026-10-20",
-  "notes": "Düzeltme: qalE açılınca qiT'in tıklamalara yanıt vermemesi giderildi (kısayol kaydı başlatmada hata veriyordu). qalE varsayılan kısayolları qriD'inkilerle çakışırsa qriD'e bırakılır, Ayarlar'da uyarı gösterilir.",
+  "version": "0.5.11",
+  "date": "2026-10-21",
+  "notes": "Yeni modül qatE: DNS ve alan adı (SNI) engelini aşarak Discord'u açar. Yönetici izni, sürücü ya da VPN gerekmez; yalnız listedeki alan adları qatE'den geçer, kalan trafiğe dokunulmaz. Ayarlar › Modüller'den açın, 'Bağlantıyı dene' ile kontrol edin; açılmazsa öteki ön ayarı seçin. Sesli sohbet (UDP) bu sürümde kapsanmıyor.",
   "macos": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.5.10/qiT-macOS-0.5.10.zip",
-    "sha256": "759fc01fb2b43155df9415a81179f3a1d39871ed8a30ba0e46ea52c25bc8ebf8",
-    "size": 11123988,
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.5.11/qiT-macOS-0.5.11.zip",
+    "sha256": "635a4eb8e80d64b6c0b07f25213d56aefbc4ec8efaf6945068f09d69b83a32f6",
+    "size": 11458216,
     "minimumSystemVersion": "15.2",
-    "signature": "83ca3970c17f9940df1df3188d4b15b87d6d07384dc28553ba23cad4a471829fdb3c86943a0a6c54791b7067c0d9ebb6087af6d52b47198973422741f028a502"
+    "signature": "126d569e2fa8ba67170f8e0b31562460bf829759dc0982bb56cb0026dd1cfadf4b60bd355fb7992401a0dbb278605f37fea90fc3e2a58308c0bd8cb5f9127d0a"
   },
   "history": [
+    {
+      "version": "0.5.11",
+      "date": "2026-10-21",
+      "notes": "Yeni modül qatE: DNS ve alan adı (SNI) engelini aşarak Discord'u açar. Yönetici izni, sürücü ya da VPN gerekmez; yalnız listedeki alan adları qatE'den geçer, kalan trafiğe dokunulmaz. Ayarlar › Modüller'den açın, 'Bağlantıyı dene' ile kontrol edin; açılmazsa öteki ön ayarı seçin. Sesli sohbet (UDP) bu sürümde kapsanmıyor."
+    },
     {
       "version": "0.5.10",
       "date": "2026-10-20",
