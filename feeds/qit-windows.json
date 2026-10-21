@@ -1,15 +1,20 @@
 {
-  "version": "0.5.13",
+  "version": "0.5.14",
   "date": "2026-10-21",
-  "notes": "qatE: qiT panelinde ve ayar sayfasında 'Etkin' anahtarı. Modülü kapatmadan qatE'yi duraklatır; kapatınca sistem proxy ve ortam ayarları eski haline döner, açınca yeniden başlar.",
-  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-v0.5.13",
+  "notes": "qatE (Windows): Discord güncelleyicisi qatE üzerinden çalışır (\"Update failed\" düzeltmesi).",
+  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-v0.5.14",
   "windows": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.5.13/qiT-Setup-x64.exe",
-    "sha256": "4c9af5e153483429447e29d5dea8ab1a4ce524c7cbd6b62e3295605d6979d375",
-    "size": 5859219,
-    "signature": "35f9f01dcb34f3425c98e811b152fa013388c666ac770f1ca070a28969323711d5109a7d03ead01f7d562ca3e5129d37f0eae77ccc6515fd69f5bf47bfe73b0c"
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.5.14/qiT-Setup-x64.exe",
+    "sha256": "50fdab5364b31d9261588ed829fc83d39d117527c166694d9fdb21c394fc0794",
+    "size": 5862494,
+    "signature": "da3c517c43feb4d44679ed9ebb4686169fc9bddfda462dba96a063cf1156b3d309287f344ac11db2520f97a467b22512e7ef5c38cded1595fe609f8b9fad2103"
   },
   "history": [
+    {
+      "version": "0.5.14",
+      "date": "2026-10-21",
+      "notes": "qatE (Windows): Discord güncelleyicisi qatE üzerinden çalışır (\"Update failed\" düzeltmesi)."
+    },
     {
       "version": "0.5.13",
       "date": "2026-10-21",
