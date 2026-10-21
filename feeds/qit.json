@@ -1,15 +1,20 @@
 {
-  "version": "0.5.12",
+  "version": "0.5.13",
   "date": "2026-10-21",
-  "notes": "qatE: Discord masaüstü uygulaması da açılır (güncelleyici için HTTPS_PROXY/HTTP_PROXY; qatE kapanınca eski hali geri gelir). qatE'yi açtıktan sonra Discord açıksa kapatıp yeniden açın. qalE: qiT panelinde kayıtlı ekran düzenleri çip olarak görünür, tek tıkla düzen değişir.",
+  "notes": "qatE: qiT panelinde ve ayar sayfasında 'Etkin' anahtarı. Modülü kapatmadan qatE'yi duraklatır; kapatınca sistem proxy ve ortam ayarları eski haline döner, açınca yeniden başlar.",
   "macos": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.5.12/qiT-macOS-0.5.12.zip",
-    "sha256": "295695eb98542d48069d784397ec3d7ff9e64ca75f57d12733932abbfa988737",
-    "size": 11489848,
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.5.13/qiT-macOS-0.5.13.zip",
+    "sha256": "0cd7cddc3a8747ea595613a5e277abcb28f26f90057eb3e1094e5ab0a1e167eb",
+    "size": 11498883,
     "minimumSystemVersion": "15.2",
-    "signature": "43a2c54edea425c9bbe6a95c494255a8bc0a4ab8a1656ba728eefd68e93a314da631132cbf43142230fa7958d98ccba615903dc1ca7d5856f59b3bdb8641d403"
+    "signature": "c0a68175818d4ae71b5389fdbb087ce4e7e036a830660053c3a8e47b1714fa1b42fc65ff63bb92352fce5a93b102e4df02de6d4bb277178b5247fc6b2d6a730b"
   },
   "history": [
+    {
+      "version": "0.5.13",
+      "date": "2026-10-21",
+      "notes": "qatE: qiT panelinde ve ayar sayfasında 'Etkin' anahtarı. Modülü kapatmadan qatE'yi duraklatır; kapatınca sistem proxy ve ortam ayarları eski haline döner, açınca yeniden başlar."
+    },
     {
       "version": "0.5.12",
       "date": "2026-10-21",
