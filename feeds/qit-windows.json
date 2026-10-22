@@ -1,15 +1,20 @@
 {
-  "version": "0.5.14",
-  "date": "2026-10-21",
-  "notes": "qatE (Windows): Discord güncelleyicisi qatE üzerinden çalışır (\"Update failed\" düzeltmesi).",
-  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-v0.5.14",
+  "version": "0.5.15",
+  "date": "2026-10-22",
+  "notes": "qalE (macOS): Ekranlar bağlanınca en son kaydedilen değil, en son kullanılan düzen uygulanır. (qalE Windows'ta henüz yok.)",
+  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-v0.5.15",
   "windows": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.5.14/qiT-Setup-x64.exe",
-    "sha256": "50fdab5364b31d9261588ed829fc83d39d117527c166694d9fdb21c394fc0794",
-    "size": 5862494,
-    "signature": "da3c517c43feb4d44679ed9ebb4686169fc9bddfda462dba96a063cf1156b3d309287f344ac11db2520f97a467b22512e7ef5c38cded1595fe609f8b9fad2103"
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.5.15/qiT-Setup-x64.exe",
+    "sha256": "f2add059b0d236847d6133365fb8b34d164ff45b17e2018099993b0278112cef",
+    "size": 5862425,
+    "signature": "73b9c5b387c47a8e7281be460ee922c997941427041940670e8da0168dc5e177d32ed5432765fa278efe28235cf67fec3fab25b9132dbb61a194a019d3af9400"
   },
   "history": [
+    {
+      "version": "0.5.15",
+      "date": "2026-10-22",
+      "notes": "qalE (macOS): Ekranlar bağlanınca en son kaydedilen değil, en son kullanılan düzen uygulanır. (qalE Windows'ta henüz yok.)"
+    },
     {
       "version": "0.5.14",
       "date": "2026-10-21",
