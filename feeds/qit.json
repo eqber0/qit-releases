@@ -1,15 +1,20 @@
 {
-  "version": "0.5.15",
+  "version": "0.5.16",
   "date": "2026-10-22",
-  "notes": "qalE (macOS): Ekranlar bağlanınca en son kaydedilen değil, en son kullanılan düzen uygulanır. (qalE Windows'ta henüz yok.)",
+  "notes": "qalE (macOS): Kayıtlı düzenler artık belirli monitörlere bağlı değil; ekran sayısı aynıysa başka monitörde de uygulanır (çözünürlük yeni monitörde değiştirilmez). (qalE Windows'ta henüz yok.)\nqatE: Paneldeki Etkin anahtarı küçüldü, başlık satırında sağa yaslı (macOS ve Windows).\nqiT: Modül ayarları sayfasında da \"Menüde göster\" seçeneği; Windows'a da eklendi (Modüller kartı ve modül sayfası).",
   "macos": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.5.15/qiT-macOS-0.5.15.zip",
-    "sha256": "a3ff1852883b7684b38c00c563e4bcd1f1674f465bae2a80c4f36056b7b854bc",
-    "size": 11498748,
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.5.16/qiT-macOS-0.5.16.zip",
+    "sha256": "fab05246bcc28747f7a2e34ef681dcf85b9166c693ee8f0663c5c06624277d28",
+    "size": 11517114,
     "minimumSystemVersion": "15.2",
-    "signature": "703688ff815891f50ef99a775dd2a6cd00b079b557a82924c1d1971ae02356f1f8be88d788614ef720a64a76eb3b3081576c569f377ec5a5df2d7025a8b57002"
+    "signature": "9a810860cfa1283e2a7c8f780325ad2fc14a959da6c0176f1bdc003c35c9013eb0910fde5f9995caf6706de0ef728021d99296973230e03c96e0ac26e76fed08"
   },
   "history": [
+    {
+      "version": "0.5.16",
+      "date": "2026-10-22",
+      "notes": "qalE (macOS): Kayıtlı düzenler artık belirli monitörlere bağlı değil; ekran sayısı aynıysa başka monitörde de uygulanır (çözünürlük yeni monitörde değiştirilmez). (qalE Windows'ta henüz yok.)\nqatE: Paneldeki Etkin anahtarı küçüldü, başlık satırında sağa yaslı (macOS ve Windows).\nqiT: Modül ayarları sayfasında da \"Menüde göster\" seçeneği; Windows'a da eklendi (Modüller kartı ve modül sayfası)."
+    },
     {
       "version": "0.5.15",
       "date": "2026-10-22",
