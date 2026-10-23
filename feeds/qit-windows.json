@@ -1,15 +1,20 @@
 {
-  "version": "0.5.16",
-  "date": "2026-10-22",
-  "notes": "qalE (macOS): Kayıtlı düzenler artık belirli monitörlere bağlı değil; ekran sayısı aynıysa başka monitörde de uygulanır (çözünürlük yeni monitörde değiştirilmez). (qalE Windows'ta henüz yok.)\nqatE: Paneldeki Etkin anahtarı küçüldü, başlık satırında sağa yaslı (macOS ve Windows).\nqiT: Modül ayarları sayfasında da \"Menüde göster\" seçeneği; Windows'a da eklendi (Modüller kartı ve modül sayfası).",
-  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-v0.5.16",
+  "version": "0.5.17",
+  "date": "2026-10-23",
+  "notes": "qatE (macOS): Paneldeki Etkin anahtarı 0.5.16'da görünmüyordu; artık başlık satırında, sağda. Uzun açıklama sığmazsa kısalır.",
+  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-v0.5.17",
   "windows": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.5.16/qiT-Setup-x64.exe",
-    "sha256": "5bd867fe634673a7a7a98474288421cb4ad676dac2a3f8e24b716513f575bab0",
-    "size": 5872894,
-    "signature": "4c1dce9795d933920c0575f2c615d2563b907403d1bd08e70ac3505b1013fa73321e09e615eb779610e3272d6717effa99ca850d6bdbc55a8efc769c275ee800"
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.5.17/qiT-Setup-x64.exe",
+    "sha256": "bef95f64077cbec452ac8a5efc2f82b944e4d09ca51556e5c0619c282b601776",
+    "size": 5871368,
+    "signature": "e20f1b3e46e2e987300265cac30a7f9b4cb285c5d1c1cd7598fa5515335a5fa46c64b4eb9fd859ee26ee6f9393cb3a8aa05241a62a041d979d7a39584583f105"
   },
   "history": [
+    {
+      "version": "0.5.17",
+      "date": "2026-10-23",
+      "notes": "qatE (macOS): Paneldeki Etkin anahtarı 0.5.16'da görünmüyordu; artık başlık satırında, sağda. Uzun açıklama sığmazsa kısalır."
+    },
     {
       "version": "0.5.16",
       "date": "2026-10-22",
