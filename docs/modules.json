@@ -102,6 +102,34 @@
       ],
       "keys": [[";;mail", "Kısaltmayı metne çevir"], ["Ekran köşesi", "Eylem tetikle"]],
       "demo": "trigger", "settings": "assets/shots/settings-qast"
+    },
+    {
+      "id": "qock", "name": "qocK", "icon": "assets/icons/qock.png", "isNew": true,
+      "tagline": "Dock simgesinin üstüne gel, pencereleri gör.",
+      "description": "Dock'taki bir uygulamanın simgesinin üstüne gelince pencereleri küçük resim olarak açılır. İstediğini öne getir, kapat ya da küçült. ⌘⇥ yerine kendi pencere değiştiricisi de var; Dock'u tek bir ekrana kilitleyebilirsin.",
+      "platforms": ["macOS"],
+      "features": [
+        "Dock simgesinin üstüne gelince pencere önizlemeleri (diğer masaüstleri, küçültülmüş ve gizli pencereler dahil)",
+        "Karttan öne getir, kapat, küçült, uygulamadan çık; orta tıkla kapat",
+        "⌘⇥ yerine pencere değiştirici: ızgara, ⇥/⇧⇥, oklar, ⌘W/⌘M/⌘Q; kısayol ayarlanabilir, kapatınca sistem ⌘⇥ geri gelir",
+        "Dock'u bir ekrana kilitle (diğer ekranlara geçmez)",
+        "Dock tıklamaları: tıklayınca gizle, ⌘+sağ tık ile çık",
+        "Cam görünüm, ayarlanabilir köşe/boyut/vurgu rengi; Ekran Kaydı izni yokken liste kipi"
+      ],
+      "keys": [["Dock simgesine gel", "Pencere önizlemeleri"], ["Orta tık", "Pencereyi kapat"], ["⌘⇥", "Pencere değiştirici"]]
+    },
+    {
+      "id": "qate", "name": "qatE", "icon": "assets/icons/qate.png", "isNew": true,
+      "tagline": "Engellenen siteleri VPN'siz, yönetici izni olmadan aç.",
+      "description": "Discord gibi DPI ile engellenen siteler için yerel bir proxy çalıştırır: listedeki alan adlarını şifreli DNS (DoH) ile çözer, bağlantının ilk paketini parçalara bölerek gönderir. Listede olmayan trafiğe dokunmaz. Sesli sohbet (UDP) bu sürümde kapsanmaz.",
+      "platforms": ["macOS", "Windows"],
+      "features": [
+        "Discord için hazır alan listesi; kendi alanlarını da ekleyebilirsin",
+        "DNS'i DoH ile çözer, bağlantı başlangıcını parçalar; üç ön ayar",
+        "Yalnız listedeki alanlar yerel proxy'den geçer",
+        "Yönetici izni, sürücü ya da VPN yok; kapatınca sistem ayarları geri yazılır",
+        "Bağlantıyı dene düğmesi; modülü kapatmadan duraklatma anahtarı"
+      ]
     }
   ]
 }

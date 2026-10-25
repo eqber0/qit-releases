@@ -106,7 +106,7 @@ function renderModules(mods) {
         <div class="mod-top"><img src="${esc(m.icon)}" alt="" width="52" height="52" loading="lazy"><h3 id="h-${id}">${esc(m.name)}</h3><div class="badges">${plat}</div></div>
         <p class="pitch">${esc(m.tagline)}</p>
         <p class="desc">${esc(m.description)}</p>
-        <ul class="feat">${(m.features || []).slice(0, 4).map(f => `<li>${CHECK}<span>${esc(f)}</span></li>`).join('')}</ul>
+        <ul class="feat">${(m.features || []).slice(0, 6).map(f => `<li>${CHECK}<span>${esc(f)}</span></li>`).join('')}</ul>
         ${keys ? `<div class="keys">${keys}</div>` : ''}
       </div>
       <div class="stage rv">

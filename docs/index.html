@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>qiT: masaüstünün eksik parçaları</title>
-<meta name="description" content="qiT, macOS ve Windows için tek menü çubuğu uygulaması: ekran görüntüsü, pencere yerleştirme, medya tuşları, yumuşak kaydırma, dosya dönüştürme, monitör ve tetikleyiciler. Her araç ayrı açılır.">
+<meta name="description" content="qiT, macOS ve Windows için tek menü çubuğu uygulaması: ekran görüntüsü, pencere yerleştirme, Dock önizlemesi, medya tuşları, yumuşak kaydırma, dosya dönüştürme, monitör ve tetikleyiciler. Her araç ayrı açılır.">
 <meta name="color-scheme" content="dark light">
 <meta name="theme-color" content="#09080d">
 <link rel="icon" href="assets/qit-icon.svg" type="image/svg+xml">
@@ -92,7 +92,7 @@ try{var t=localStorage.getItem('qit-theme');if(t==='light'||t==='dark')document.
 
   <section class="strip" aria-label="Modüller">
     <div class="wrap">
-      <p class="strip-t"><span id="modCount">Yedi</span> araç, tek uygulama</p>
+      <p class="strip-t"><span id="modCount">Dokuz</span> araç, tek uygulama</p>
       <ul class="chips" id="chips"></ul>
     </div>
   </section>
@@ -167,10 +167,71 @@ try{var t=localStorage.getItem('qit-theme');if(t==='light'||t==='dark')document.
     </div>
     <div class="faq">
       <details><summary>Modülleri ayrı indirebilir miyim?</summary><p>Hayır. Bütün modüller qiT'in içinde gelir. qiT'i kurup Ayarlar › Modüller'den istediğini açarsın; yeni modüller mevcut kurulumlarda kapalı başlar.</p></details>
-      <details><summary>macOS ve Windows aynı özelliklere mi sahip?</summary><p>Hedef bu: her düzeltme ve özellik iki platformda birlikte yapılır. Biri yetişmezse sürüm notunda yazılır ve bir sonraki sürümde tamamlanır. qasT yalnız macOS'tadır; qalE şimdilik macOS'ta.</p></details>
+      <details><summary>macOS ve Windows aynı özelliklere mi sahip?</summary><p>Hedef bu: her düzeltme ve özellik iki platformda birlikte yapılır. Biri yetişmezse sürüm notunda yazılır ve bir sonraki sürümde tamamlanır. qasT ve qocK yalnız macOS'tadır; qalE şimdilik macOS'ta.</p></details>
       <details><summary>Güncellemeler güvenli mi?</summary><p>qiT yalnız kendi sürüm deposundan güncellenir. İndirilen paketin sha256'sı denetlenir ve paket ed25519 ile imzalıdır; imza tutmazsa kurulmaz.</p></details>
-      <details><summary>Veri toplar mı?</summary><p>Hayır. Analitik ya da telemetri yok; bu site de çerez ve izleyici kullanmaz.</p></details>
+      <details><summary>Veri toplar mı?</summary><p>Hayır. Analitik ya da telemetri yok; bu site de çerez ve izleyici kullanmaz. Hangi izinlerin neden istendiği ve ağa çıkan az sayıdaki durum için <a href="#gizlilik">Gizlilik</a> bölümüne bak.</p></details>
     </div>
+  </section>
+
+  <section id="gizlilik" class="wrap sec narrow" aria-labelledby="gizTitle">
+    <div class="head">
+      <p class="eyebrow">Gizlilik</p>
+      <h2 id="gizTitle">Verilerin sende kalır.<br><span class="dim">Telemetri yok.</span></h2>
+      <p class="sub">qiT hesap istemez, kullanımını ölçmez, analitik ya da reklam içermez. Ekran görüntüleri, kayıtlar, kurallar ve ayarlar yalnız bu bilgisayarda durur; hiçbiri bir sunucuya yüklenmez.</p>
+    </div>
+    <div class="policy">
+      <article class="card wide">
+        <h3>İzinler ve neden gerektikleri</h3>
+        <p class="hint">Bir izin ancak onu kullanan modül açıkken istenir. Modülü kapatırsan izne de gerek kalmaz.</p>
+        <dl class="perm">
+          <div><dt>Erişilebilirlik</dt><dd>Pencereleri taşıyıp boyutlandırmak (qriD), Dock'taki pencereleri öne getirmek, kapatmak ve küçültmek (qocK), kısayolları, fare tuşlarını ve tekerleği dinlemek (qasT, qroL, qorD). Tuş vuruşları yalnız tanımlı kısayol ve kısaltmalarla eşleştirmek için bellekte işlenir; diske yazılmaz, hiçbir yere gönderilmez.</dd></div>
+          <div><dt>Ekran Kaydı</dt><dd>Ekran görüntüsü, kayıt, GIF ve OCR (qliP) ile pencere küçük resimleri (qocK) için. İzin yoksa qocK pencereleri liste olarak gösterir.</dd></div>
+          <div><dt>Mikrofon, Kamera</dt><dd>Yalnız qliP kaydına mikrofon sesini ya da yüz kamerasını eklemeyi seçersen.</dd></div>
+          <div><dt>Otomasyon</dt><dd>qorD medya tuşlarını Müzik, Spotify, Doppler ya da VOX'a iletmek, qasT AppleScript eylemlerini çalıştırmak için.</dd></div>
+        </dl>
+        <p class="hint">Windows'ta bu izinlerin çoğu yoktur; mikrofon ve kamera Windows'un Gizlilik ayarlarından yönetilir.</p>
+      </article>
+      <article class="card wide">
+        <h3>Ağa çıkan üç durum</h3>
+        <p class="hint">Bunların dışında qiT kendiliğinden ağ isteği yapmaz.</p>
+        <dl class="perm">
+          <div><dt>Güncelleme denetimi</dt><dd>qiT, GitHub'daki <code>eqber0/qit-releases</code> deposundan yalnız sürüm bilgisini okur ve yeni sürümü oradan indirir. Kimlik ya da kullanım bilgisi göndermez. Ayarlar › Güncellemeler'den otomatik denetim kapatılır.</dd></div>
+          <div><dt>qatE · DNS-over-HTTPS</dt><dd>qatE açıkken yalnız kendi listesindeki alan adlarının DNS sorgusu Cloudflare (<code>1.1.1.1</code>) ya da Google (<code>8.8.8.8</code>) üzerinden şifreli çözülür. Başka sitelerin sorgusu sistemde kalır; DoH, qatE ayarlarından kapatılabilir.</dd></div>
+          <div><dt>qonV · model indirme (Windows)</dt><dd>Arka planı silme modeli ve ONNX Runtime, yalnız sen qonV ayarlarında “Modeli indir” dersen Hugging Face ve NuGet'ten iner; SHA-256 doğrulanır. İstemezsen hiç inmez.</dd></div>
+        </dl>
+      </article>
+      <article class="card">
+        <h3>Telemetri yok</h3>
+        <p class="hint">Analitik, kullanım ölçümü, çökme raporu, reklam ve hesap yok.</p>
+      </article>
+      <article class="card">
+        <h3>Bu site</h3>
+        <p class="hint">Çerez ve izleyici kullanmaz. Sürüm listesi için tarayıcın GitHub'ın herkese açık sürüm API'sini çağırır.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="lisanslar" class="wrap sec narrow" aria-labelledby="licTitle">
+    <div class="head">
+      <p class="eyebrow">Lisanslar</p>
+      <h2 id="licTitle">Açık kaynak omuzlarında.</h2>
+      <p class="sub">qiT aşağıdaki açık kaynak yazılımları kullanır. Telif bildirimleri ve lisans metinlerinin tamamı tek dosyada; uygulamada Ayarlar › Hakkında'dan da açılır.</p>
+    </div>
+    <div class="tbl">
+      <table class="lic">
+        <caption class="sr">qiT'in kullandığı açık kaynak bileşenler</caption>
+        <thead><tr><th scope="col">Bileşen</th><th scope="col">Lisans</th><th scope="col">Kullanan</th><th scope="col">Platform</th></tr></thead>
+        <tbody>
+          <tr><th scope="row"><a href="https://github.com/rxhanson/Rectangle">Rectangle</a>, <a href="https://github.com/eczarny/spectacle">Spectacle</a></th><td>MIT</td><td>qriD</td><td>macOS, Windows</td></tr>
+          <tr><th scope="row"><a href="https://github.com/rxhanson/MASShortcut">MASShortcut</a></th><td>BSD-2-Clause</td><td>qriD, qalE</td><td>macOS</td></tr>
+          <tr><th scope="row"><a href="https://slint.dev">Slint</a></th><td>Royalty-Free Desktop</td><td>qiT arayüzü</td><td>Windows</td></tr>
+          <tr><th scope="row">Rust kütüphaneleri</th><td>MIT, Apache-2.0, BSD, ISC, Zlib, Unicode-3.0 ve benzerleri</td><td>qiT</td><td>Windows</td></tr>
+          <tr><th scope="row"><a href="https://github.com/ZhengPeng7/BiRefNet">BiRefNet_lite</a> modeli</th><td>MIT</td><td>qonV arka plan silme; istenince indirilir</td><td>Windows</td></tr>
+          <tr><th scope="row"><a href="https://github.com/microsoft/onnxruntime">ONNX Runtime</a></th><td>MIT</td><td>qonV arka plan silme; istenince indirilir</td><td>Windows</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="lic-more"><a class="btn sm" href="THIRD_PARTY_NOTICES.txt">Lisans metinlerinin tamamı (THIRD_PARTY_NOTICES)</a></p>
   </section>
 
   <section class="wrap end" aria-labelledby="endTitle">
@@ -187,6 +248,8 @@ try{var t=localStorage.getItem('qit-theme');if(t==='light'||t==='dark')document.
     <span class="brand small"><img src="assets/qit-icon.svg" alt="" width="20" height="20"><span>qiT</span></span>
     <span class="muted">Bilgehan Yılmaz</span>
     <span class="sp"></span>
+    <a href="#gizlilik">Gizlilik</a>
+    <a href="#lisanslar">Lisanslar</a>
     <a href="https://github.com/eqber0/qit-releases/releases">Sürümler</a>
     <a href="https://github.com/eqber0/qit-releases">GitHub</a>
   </div>
