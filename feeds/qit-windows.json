@@ -1,15 +1,20 @@
 {
-  "version": "0.5.17",
-  "date": "2026-10-23",
-  "notes": "qatE (macOS): Paneldeki Etkin anahtarı 0.5.16'da görünmüyordu; artık başlık satırında, sağda. Uzun açıklama sığmazsa kısalır.",
-  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-v0.5.17",
+  "version": "0.6.0",
+  "date": "2026-10-25",
+  "notes": "qocK (yeni, yalnız macOS): Dock simgesinin üstüne gelince pencere önizlemeleri; ⌘⇥ yerine pencere değiştirici (kısayol ayarlanabilir, kapatınca sistem ⌘⇥ geri gelir); Dock'u bir ekrana kilitle; Dock tıklamaları (gizle, ⌘ + sağ tık ile çık). Ayarlar › Modüller'den açılır.\nqiT: Ayarlar › Hakkında'da açık kaynak lisansları (macOS ve Windows).\nqiT (macOS): Paneldeki modül başlığı anahtarı görünmüyordu, düzeldi.",
+  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-v0.6.0",
   "windows": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.5.17/qiT-Setup-x64.exe",
-    "sha256": "bef95f64077cbec452ac8a5efc2f82b944e4d09ca51556e5c0619c282b601776",
-    "size": 5871368,
-    "signature": "e20f1b3e46e2e987300265cac30a7f9b4cb285c5d1c1cd7598fa5515335a5fa46c64b4eb9fd859ee26ee6f9393cb3a8aa05241a62a041d979d7a39584583f105"
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.6.0/qiT-Setup-x64.exe",
+    "sha256": "22e97b0b566a35e1d4987c4fb74f6ee25da71d94e58594fcd01d2d1720d8dd2e",
+    "size": 5895602,
+    "signature": "519c6f304507939eb77a16178ded9306b627c9668b43cea9a320aabb3e888302f6b2124eab1cacbf274a47444766ce30ec576c0de4dd7c1046b9d16a42cd1602"
   },
   "history": [
+    {
+      "version": "0.6.0",
+      "date": "2026-10-25",
+      "notes": "qocK (yeni, yalnız macOS): Dock simgesinin üstüne gelince pencere önizlemeleri; ⌘⇥ yerine pencere değiştirici (kısayol ayarlanabilir, kapatınca sistem ⌘⇥ geri gelir); Dock'u bir ekrana kilitle; Dock tıklamaları (gizle, ⌘ + sağ tık ile çık). Ayarlar › Modüller'den açılır.\nqiT: Ayarlar › Hakkında'da açık kaynak lisansları (macOS ve Windows).\nqiT (macOS): Paneldeki modül başlığı anahtarı görünmüyordu, düzeldi."
+    },
     {
       "version": "0.5.17",
       "date": "2026-10-23",

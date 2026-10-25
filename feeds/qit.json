@@ -1,15 +1,20 @@
 {
-  "version": "0.5.17",
-  "date": "2026-10-23",
-  "notes": "qatE (macOS): Paneldeki Etkin anahtarı 0.5.16'da görünmüyordu; artık başlık satırında, sağda. Uzun açıklama sığmazsa kısalır.",
+  "version": "0.6.0",
+  "date": "2026-10-25",
+  "notes": "qocK (yeni, yalnız macOS): Dock simgesinin üstüne gelince pencere önizlemeleri; ⌘⇥ yerine pencere değiştirici (kısayol ayarlanabilir, kapatınca sistem ⌘⇥ geri gelir); Dock'u bir ekrana kilitle; Dock tıklamaları (gizle, ⌘ + sağ tık ile çık). Ayarlar › Modüller'den açılır.\nqiT: Ayarlar › Hakkında'da açık kaynak lisansları (macOS ve Windows).\nqiT (macOS): Paneldeki modül başlığı anahtarı görünmüyordu, düzeldi.",
   "macos": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.5.17/qiT-macOS-0.5.17.zip",
-    "sha256": "f15369ef01d7938edb9ba7347744fe258fa70e5d5d7f8623538481e3889b1ba5",
-    "size": 11521017,
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.6.0/qiT-macOS-0.6.0.zip",
+    "sha256": "538774529c4f69f66686ee47dd1038f4c7526da0bbbb3b9d9865bdc3d540d3ab",
+    "size": 13335700,
     "minimumSystemVersion": "15.2",
-    "signature": "a58b4c3268291eae96f786ba44803eedb5062f673c9e8788d88931dec669217f5c11310707600f27a3f4c2b32beeefdae93db1a13d247056095aff7766d2cd00"
+    "signature": "6beed291154dc2ecbc43b98101b14b17885e0214839e005624c27e3a4817d7b6ed03ad0a0dab370e000cc1eef3e4d98680853bb0841989bd8e13479b3d434d0e"
   },
   "history": [
+    {
+      "version": "0.6.0",
+      "date": "2026-10-25",
+      "notes": "qocK (yeni, yalnız macOS): Dock simgesinin üstüne gelince pencere önizlemeleri; ⌘⇥ yerine pencere değiştirici (kısayol ayarlanabilir, kapatınca sistem ⌘⇥ geri gelir); Dock'u bir ekrana kilitle; Dock tıklamaları (gizle, ⌘ + sağ tık ile çık). Ayarlar › Modüller'den açılır.\nqiT: Ayarlar › Hakkında'da açık kaynak lisansları (macOS ve Windows).\nqiT (macOS): Paneldeki modül başlığı anahtarı görünmüyordu, düzeldi."
+    },
     {
       "version": "0.5.17",
       "date": "2026-10-23",
