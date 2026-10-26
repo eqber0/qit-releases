@@ -1,7 +1,7 @@
 {
   "version": "0.7.1",
   "date": "2026-10-26",
-  "notes": "qadA (macOS): Harici monitörde dosya rafı açılıyor; dosya sürüklemesi 1 sn sürünce bırakma alanı kendiliğinden açılır (Mission Control'e takılmaz, ayardan kapatılabilir). Göz at kartında şarkı değişince süre baştan başlar. Monitörde imleç ekranın en üstüne dayalıyken de ada açılır. Monitör/dock takılınca oluşan çökme düzeldi.",
+  "notes": "qadA (macOS): Harici monitörde dosya rafı açılıyor; dosya sürüklemesi 1 sn sürünce bırakma alanı kendiliğinden açılır (Mission Control'e takılmaz, ayardan kapatılabilir). Göz at kartında şarkı değişince süre baştan başlar.",
   "macos": {
     "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.1/qiT-macOS-0.7.1.zip",
     "sha256": "34d8de1130d57e3e14150d3518d1f14b839daa1a9b3a25e3e8b61179976cb5c8",
@@ -13,7 +13,7 @@
     {
       "version": "0.7.1",
       "date": "2026-10-26",
-      "notes": "qadA (macOS): Harici monitörde dosya rafı açılıyor; dosya sürüklemesi 1 sn sürünce bırakma alanı kendiliğinden açılır (Mission Control'e takılmaz, ayardan kapatılabilir). Göz at kartında şarkı değişince süre baştan başlar. Monitörde imleç ekranın en üstüne dayalıyken de ada açılır. Monitör/dock takılınca oluşan çökme düzeldi."
+      "notes": "qadA (macOS): Harici monitörde dosya rafı açılıyor; dosya sürüklemesi 1 sn sürünce bırakma alanı kendiliğinden açılır (Mission Control'e takılmaz, ayardan kapatılabilir). Göz at kartında şarkı değişince süre baştan başlar."
     },
     {
       "version": "0.7.0",
