@@ -1,15 +1,20 @@
 {
-  "version": "0.6.0",
-  "date": "2026-10-25",
-  "notes": "qocK (yeni, yalnız macOS): Dock simgesinin üstüne gelince pencere önizlemeleri; ⌘⇥ yerine pencere değiştirici (kısayol ayarlanabilir, kapatınca sistem ⌘⇥ geri gelir); Dock'u bir ekrana kilitle; Dock tıklamaları (gizle, ⌘ + sağ tık ile çık). Ayarlar › Modüller'den açılır.\nqiT: Ayarlar › Hakkında'da açık kaynak lisansları (macOS ve Windows).\nqiT (macOS): Paneldeki modül başlığı anahtarı görünmüyordu, düzeldi.",
+  "version": "0.7.0",
+  "date": "2026-10-26",
+  "notes": "qadA (yeni, yalnız macOS): Çentikli MacBook'larda Dinamik Ada. Şimdi Çalıyor (Apple Music, Spotify; canlı ses çubukları, şarkı sözü, sıradaki), ses/parlaklık/klavye ışığı kartı, takvim ve toplantıya katıl, zamanlayıcı, hava durumu ve anımsatıcılar, pil/şarj, AirPods, Odak, dosya rafı; deneysel: mesaj bildirimleri ve kilit ekranı widget'ları. Harici monitörde yüzen kart olarak çalışır. Ayarlar › Modüller'den açılır.\nqiT (macOS): Ayarlar kenar çubuğunda her modülün altında kısa açıklama.",
   "macos": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.6.0/qiT-macOS-0.6.0.zip",
-    "sha256": "538774529c4f69f66686ee47dd1038f4c7526da0bbbb3b9d9865bdc3d540d3ab",
-    "size": 13335700,
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.0/qiT-macOS-0.7.0.zip",
+    "sha256": "a9ee97571ebf7e2f5439fc1cfe2c4ad1ad57208db9419fbc647eaeef4c6f7e6c",
+    "size": 15887444,
     "minimumSystemVersion": "15.2",
-    "signature": "6beed291154dc2ecbc43b98101b14b17885e0214839e005624c27e3a4817d7b6ed03ad0a0dab370e000cc1eef3e4d98680853bb0841989bd8e13479b3d434d0e"
+    "signature": "646c2a3617c63e258823c009ab42d76f39d152024de43d77026d03022be98e70d77e5577f779afe11a83c78e0c1e60da97e7c782c55778c00f67ca23df88bc00"
   },
   "history": [
+    {
+      "version": "0.7.0",
+      "date": "2026-10-26",
+      "notes": "qadA (yeni, yalnız macOS): Çentikli MacBook'larda Dinamik Ada. Şimdi Çalıyor (Apple Music, Spotify; canlı ses çubukları, şarkı sözü, sıradaki), ses/parlaklık/klavye ışığı kartı, takvim ve toplantıya katıl, zamanlayıcı, hava durumu ve anımsatıcılar, pil/şarj, AirPods, Odak, dosya rafı; deneysel: mesaj bildirimleri ve kilit ekranı widget'ları. Harici monitörde yüzen kart olarak çalışır. Ayarlar › Modüller'den açılır.\nqiT (macOS): Ayarlar kenar çubuğunda her modülün altında kısa açıklama."
+    },
     {
       "version": "0.6.0",
       "date": "2026-10-25",

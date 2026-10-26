@@ -1,15 +1,20 @@
 {
-  "version": "0.6.0",
-  "date": "2026-10-25",
-  "notes": "qocK (yeni, yalnız macOS): Dock simgesinin üstüne gelince pencere önizlemeleri; ⌘⇥ yerine pencere değiştirici (kısayol ayarlanabilir, kapatınca sistem ⌘⇥ geri gelir); Dock'u bir ekrana kilitle; Dock tıklamaları (gizle, ⌘ + sağ tık ile çık). Ayarlar › Modüller'den açılır.\nqiT: Ayarlar › Hakkında'da açık kaynak lisansları (macOS ve Windows).\nqiT (macOS): Paneldeki modül başlığı anahtarı görünmüyordu, düzeldi.",
-  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-v0.6.0",
+  "version": "0.7.0",
+  "date": "2026-10-26",
+  "notes": "qadA (yeni, yalnız macOS): Çentikli MacBook'larda Dinamik Ada. Şimdi Çalıyor (Apple Music, Spotify; canlı ses çubukları, şarkı sözü, sıradaki), ses/parlaklık/klavye ışığı kartı, takvim ve toplantıya katıl, zamanlayıcı, hava durumu ve anımsatıcılar, pil/şarj, AirPods, Odak, dosya rafı; deneysel: mesaj bildirimleri ve kilit ekranı widget'ları. Harici monitörde yüzen kart olarak çalışır. Ayarlar › Modüller'den açılır.\nqiT (macOS): Ayarlar kenar çubuğunda her modülün altında kısa açıklama.",
+  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-v0.7.0",
   "windows": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.6.0/qiT-Setup-x64.exe",
-    "sha256": "22e97b0b566a35e1d4987c4fb74f6ee25da71d94e58594fcd01d2d1720d8dd2e",
-    "size": 5895602,
-    "signature": "519c6f304507939eb77a16178ded9306b627c9668b43cea9a320aabb3e888302f6b2124eab1cacbf274a47444766ce30ec576c0de4dd7c1046b9d16a42cd1602"
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.0/qiT-Setup-x64.exe",
+    "sha256": "eaa12f11c02cd105c4d807df5152880ed85b01e9882c78213a21afa57dc7b060",
+    "size": 5896496,
+    "signature": "7a7a266b331100b56ab635818d2059489915ef6bf2a0e18f5e13cb2941f91676c2af6cfa108e700fb06b481afe66a5a3f9e976d7596daeb5332502579c7b8a0b"
   },
   "history": [
+    {
+      "version": "0.7.0",
+      "date": "2026-10-26",
+      "notes": "qadA (yeni, yalnız macOS): Çentikli MacBook'larda Dinamik Ada. Şimdi Çalıyor (Apple Music, Spotify; canlı ses çubukları, şarkı sözü, sıradaki), ses/parlaklık/klavye ışığı kartı, takvim ve toplantıya katıl, zamanlayıcı, hava durumu ve anımsatıcılar, pil/şarj, AirPods, Odak, dosya rafı; deneysel: mesaj bildirimleri ve kilit ekranı widget'ları. Harici monitörde yüzen kart olarak çalışır. Ayarlar › Modüller'den açılır.\nqiT (macOS): Ayarlar kenar çubuğunda her modülün altında kısa açıklama."
+    },
     {
       "version": "0.6.0",
       "date": "2026-10-25",
