@@ -1,15 +1,20 @@
 {
-  "version": "0.7.2",
+  "version": "0.7.3",
   "date": "2026-10-26",
-  "notes": "qadA (macOS): İzin kaldırılıp yeniden verilince oluşan çökme düzeldi. AirPods bağlanınca ses kartı \"AirPods bağlandı\" uyarısını örtmez; ses kartında AirPods ve kulaklık simgeleri görünür. Dosya rafı sürükleme 0,5 sn sürünce açılır.",
+  "notes": "qadA (macOS): Dosya sürüklenirken ada ikiye bölünür: bir yarısı rafa ekler, öbür yarısı dosyayı doğrudan AirDrop'a gönderir (rafa eklemez); raf doluysa içindekilerin önizlemesi görünür. Takvim sekmesinin altındaki fazla boşluk kalktı.",
   "macos": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.2/qiT-macOS-0.7.2.zip",
-    "sha256": "880a4dc8e1f131191504454fd1b9e7681b456c6fc80d0ac65e70a9d2a28fed9f",
-    "size": 15898577,
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.3/qiT-macOS-0.7.3.zip",
+    "sha256": "bd34c971f810ce83e250830187eecbb404215b30a605a8bbf447e324296c8efc",
+    "size": 15930987,
     "minimumSystemVersion": "15.2",
-    "signature": "9011fbc9aa8b65fa292954d497657f6622c72fd16d0072083d214817ad93c6734d42dd7a231acdc39eaaa822216dd5a9b8bbe1c80e7d8a65df778b437635b406"
+    "signature": "e81eaefadf6900e87d8db3eccc66d9df76df5ac8504e74bba3e148075ce8c81f37e37b31f54af0dd9cab05bdeafdf7db9c7bc1d1fb9a7f18a768bb566c169a0c"
   },
   "history": [
+    {
+      "version": "0.7.3",
+      "date": "2026-10-26",
+      "notes": "qadA (macOS): Dosya sürüklenirken ada ikiye bölünür: bir yarısı rafa ekler, öbür yarısı dosyayı doğrudan AirDrop'a gönderir (rafa eklemez); raf doluysa içindekilerin önizlemesi görünür. Takvim sekmesinin altındaki fazla boşluk kalktı."
+    },
     {
       "version": "0.7.2",
       "date": "2026-10-26",
