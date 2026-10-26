@@ -1,7 +1,7 @@
 {
   "repo": "eqber0/qit-releases",
   "tap": "eqber0/qit",
-  "fallbackVersion": "0.7.0",
+  "fallbackVersion": "0.7.1",
   "modules": [
     {
       "id": "qlip", "name": "qliP", "icon": "assets/icons/qlip.png",
