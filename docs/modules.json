@@ -1,7 +1,7 @@
 {
   "repo": "eqber0/qit-releases",
   "tap": "eqber0/qit",
-  "fallbackVersion": "0.5.8",
+  "fallbackVersion": "0.7.0",
   "modules": [
     {
       "id": "qlip", "name": "qliP", "icon": "assets/icons/qlip.png",
@@ -102,6 +102,21 @@
       ],
       "keys": [[";;mail", "Kısaltmayı metne çevir"], ["Ekran köşesi", "Eylem tetikle"]],
       "demo": "trigger", "settings": "assets/shots/settings-qast"
+    },
+    {
+      "id": "qada", "name": "qadA", "icon": "assets/icons/qada.png", "isNew": true,
+      "tagline": "Çentik canlanır: Dinamik Ada, artık MacBook'ta.",
+      "description": "MacBook'un çentiği çalan şarkıyı, ses ve parlaklığı, takvimi, zamanlayıcıyı ve uyarıları gösteren canlı bir adaya dönüşür. Üstüne gel, göz at; tıkla, açılsın. Harici monitörde yüzen kart olarak çalışır.",
+      "platforms": ["macOS"],
+      "features": [
+        "Şimdi Çalıyor: Apple Music ve Spotify, kapak, kontroller, canlı ses çubukları, şarkı sözü ve sıradaki",
+        "Ses, parlaklık ve klavye ışığı için büyük kart",
+        "Takvim ve toplantıya katıl, zamanlayıcı (adayı yana sürükle), hava durumu ve anımsatıcılar",
+        "Pil ve şarj, AirPods, Odak modu uyarıları",
+        "Dosya rafı: dosyayı çentiğe bırak, sonra AirDrop'la, paylaş ya da taşı",
+        "Deneysel: mesaj bildirimleri ve kilit ekranı widget'ları"
+      ],
+      "keys": [["Üstüne gel", "Göz at"], ["Tıkla / aşağı kaydır", "Aç"], ["Yana kaydır", "Sonraki şarkı"]]
     },
     {
       "id": "qock", "name": "qocK", "icon": "assets/icons/qock.png", "isNew": true,
