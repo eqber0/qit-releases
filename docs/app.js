@@ -171,24 +171,25 @@ function renderSettings(mods) {
 function macAsset(r) { return r.assets.find(a => /\.dmg$/i.test(a.name)) || r.assets.find(a => /macOS.*\.zip$/i.test(a.name)); }
 function winAsset(r) { return r.assets.find(a => /Setup.*\.exe$/i.test(a.name)); }
 
-function renderDownload(r) {
+/* wr: Windows kurulumu olan en yeni sürüm (--mac-only sürümlerde exe yok) */
+function renderDownload(r, wr = r) {
   const v = r.tag.replace(/^qit-v/, '');
   $('#dlVer').textContent = 'v' + v;
   $('#heroVer').textContent = 'qiT ' + v;
-  const mac = macAsset(r), win = winAsset(r);
+  const mac = macAsset(r), win = wr && winAsset(wr);
   const rel = 'https://github.com/' + CFG.repo + '/releases/latest';
   $('#macBtn').href = mac ? mac.url : rel;
   $('#macBtn').textContent = mac && /\.dmg$/i.test(mac.name) ? 'DMG indir' : 'macOS için indir';
   $('#macFile').textContent = mac ? mac.name + (mac.size ? ' · ' + mb(mac.size) : '') : '';
   if (win) { $('#winBtn').href = win.url; $('#winFile').textContent = win.name + (win.size ? ' · ' + mb(win.size) : ''); }
   const winOs = /Win/i.test(navigator.userAgent || '');
-  const pick = winOs ? win : mac;
+  const pick = winOs ? win : mac, pv = winOs && wr ? wr.tag.replace(/^qit-v/, '') : v, pd = winOs && wr ? wr.date : r.date;
   $('#heroDlText').textContent = (winOs ? 'Windows' : 'macOS') + ' için indir';
   $('#heroDl').href = pick ? pick.url : '#kurulum';
   $('#endDl').href = pick ? pick.url : '#kurulum';
   $('#cardWin').classList.toggle('rec', winOs); $('#cardMac').classList.toggle('rec', !winOs);
   const other = winOs ? '<a href="#kurulum">macOS</a>' : '<a href="#kurulum">Windows</a>';
-  $('#heroMeta').innerHTML = `<b>v${esc(v)}</b>${r.date ? ' · ' + day(r.date) : ''}${pick && pick.size ? ' · ' + mb(pick.size) : ''} · ${other} için de var`;
+  $('#heroMeta').innerHTML = `<b>v${esc(pv)}</b>${pd ? ' · ' + day(pd) : ''}${pick && pick.size ? ' · ' + mb(pick.size) : ''} · ${other} için de var`;
 }
 
 function renderReleases(list) {
@@ -211,7 +212,7 @@ async function loadReleases() {
       assets: r.assets.map(a => ({name: a.name, size: a.size, url: a.browser_download_url}))
     }));
     if (!list.length) throw 0;
-    renderDownload(list[0]); renderReleases(list);
+    renderDownload(list[0], list.find(winAsset)); renderReleases(list);
   } catch (e) {
     /* GitHub'a ulaşılamazsa: sabit "latest" bağlantıları yeterli */
     $('#rel').innerHTML = `<p class="muted">Sürüm listesi şu an okunamadı. <a href="https://github.com/${esc(CFG.repo)}/releases">GitHub'da sürümlere bak</a>.</p>`;
@@ -253,7 +254,7 @@ function reveal() {
   renderModules(CFG.modules); renderSettings(CFG.modules); applyShots(); reveal();
   if (CFG.fallbackVersion) {
     const v = CFG.fallbackVersion, base = `https://github.com/${CFG.repo}/releases/download/qit-v${v}/`;
-    renderDownload({tag: 'qit-v' + v, date: '', assets: [{name: 'qiT-macOS-' + v + '.zip', size: 0, url: base + 'qiT-macOS-' + v + '.zip'}, {name: 'qiT-Setup-x64.exe', size: 0, url: `https://github.com/${CFG.repo}/releases/latest/download/qiT-Setup-x64.exe`}]});
+    renderDownload({tag: 'qit-v' + v, date: '', assets: [{name: 'qiT-macOS-' + v + '.zip', size: 0, url: base + 'qiT-macOS-' + v + '.zip'}, {name: 'qiT-Setup-x64.exe', size: 0, url: `https://github.com/${CFG.repo}/releases`}]});
   }
   loadReleases();
   if (location.hash) { const t = document.getElementById(location.hash.slice(1)); if (t) t.scrollIntoView(); }
