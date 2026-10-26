@@ -1,15 +1,20 @@
 {
-  "version": "0.7.0",
+  "version": "0.7.1",
   "date": "2026-10-26",
-  "notes": "qadA (yeni, yalnız macOS): Çentikli MacBook'larda Dinamik Ada. Şimdi Çalıyor (Apple Music, Spotify; canlı ses çubukları, şarkı sözü, sıradaki), ses/parlaklık/klavye ışığı kartı, takvim ve toplantıya katıl, zamanlayıcı, hava durumu ve anımsatıcılar, pil/şarj, AirPods, Odak, dosya rafı; deneysel: mesaj bildirimleri ve kilit ekranı widget'ları. Harici monitörde yüzen kart olarak çalışır. Ayarlar › Modüller'den açılır.\nqiT (macOS): Ayarlar kenar çubuğunda her modülün altında kısa açıklama.",
-  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-v0.7.0",
+  "notes": "qadA (macOS): Harici monitörde dosya rafı açılıyor; dosya sürüklemesi 1 sn sürünce bırakma alanı kendiliğinden açılır (Mission Control'e takılmaz, ayardan kapatılabilir). Göz at kartında şarkı değişince süre baştan başlar. Monitörde imleç ekranın en üstüne dayalıyken de ada açılır. Monitör/dock takılınca oluşan çökme düzeldi.",
+  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-v0.7.1",
   "windows": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.0/qiT-Setup-x64.exe",
-    "sha256": "eaa12f11c02cd105c4d807df5152880ed85b01e9882c78213a21afa57dc7b060",
-    "size": 5896496,
-    "signature": "7a7a266b331100b56ab635818d2059489915ef6bf2a0e18f5e13cb2941f91676c2af6cfa108e700fb06b481afe66a5a3f9e976d7596daeb5332502579c7b8a0b"
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.1/qiT-Setup-x64.exe",
+    "sha256": "6b37024d36920444b9e83654381e2fd0cfd87ff0f365502cbeecb1d6636db797",
+    "size": 5897266,
+    "signature": "535b887b4e3e124470a7c29162bc5736ba3fd98f3261f0ff90cbcd5032de2c4c9de0de42a52343386448a720df3c56a527219e482cae52d5e5c16ff10f3c7104"
   },
   "history": [
+    {
+      "version": "0.7.1",
+      "date": "2026-10-26",
+      "notes": "qadA (macOS): Harici monitörde dosya rafı açılıyor; dosya sürüklemesi 1 sn sürünce bırakma alanı kendiliğinden açılır (Mission Control'e takılmaz, ayardan kapatılabilir). Göz at kartında şarkı değişince süre baştan başlar. Monitörde imleç ekranın en üstüne dayalıyken de ada açılır. Monitör/dock takılınca oluşan çökme düzeldi."
+    },
     {
       "version": "0.7.0",
       "date": "2026-10-26",

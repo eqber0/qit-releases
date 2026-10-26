@@ -1,15 +1,20 @@
 {
-  "version": "0.7.0",
+  "version": "0.7.1",
   "date": "2026-10-26",
-  "notes": "qadA (yeni, yalnız macOS): Çentikli MacBook'larda Dinamik Ada. Şimdi Çalıyor (Apple Music, Spotify; canlı ses çubukları, şarkı sözü, sıradaki), ses/parlaklık/klavye ışığı kartı, takvim ve toplantıya katıl, zamanlayıcı, hava durumu ve anımsatıcılar, pil/şarj, AirPods, Odak, dosya rafı; deneysel: mesaj bildirimleri ve kilit ekranı widget'ları. Harici monitörde yüzen kart olarak çalışır. Ayarlar › Modüller'den açılır.\nqiT (macOS): Ayarlar kenar çubuğunda her modülün altında kısa açıklama.",
+  "notes": "qadA (macOS): Harici monitörde dosya rafı açılıyor; dosya sürüklemesi 1 sn sürünce bırakma alanı kendiliğinden açılır (Mission Control'e takılmaz, ayardan kapatılabilir). Göz at kartında şarkı değişince süre baştan başlar. Monitörde imleç ekranın en üstüne dayalıyken de ada açılır. Monitör/dock takılınca oluşan çökme düzeldi.",
   "macos": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.0/qiT-macOS-0.7.0.zip",
-    "sha256": "a9ee97571ebf7e2f5439fc1cfe2c4ad1ad57208db9419fbc647eaeef4c6f7e6c",
-    "size": 15887444,
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.1/qiT-macOS-0.7.1.zip",
+    "sha256": "34d8de1130d57e3e14150d3518d1f14b839daa1a9b3a25e3e8b61179976cb5c8",
+    "size": 15896823,
     "minimumSystemVersion": "15.2",
-    "signature": "646c2a3617c63e258823c009ab42d76f39d152024de43d77026d03022be98e70d77e5577f779afe11a83c78e0c1e60da97e7c782c55778c00f67ca23df88bc00"
+    "signature": "40f098c09cd4c5cbb88889c7f99174b7e4f879b10b1c63d434c41f571414a4027c3b5fcbef2dccf039379720d5ed594ec9eab1144a62e9609e204f2c398fa904"
   },
   "history": [
+    {
+      "version": "0.7.1",
+      "date": "2026-10-26",
+      "notes": "qadA (macOS): Harici monitörde dosya rafı açılıyor; dosya sürüklemesi 1 sn sürünce bırakma alanı kendiliğinden açılır (Mission Control'e takılmaz, ayardan kapatılabilir). Göz at kartında şarkı değişince süre baştan başlar. Monitörde imleç ekranın en üstüne dayalıyken de ada açılır. Monitör/dock takılınca oluşan çökme düzeldi."
+    },
     {
       "version": "0.7.0",
       "date": "2026-10-26",
