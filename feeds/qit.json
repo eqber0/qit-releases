@@ -1,15 +1,20 @@
 {
-  "version": "0.7.4",
+  "version": "0.7.5",
   "date": "2026-10-26",
-  "notes": "qadA (macOS): Sürüklerken AirDrop yarısına bırakılan dosya doğrudan AirDrop penceresini açar; ada kapanır, raf görünümüne dönmez.",
+  "notes": "qadA (macOS): AirDrop yarısına bırakılan dosya artık doğrudan AirDrop penceresini açar (önceden rafa düşüyordu). AirDrop yarısında sistemin gerçek AirDrop simgesi.",
   "macos": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.4/qiT-macOS-0.7.4.zip",
-    "sha256": "c96cfe4c6293ff4b97aeab0014a0e8c95cf8758f1e07aef5717d128c8dccbbe1",
-    "size": 15932540,
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.5/qiT-macOS-0.7.5.zip",
+    "sha256": "ed68d1cb8298ac075e7e124d673256b21cba775bbfe647434d2028bf11be9777",
+    "size": 15937092,
     "minimumSystemVersion": "15.2",
-    "signature": "353de67f6de115282eea004a8a9ad3b67b76696f017265b8ee36d83f23a0a1be541dba89003febde2d5bd2183622c1fb26357758e6d31f56907b456f53cd510b"
+    "signature": "5caded8add6af578bf8f31402613d8a53f6faaf34c61526aa8fae7929a50bf045a3692cf69c7e2bb08fe084bbde599375fab7ed9ab096e2ea578ae3faa64a402"
   },
   "history": [
+    {
+      "version": "0.7.5",
+      "date": "2026-10-26",
+      "notes": "qadA (macOS): AirDrop yarısına bırakılan dosya artık doğrudan AirDrop penceresini açar (önceden rafa düşüyordu). AirDrop yarısında sistemin gerçek AirDrop simgesi."
+    },
     {
       "version": "0.7.4",
       "date": "2026-10-26",
