@@ -1,15 +1,20 @@
 {
-  "version": "0.7.1",
+  "version": "0.7.2",
   "date": "2026-10-26",
-  "notes": "qadA (macOS): Harici monitörde dosya rafı açılıyor; dosya sürüklemesi 1 sn sürünce bırakma alanı kendiliğinden açılır (Mission Control'e takılmaz, ayardan kapatılabilir). Göz at kartında şarkı değişince süre baştan başlar.",
-  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-v0.7.1",
+  "notes": "qadA (macOS): İzin kaldırılıp yeniden verilince oluşan çökme düzeldi. AirPods bağlanınca ses kartı \"AirPods bağlandı\" uyarısını örtmez; ses kartında AirPods ve kulaklık simgeleri görünür. Dosya rafı sürükleme 0,5 sn sürünce açılır.",
+  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-v0.7.2",
   "windows": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.1/qiT-Setup-x64.exe",
-    "sha256": "6b37024d36920444b9e83654381e2fd0cfd87ff0f365502cbeecb1d6636db797",
-    "size": 5897266,
-    "signature": "535b887b4e3e124470a7c29162bc5736ba3fd98f3261f0ff90cbcd5032de2c4c9de0de42a52343386448a720df3c56a527219e482cae52d5e5c16ff10f3c7104"
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.2/qiT-Setup-x64.exe",
+    "sha256": "9721e856bd6f138adb11e1b8b33e40e4d02270dac33cc959857931077df56330",
+    "size": 5895196,
+    "signature": "f4e7436e3b363a9b6dda311dfd216bfd68a5c9ea8a6eb24fdd076db264f7b9cbe6d8f6f798a003089ef1976f9b8d67773d8caf34746ae57fffc7e4d888548a0c"
   },
   "history": [
+    {
+      "version": "0.7.2",
+      "date": "2026-10-26",
+      "notes": "qadA (macOS): İzin kaldırılıp yeniden verilince oluşan çökme düzeldi. AirPods bağlanınca ses kartı \"AirPods bağlandı\" uyarısını örtmez; ses kartında AirPods ve kulaklık simgeleri görünür. Dosya rafı sürükleme 0,5 sn sürünce açılır."
+    },
     {
       "version": "0.7.1",
       "date": "2026-10-26",
