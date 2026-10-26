@@ -1,15 +1,20 @@
 {
-  "version": "0.7.3",
+  "version": "0.7.4",
   "date": "2026-10-26",
-  "notes": "qadA (macOS): Dosya sürüklenirken ada ikiye bölünür: bir yarısı rafa ekler, öbür yarısı dosyayı doğrudan AirDrop'a gönderir (rafa eklemez); raf doluysa içindekilerin önizlemesi görünür. Takvim sekmesinin altındaki fazla boşluk kalktı.",
+  "notes": "qadA (macOS): Sürüklerken AirDrop yarısına bırakılan dosya doğrudan AirDrop penceresini açar; ada kapanır, raf görünümüne dönmez.",
   "macos": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.3/qiT-macOS-0.7.3.zip",
-    "sha256": "bd34c971f810ce83e250830187eecbb404215b30a605a8bbf447e324296c8efc",
-    "size": 15930987,
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.4/qiT-macOS-0.7.4.zip",
+    "sha256": "c96cfe4c6293ff4b97aeab0014a0e8c95cf8758f1e07aef5717d128c8dccbbe1",
+    "size": 15932540,
     "minimumSystemVersion": "15.2",
-    "signature": "e81eaefadf6900e87d8db3eccc66d9df76df5ac8504e74bba3e148075ce8c81f37e37b31f54af0dd9cab05bdeafdf7db9c7bc1d1fb9a7f18a768bb566c169a0c"
+    "signature": "353de67f6de115282eea004a8a9ad3b67b76696f017265b8ee36d83f23a0a1be541dba89003febde2d5bd2183622c1fb26357758e6d31f56907b456f53cd510b"
   },
   "history": [
+    {
+      "version": "0.7.4",
+      "date": "2026-10-26",
+      "notes": "qadA (macOS): Sürüklerken AirDrop yarısına bırakılan dosya doğrudan AirDrop penceresini açar; ada kapanır, raf görünümüne dönmez."
+    },
     {
       "version": "0.7.3",
       "date": "2026-10-26",
