@@ -1,15 +1,20 @@
 {
-  "version": "0.7.5",
-  "date": "2026-10-26",
-  "notes": "qadA (macOS): AirDrop yarısına bırakılan dosya artık doğrudan AirDrop penceresini açar (önceden rafa düşüyordu). AirDrop yarısında sistemin gerçek AirDrop simgesi.",
+  "version": "0.7.6",
+  "date": "2026-10-27",
+  "notes": "qocK: Dock kilidinde imleç artık Dock'suz monitörün kenarında takılmıyor",
   "macos": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.5/qiT-macOS-0.7.5.zip",
-    "sha256": "ed68d1cb8298ac075e7e124d673256b21cba775bbfe647434d2028bf11be9777",
-    "size": 15937092,
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.6/qiT-macOS-0.7.6.zip",
+    "sha256": "ba78036e03e335fcc260e95455a3915e053f7ee40aec56f1b26f1143ca3f6829",
+    "size": 15936987,
     "minimumSystemVersion": "15.2",
-    "signature": "5caded8add6af578bf8f31402613d8a53f6faaf34c61526aa8fae7929a50bf045a3692cf69c7e2bb08fe084bbde599375fab7ed9ab096e2ea578ae3faa64a402"
+    "signature": "77f4281d8d726032947211a55a05680f903a8a25ccf159100dc24f419293aa453debf1132ca441917def7d6bee094e63f5e9f0c83e14db4b54edbfe63d2f5c05"
   },
   "history": [
+    {
+      "version": "0.7.6",
+      "date": "2026-10-27",
+      "notes": "qocK: Dock kilidinde imleç artık Dock'suz monitörün kenarında takılmıyor"
+    },
     {
       "version": "0.7.5",
       "date": "2026-10-26",
