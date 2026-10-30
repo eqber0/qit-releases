@@ -1,15 +1,20 @@
 {
-  "version": "0.7.8",
+  "version": "0.7.9",
   "date": "2026-10-30",
-  "notes": "qorD ve qadA: klavyedeki oynat/duraklat, ileri ve geri tuşları yeniden çalışıyor (Otomasyon izni sorgusu takılınca tuş komutları bekliyordu).",
+  "notes": "qadA: Claude kullanımı. Ayarlar › qadA › Etkinlikler'den açılır; seçili uygulama (varsayılan iTerm) öndeyken çentikte 5 saatlik ve haftalık limit yüzdesi görünür, tıklayınca Claude sekmesinde ayrıntı. İlk açılışta Anahtar Zinciri izni istenir.",
   "macos": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.8/qiT-macOS-0.7.8.zip",
-    "sha256": "cf3f2b08b366ec60e41ffc4e0af8cd7c735c66c417d9652ddb523cbd54d20aa9",
-    "size": 15948916,
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.9/qiT-macOS-0.7.9.zip",
+    "sha256": "adc4b207cfad36b946e5d4c4b3236ca7c2063bff4f5863358629bab40e441d0f",
+    "size": 16150242,
     "minimumSystemVersion": "15.2",
-    "signature": "c666f60a421354c1077b3b80a8c8c90af41ec98aba39ca25ae068fd84835282db0984c54be25be716ebf2d75e8140bb3cd6166146713e99b3f89c4a0eb9bc605"
+    "signature": "eb2bd1fddf964228deff4b55652f8b4abbbaf802060b237509c172ba46b9c14c75f1052bb17742de8639a680c91ae014dbd05d6f2452d3ffdfe34624f63ab107"
   },
   "history": [
+    {
+      "version": "0.7.9",
+      "date": "2026-10-30",
+      "notes": "qadA: Claude kullanımı. Ayarlar › qadA › Etkinlikler'den açılır; seçili uygulama (varsayılan iTerm) öndeyken çentikte 5 saatlik ve haftalık limit yüzdesi görünür, tıklayınca Claude sekmesinde ayrıntı. İlk açılışta Anahtar Zinciri izni istenir."
+    },
     {
       "version": "0.7.8",
       "date": "2026-10-30",
