@@ -1,15 +1,20 @@
 {
-  "version": "0.7.6",
-  "date": "2026-10-27",
-  "notes": "qocK: Dock kilidinde imleç artık Dock'suz monitörün kenarında takılmıyor",
+  "version": "0.7.7",
+  "date": "2026-10-30",
+  "notes": "qadA: ses tuşu sesi, Bluetooth ses adımı, şarkıya tıklayınca oynatıcı, uygulama sürüklemede raf açılmıyor",
   "macos": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.6/qiT-macOS-0.7.6.zip",
-    "sha256": "ba78036e03e335fcc260e95455a3915e053f7ee40aec56f1b26f1143ca3f6829",
-    "size": 15936987,
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.7/qiT-macOS-0.7.7.zip",
+    "sha256": "5ab12b29eeaf0525a68be60b42b78623e346924c3ef6b11d1aa042940951fab6",
+    "size": 15947744,
     "minimumSystemVersion": "15.2",
-    "signature": "77f4281d8d726032947211a55a05680f903a8a25ccf159100dc24f419293aa453debf1132ca441917def7d6bee094e63f5e9f0c83e14db4b54edbfe63d2f5c05"
+    "signature": "319a097ee8ad6dbe453e545ec6233b0f0b17899fda275fafa5e6c265d989a10344a4661463e0df9eb6779d99d5e446f356c775441e5beb17778846c3c0b46201"
   },
   "history": [
+    {
+      "version": "0.7.7",
+      "date": "2026-10-30",
+      "notes": "qadA: ses tuşu sesi, Bluetooth ses adımı, şarkıya tıklayınca oynatıcı, uygulama sürüklemede raf açılmıyor"
+    },
     {
       "version": "0.7.6",
       "date": "2026-10-27",
