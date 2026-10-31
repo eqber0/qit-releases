@@ -1,15 +1,20 @@
 {
-  "version": "0.7.10",
-  "date": "2026-10-30",
-  "notes": "qadA: Claude kullanımı kompaktta yüzde yerine iki halka (5 saatlik · haftalık); yüzdeler göz atta ve Claude sekmesinde.",
+  "version": "0.7.11",
+  "date": "2026-10-31",
+  "notes": "qadA: Claude kullanımı Claude turuncusu ve Claw'd simgesiyle; %75'ten turuncu, %90'dan kırmızı. Hava durumu, anımsatıcılar ve zamanlayıcılar tek Bugün sekmesinde. Sekmeler müzikle aynı yükseklikte. Claude limitleri artık Anahtar Zinciri izni sormuyor.",
   "macos": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.10/qiT-macOS-0.7.10.zip",
-    "sha256": "3f48f477c0e51370ecf60bed9675e3a581c33f08d5e4f31e732637ec63568a3e",
-    "size": 16159512,
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.11/qiT-macOS-0.7.11.zip",
+    "sha256": "00cf7268112d248cf2b4f87a07a905f84f3071d2b3c8b886e47ebbc9bd09785e",
+    "size": 16178097,
     "minimumSystemVersion": "15.2",
-    "signature": "f3b1193309874ef42f785171d2c23f1338bbeda0e29bbe80b5b152772c0ef6d0085624d414f420bc9c0581fee6c3983460eb95d01779d7c66fc9b3575a29490a"
+    "signature": "2a20ad8e62fe0a825a35b1610b2b93396533e64511eec7cd4b76f3557ce9ec84c2e907db698af870f4c821b6ef6c54cbe669f38cda0a0b90aba0ef147445cc0d"
   },
   "history": [
+    {
+      "version": "0.7.11",
+      "date": "2026-10-31",
+      "notes": "qadA: Claude kullanımı Claude turuncusu ve Claw'd simgesiyle; %75'ten turuncu, %90'dan kırmızı. Hava durumu, anımsatıcılar ve zamanlayıcılar tek Bugün sekmesinde. Sekmeler müzikle aynı yükseklikte. Claude limitleri artık Anahtar Zinciri izni sormuyor."
+    },
     {
       "version": "0.7.10",
       "date": "2026-10-30",
