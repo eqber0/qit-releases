@@ -1,15 +1,20 @@
 {
-  "version": "0.7.2",
-  "date": "2026-10-26",
-  "notes": "qadA (macOS): İzin kaldırılıp yeniden verilince oluşan çökme düzeldi. AirPods bağlanınca ses kartı \"AirPods bağlandı\" uyarısını örtmez; ses kartında AirPods ve kulaklık simgeleri görünür. Dosya rafı sürükleme 0,5 sn sürünce açılır.",
-  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-v0.7.2",
+  "version": "0.7.12",
+  "date": "2026-11-06",
+  "notes": "Çok ekran ve kararlılık düzeltmeleri. qliP: kısayol artık takılmıyor, ikinci ekranda açılan katman seçim ve klavye alıyor (macOS ve Windows). qocK: imleç odağı izlerken Dock öbür ekrana kaçmıyor. qriD: sonraki/önceki ekran pencerenin ekranından sayılıyor, ekran sınırında yapışma alanı doğru ekranda. qadA, qalE, qasT, qorD, qroL, qatE, qonV: ekran takma/çıkarma, uyku ve kaçan tuş olaylarından sonra takılı kalan durumlar düzeltildi. Modül çakışmaları: qorD medya tuşları önce; ses/parlaklık göstergesi çentiğin üstünde; qasT alanında qriD yerleştirmiyor; qonV tekerleği açıkken qadA rafı açılmıyor. Modüller birbirinin kısayolunu görüyor ve çakışınca uyarıyor (yalnız macOS; Windows sonraki sürümde).",
+  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-v0.7.12",
   "windows": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.2/qiT-Setup-x64.exe",
-    "sha256": "9721e856bd6f138adb11e1b8b33e40e4d02270dac33cc959857931077df56330",
-    "size": 5895196,
-    "signature": "f4e7436e3b363a9b6dda311dfd216bfd68a5c9ea8a6eb24fdd076db264f7b9cbe6d8f6f798a003089ef1976f9b8d67773d8caf34746ae57fffc7e4d888548a0c"
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.12/qiT-Setup-x64.exe",
+    "sha256": "a2104a55ba2e54fbab019b6e6e3ab56b8157f426706d7c66e7b6d63c9ae76604",
+    "size": 5900116,
+    "signature": "e20a57457a27c58663cea34c5300d17646f0a82c7c2981c501cea269ac7d7a6a663ae6111d8e324ab91b3ad29a3b29f0c14733029c2af970696d113bbcaa4c03"
   },
   "history": [
+    {
+      "version": "0.7.12",
+      "date": "2026-11-06",
+      "notes": "Çok ekran ve kararlılık düzeltmeleri. qliP: kısayol artık takılmıyor, ikinci ekranda açılan katman seçim ve klavye alıyor (macOS ve Windows). qocK: imleç odağı izlerken Dock öbür ekrana kaçmıyor. qriD: sonraki/önceki ekran pencerenin ekranından sayılıyor, ekran sınırında yapışma alanı doğru ekranda. qadA, qalE, qasT, qorD, qroL, qatE, qonV: ekran takma/çıkarma, uyku ve kaçan tuş olaylarından sonra takılı kalan durumlar düzeltildi. Modül çakışmaları: qorD medya tuşları önce; ses/parlaklık göstergesi çentiğin üstünde; qasT alanında qriD yerleştirmiyor; qonV tekerleği açıkken qadA rafı açılmıyor. Modüller birbirinin kısayolunu görüyor ve çakışınca uyarıyor (yalnız macOS; Windows sonraki sürümde)."
+    },
     {
       "version": "0.7.2",
       "date": "2026-10-26",

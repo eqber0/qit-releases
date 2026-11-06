@@ -1,15 +1,20 @@
 {
-  "version": "0.7.11",
-  "date": "2026-10-31",
-  "notes": "qadA: Claude kullanımı Claude turuncusu ve Claw'd simgesiyle; %75'ten turuncu, %90'dan kırmızı. Hava durumu, anımsatıcılar ve zamanlayıcılar tek Bugün sekmesinde. Sekmeler müzikle aynı yükseklikte. Claude limitleri artık Anahtar Zinciri izni sormuyor.",
+  "version": "0.7.12",
+  "date": "2026-11-06",
+  "notes": "Çok ekran ve kararlılık düzeltmeleri. qliP: kısayol artık takılmıyor, ikinci ekranda açılan katman seçim ve klavye alıyor (macOS ve Windows). qocK: imleç odağı izlerken Dock öbür ekrana kaçmıyor. qriD: sonraki/önceki ekran pencerenin ekranından sayılıyor, ekran sınırında yapışma alanı doğru ekranda. qadA, qalE, qasT, qorD, qroL, qatE, qonV: ekran takma/çıkarma, uyku ve kaçan tuş olaylarından sonra takılı kalan durumlar düzeltildi. Modül çakışmaları: qorD medya tuşları önce; ses/parlaklık göstergesi çentiğin üstünde; qasT alanında qriD yerleştirmiyor; qonV tekerleği açıkken qadA rafı açılmıyor. Modüller birbirinin kısayolunu görüyor ve çakışınca uyarıyor (yalnız macOS; Windows sonraki sürümde).",
   "macos": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.11/qiT-macOS-0.7.11.zip",
-    "sha256": "00cf7268112d248cf2b4f87a07a905f84f3071d2b3c8b886e47ebbc9bd09785e",
-    "size": 16178097,
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.12/qiT-macOS-0.7.12.zip",
+    "sha256": "ded289826a6c8a9e24fd12aad2c0cfddcbd1e20b9069103d9f81975ece76f117",
+    "size": 16281833,
     "minimumSystemVersion": "15.2",
-    "signature": "2a20ad8e62fe0a825a35b1610b2b93396533e64511eec7cd4b76f3557ce9ec84c2e907db698af870f4c821b6ef6c54cbe669f38cda0a0b90aba0ef147445cc0d"
+    "signature": "1b9a74c6e180314129c18ea9ecee9818932922ea158305cb63cf12296519ba9e4f547623cf85141abbcf714701aa67e240c886244a71d36c66fe1346714b0f0f"
   },
   "history": [
+    {
+      "version": "0.7.12",
+      "date": "2026-11-06",
+      "notes": "Çok ekran ve kararlılık düzeltmeleri. qliP: kısayol artık takılmıyor, ikinci ekranda açılan katman seçim ve klavye alıyor (macOS ve Windows). qocK: imleç odağı izlerken Dock öbür ekrana kaçmıyor. qriD: sonraki/önceki ekran pencerenin ekranından sayılıyor, ekran sınırında yapışma alanı doğru ekranda. qadA, qalE, qasT, qorD, qroL, qatE, qonV: ekran takma/çıkarma, uyku ve kaçan tuş olaylarından sonra takılı kalan durumlar düzeltildi. Modül çakışmaları: qorD medya tuşları önce; ses/parlaklık göstergesi çentiğin üstünde; qasT alanında qriD yerleştirmiyor; qonV tekerleği açıkken qadA rafı açılmıyor. Modüller birbirinin kısayolunu görüyor ve çakışınca uyarıyor (yalnız macOS; Windows sonraki sürümde)."
+    },
     {
       "version": "0.7.11",
       "date": "2026-10-31",
