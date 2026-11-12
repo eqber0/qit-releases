@@ -1,15 +1,20 @@
 {
-  "version": "0.7.13",
+  "version": "0.7.14",
   "date": "2026-11-12",
-  "notes": "qadA: çentikte ajan durumu. Claude Code ve Codex oturumları ve durumları (çalışıyor, seni bekliyor, bitti) çentikte ve Ajanlar sayfasında; satıra tıklayınca iTerm/Terminal/tmux sekmesine gider; izin isteklerini adadan ver ya da reddet (2 sn geri alma); ajan bitince çan sesi ve küçük animasyon. Ada daha hızlı açılır, yanlışlıkla açılma azalır. Müzik çalarken ses dalgaları hep görünür, yanında oturum sayısı ya da oturum limiti. Dosya rafı yalnız dosyayı çentiğe yaklaştırınca açılır. Ayarlar > qadA > Ajan durumu ile açılır (varsayılan kapalı). Yalnız macOS.",
+  "notes": "qadA: Ajanlar sayfasında bir oturuma tıklayınca o oturumun terminal sekmesi (iTerm, Terminal, tmux) açılır ve ada kapanır; 0.7.13'te tıklama çalışmıyordu. Satırlarda üstüne gelince vurgu ve el imleci. Ajan bitince kart çentikli ekranda da çıkar, özet metni düzgün görünür. Biten ajan 2 dakika sonra listeden düşer. Yalnız macOS.",
   "macos": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.13/qiT-macOS-0.7.13.zip",
-    "sha256": "2804f9c758abb3ac4346e68f2628dacfa31411a88abc4e9aa03c2d18b649c9cf",
-    "size": 17071996,
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.14/qiT-macOS-0.7.14.zip",
+    "sha256": "12ce588275a050cb4bda63fc8b2351472870520cddf469dacf17de052eb376a7",
+    "size": 17080227,
     "minimumSystemVersion": "15.2",
-    "signature": "a9c1c1c5ec23f5f9c476697256c0cfb629b9fd4817b541edc9d2adcf9cf8193841d2ae262d064e959a323bcfc602c2568a23a7c601e069d7c055850f5e4db403"
+    "signature": "c94ef8fd3309598cccfe532cae1efbddf78ff94f3df1959e6ffbb26e4c36abd27dd0b782a8c8ceb5ecaf69a5fed44068ae0ec8361fa0b029e620396010827000"
   },
   "history": [
+    {
+      "version": "0.7.14",
+      "date": "2026-11-12",
+      "notes": "qadA: Ajanlar sayfasında bir oturuma tıklayınca o oturumun terminal sekmesi (iTerm, Terminal, tmux) açılır ve ada kapanır; 0.7.13'te tıklama çalışmıyordu. Satırlarda üstüne gelince vurgu ve el imleci. Ajan bitince kart çentikli ekranda da çıkar, özet metni düzgün görünür. Biten ajan 2 dakika sonra listeden düşer. Yalnız macOS."
+    },
     {
       "version": "0.7.13",
       "date": "2026-11-12",
