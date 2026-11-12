@@ -1,15 +1,20 @@
 {
-  "version": "0.7.12",
-  "date": "2026-11-06",
-  "notes": "Çok ekran ve kararlılık düzeltmeleri. qliP: kısayol artık takılmıyor, ikinci ekranda açılan katman seçim ve klavye alıyor (macOS ve Windows). qocK: imleç odağı izlerken Dock öbür ekrana kaçmıyor. qriD: sonraki/önceki ekran pencerenin ekranından sayılıyor, ekran sınırında yapışma alanı doğru ekranda. qadA, qalE, qasT, qorD, qroL, qatE, qonV: ekran takma/çıkarma, uyku ve kaçan tuş olaylarından sonra takılı kalan durumlar düzeltildi. Modül çakışmaları: qorD medya tuşları önce; ses/parlaklık göstergesi çentiğin üstünde; qasT alanında qriD yerleştirmiyor; qonV tekerleği açıkken qadA rafı açılmıyor. Modüller birbirinin kısayolunu görüyor ve çakışınca uyarıyor (yalnız macOS; Windows sonraki sürümde).",
+  "version": "0.7.13",
+  "date": "2026-11-12",
+  "notes": "qadA: çentikte ajan durumu. Claude Code ve Codex oturumları ve durumları (çalışıyor, seni bekliyor, bitti) çentikte ve Ajanlar sayfasında; satıra tıklayınca iTerm/Terminal/tmux sekmesine gider; izin isteklerini adadan ver ya da reddet (2 sn geri alma); ajan bitince çan sesi ve küçük animasyon. Ada daha hızlı açılır, yanlışlıkla açılma azalır. Müzik çalarken ses dalgaları hep görünür, yanında oturum sayısı ya da oturum limiti. Dosya rafı yalnız dosyayı çentiğe yaklaştırınca açılır. Ayarlar > qadA > Ajan durumu ile açılır (varsayılan kapalı). Yalnız macOS.",
   "macos": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.12/qiT-macOS-0.7.12.zip",
-    "sha256": "ded289826a6c8a9e24fd12aad2c0cfddcbd1e20b9069103d9f81975ece76f117",
-    "size": 16281833,
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.13/qiT-macOS-0.7.13.zip",
+    "sha256": "2804f9c758abb3ac4346e68f2628dacfa31411a88abc4e9aa03c2d18b649c9cf",
+    "size": 17071996,
     "minimumSystemVersion": "15.2",
-    "signature": "1b9a74c6e180314129c18ea9ecee9818932922ea158305cb63cf12296519ba9e4f547623cf85141abbcf714701aa67e240c886244a71d36c66fe1346714b0f0f"
+    "signature": "a9c1c1c5ec23f5f9c476697256c0cfb629b9fd4817b541edc9d2adcf9cf8193841d2ae262d064e959a323bcfc602c2568a23a7c601e069d7c055850f5e4db403"
   },
   "history": [
+    {
+      "version": "0.7.13",
+      "date": "2026-11-12",
+      "notes": "qadA: çentikte ajan durumu. Claude Code ve Codex oturumları ve durumları (çalışıyor, seni bekliyor, bitti) çentikte ve Ajanlar sayfasında; satıra tıklayınca iTerm/Terminal/tmux sekmesine gider; izin isteklerini adadan ver ya da reddet (2 sn geri alma); ajan bitince çan sesi ve küçük animasyon. Ada daha hızlı açılır, yanlışlıkla açılma azalır. Müzik çalarken ses dalgaları hep görünür, yanında oturum sayısı ya da oturum limiti. Dosya rafı yalnız dosyayı çentiğe yaklaştırınca açılır. Ayarlar > qadA > Ajan durumu ile açılır (varsayılan kapalı). Yalnız macOS."
+    },
     {
       "version": "0.7.12",
       "date": "2026-11-06",
