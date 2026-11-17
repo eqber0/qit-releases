@@ -1,15 +1,20 @@
 {
-  "version": "0.7.14",
-  "date": "2026-11-12",
-  "notes": "qadA: Ajanlar sayfasında bir oturuma tıklayınca o oturumun terminal sekmesi (iTerm, Terminal, tmux) açılır ve ada kapanır; 0.7.13'te tıklama çalışmıyordu. Satırlarda üstüne gelince vurgu ve el imleci. Ajan bitince kart çentikli ekranda da çıkar, özet metni düzgün görünür. Biten ajan 2 dakika sonra listeden düşer. Yalnız macOS.",
+  "version": "0.7.15",
+  "date": "2026-11-17",
+  "notes": "qolT (yeni modül): kablosuz kulaklık, mouse, klavye ve oyun kolunun pil yüzdesi görev çubuğunun en solunda. Bluetooth cihazlar, Xbox, DualSense/DS4, Logitech (Lightspeed/Bolt/Unifying), Razer, HyperX, SteelSeries. Pil eşiğin altına düşünce yüzde kırmızı olur ve bir kez bildirim gelir. qiT Ayarlar › Modüller'den açılır. Yalnız Windows.",
   "macos": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.14/qiT-macOS-0.7.14.zip",
-    "sha256": "12ce588275a050cb4bda63fc8b2351472870520cddf469dacf17de052eb376a7",
-    "size": 17080227,
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.15/qiT-macOS-0.7.15.zip",
+    "sha256": "8fdc5230adb02dec426199e783e8c042551ab626343b9e28d72545eeaa696338",
+    "size": 17080939,
     "minimumSystemVersion": "15.2",
-    "signature": "c94ef8fd3309598cccfe532cae1efbddf78ff94f3df1959e6ffbb26e4c36abd27dd0b782a8c8ceb5ecaf69a5fed44068ae0ec8361fa0b029e620396010827000"
+    "signature": "d4e5c90fbf9ec4d681a8b432289bf736bed746664f778802273320cb32ff4c5752a6415f7213ab4630fa5f9968ce100738a8494f25ec665d8fbee34c8abbc60d"
   },
   "history": [
+    {
+      "version": "0.7.15",
+      "date": "2026-11-17",
+      "notes": "qolT (yeni modül): kablosuz kulaklık, mouse, klavye ve oyun kolunun pil yüzdesi görev çubuğunun en solunda. Bluetooth cihazlar, Xbox, DualSense/DS4, Logitech (Lightspeed/Bolt/Unifying), Razer, HyperX, SteelSeries. Pil eşiğin altına düşünce yüzde kırmızı olur ve bir kez bildirim gelir. qiT Ayarlar › Modüller'den açılır. Yalnız Windows."
+    },
     {
       "version": "0.7.14",
       "date": "2026-11-12",
