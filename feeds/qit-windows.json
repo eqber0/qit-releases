@@ -1,15 +1,20 @@
 {
-  "version": "0.7.15",
+  "version": "0.7.16",
   "date": "2026-11-17",
-  "notes": "qolT (yeni modül): kablosuz kulaklık, mouse, klavye ve oyun kolunun pil yüzdesi görev çubuğunun en solunda. Bluetooth cihazlar, Xbox, DualSense/DS4, Logitech (Lightspeed/Bolt/Unifying), Razer, HyperX, SteelSeries. Pil eşiğin altına düşünce yüzde kırmızı olur ve bir kez bildirim gelir. qiT Ayarlar › Modüller'den açılır. Yalnız Windows.",
-  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-v0.7.15",
+  "notes": "qolT: görev çubuğunda daha belirgin dolu simgeler (kulaklık, mouse, klavye, oyun kolu). Pil rengi: şarjda yeşil, eşiğin altında kırmızı, eşiğe yakın turuncu; simge ve yüzde birlikte boyanır. Yalnız Windows.",
+  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-v0.7.16",
   "windows": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.15/qiT-Setup-x64.exe",
-    "sha256": "96630f2b4839b4fb7603cbb6935ad949dd705972363be9d66cdd970646686f96",
-    "size": 6003457,
-    "signature": "232e504f08b67958bbff0594cbb354a3bd15f0f2557b57c9d7e9dae83a87ae613c74043e3f0fe731e040226da03ae3ca48039a4b0c07d94d8be7a1afdb73660e"
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.16/qiT-Setup-x64.exe",
+    "sha256": "fa15c20bf895baaab15c2601f79aa671d391fb9422af4fec97f246e0208f66f7",
+    "size": 6003787,
+    "signature": "e0c43764ebca741e84878b92572359b45f7394943f9fd52e2b253ec4446f35e8e460d410e3255fcf02406ab418e034dbefde91b710baa472a08c9c7590020104"
   },
   "history": [
+    {
+      "version": "0.7.16",
+      "date": "2026-11-17",
+      "notes": "qolT: görev çubuğunda daha belirgin dolu simgeler (kulaklık, mouse, klavye, oyun kolu). Pil rengi: şarjda yeşil, eşiğin altında kırmızı, eşiğe yakın turuncu; simge ve yüzde birlikte boyanır. Yalnız Windows."
+    },
     {
       "version": "0.7.15",
       "date": "2026-11-17",

@@ -1,15 +1,20 @@
 {
-  "version": "0.7.15",
+  "version": "0.7.16",
   "date": "2026-11-17",
-  "notes": "qolT (yeni modül): kablosuz kulaklık, mouse, klavye ve oyun kolunun pil yüzdesi görev çubuğunun en solunda. Bluetooth cihazlar, Xbox, DualSense/DS4, Logitech (Lightspeed/Bolt/Unifying), Razer, HyperX, SteelSeries. Pil eşiğin altına düşünce yüzde kırmızı olur ve bir kez bildirim gelir. qiT Ayarlar › Modüller'den açılır. Yalnız Windows.",
+  "notes": "qolT: görev çubuğunda daha belirgin dolu simgeler (kulaklık, mouse, klavye, oyun kolu). Pil rengi: şarjda yeşil, eşiğin altında kırmızı, eşiğe yakın turuncu; simge ve yüzde birlikte boyanır. Yalnız Windows.",
   "macos": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.15/qiT-macOS-0.7.15.zip",
-    "sha256": "8fdc5230adb02dec426199e783e8c042551ab626343b9e28d72545eeaa696338",
-    "size": 17080939,
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.16/qiT-macOS-0.7.16.zip",
+    "sha256": "c36fbffb7a9e22ce41a428b92f713b030227b5046cf1d186e24ca89c751f0fb8",
+    "size": 17081001,
     "minimumSystemVersion": "15.2",
-    "signature": "d4e5c90fbf9ec4d681a8b432289bf736bed746664f778802273320cb32ff4c5752a6415f7213ab4630fa5f9968ce100738a8494f25ec665d8fbee34c8abbc60d"
+    "signature": "b62c347e7029cc3a0d1022dc806097fe666d13171278db4276c8cc63dc02600f1cc5bdf8cf3e14e2d9a3d7b1cd79c9648f9c641f7eb6069920a3b6c006578304"
   },
   "history": [
+    {
+      "version": "0.7.16",
+      "date": "2026-11-17",
+      "notes": "qolT: görev çubuğunda daha belirgin dolu simgeler (kulaklık, mouse, klavye, oyun kolu). Pil rengi: şarjda yeşil, eşiğin altında kırmızı, eşiğe yakın turuncu; simge ve yüzde birlikte boyanır. Yalnız Windows."
+    },
     {
       "version": "0.7.15",
       "date": "2026-11-17",
