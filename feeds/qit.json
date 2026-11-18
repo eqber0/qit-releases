@@ -1,15 +1,20 @@
 {
-  "version": "0.7.18",
+  "version": "0.7.19",
   "date": "2026-11-18",
-  "notes": "qeeK (yalnız Windows): önizleme penceresi artık her zaman en üstte açılıyor; Gezgin'in ve diğer pencerelerin arkasında kalmıyor. Başlıktaki raptiye düğmesi ve \"Her zaman üstte\" ayarı kaldırıldı. macOS'te değişiklik yok.",
+  "notes": "qeeK (yalnız Windows): önizleme penceresi açılırken büyüyerek belirir, kapanırken küçülerek solar; içerik yüklenince pencere yeni boyutuna yumuşakça geçer. Windows'ta Animasyon efektleri kapalıysa animasyon yok. macOS'te değişiklik yok.",
   "macos": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.18/qiT-macOS-0.7.18.zip",
-    "sha256": "5353b5f91ec19ffbef8dc83f17b2bde4d59f2951b8205dd49217e1cda041e435",
-    "size": 17081022,
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.19/qiT-macOS-0.7.19.zip",
+    "sha256": "734a8fbf1b8c244d7080f3d3c0e6a151d83e6a719ab98216d4bd5ea3cc6235ca",
+    "size": 17080976,
     "minimumSystemVersion": "15.2",
-    "signature": "a9a70cc75ace1dae6f663da3b12a7ab2e0973d994c30421477b73bf66b9f10e3bb2b1a8ef54b0bcf45085e022d94d6bc6776edc8f5957f3bd3759a42a93f5304"
+    "signature": "cc95bdabaff230a54c836f25d1ca10eae8ebce82df5f0872663249087c2914cf8271354b58f702d913c69b8446121ca194ab598e6adc95cd14f4b17194969b0e"
   },
   "history": [
+    {
+      "version": "0.7.19",
+      "date": "2026-11-18",
+      "notes": "qeeK (yalnız Windows): önizleme penceresi açılırken büyüyerek belirir, kapanırken küçülerek solar; içerik yüklenince pencere yeni boyutuna yumuşakça geçer. Windows'ta Animasyon efektleri kapalıysa animasyon yok. macOS'te değişiklik yok."
+    },
     {
       "version": "0.7.18",
       "date": "2026-11-18",
