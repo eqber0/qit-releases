@@ -1,15 +1,20 @@
 {
-  "version": "0.7.16",
-  "date": "2026-11-17",
-  "notes": "qolT: görev çubuğunda daha belirgin dolu simgeler (kulaklık, mouse, klavye, oyun kolu). Pil rengi: şarjda yeşil, eşiğin altında kırmızı, eşiğe yakın turuncu; simge ve yüzde birlikte boyanır. Yalnız Windows.",
-  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-v0.7.16",
+  "version": "0.7.17",
+  "date": "2026-11-18",
+  "notes": "qeeK (yeni modül, yalnız Windows): Gezgin'de ya da masaüstünde bir dosya seçip Space'e basınca dosyayı açmadan önizler. Space ya da Esc kapatır, Enter açar, oklar sonraki dosyaya geçer, F11 tam ekran. Görsel, metin, PDF, video ve ses, Office (önizleyici yüklüyse), klasör; diğer dosyalar için bilgi kartı. Varsayılan kapalı: qiT Ayarlar › Modüller'den açılır. macOS'te değişiklik yok.",
+  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-v0.7.17",
   "windows": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.16/qiT-Setup-x64.exe",
-    "sha256": "fa15c20bf895baaab15c2601f79aa671d391fb9422af4fec97f246e0208f66f7",
-    "size": 6003787,
-    "signature": "e0c43764ebca741e84878b92572359b45f7394943f9fd52e2b253ec4446f35e8e460d410e3255fcf02406ab418e034dbefde91b710baa472a08c9c7590020104"
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.17/qiT-Setup-x64.exe",
+    "sha256": "37cb6680e8474121dff98182fc3bc4300575d264616db658dd39a7cb7d905c88",
+    "size": 6101125,
+    "signature": "98f73b1714ed6faf93f43cf5846f467118f21a4baa6c58e406c31f6da6f9809f31a1e4e129c03dec4c9b977b203cfe01643a8c250d0bcbc1c63dffb674cdaa09"
   },
   "history": [
+    {
+      "version": "0.7.17",
+      "date": "2026-11-18",
+      "notes": "qeeK (yeni modül, yalnız Windows): Gezgin'de ya da masaüstünde bir dosya seçip Space'e basınca dosyayı açmadan önizler. Space ya da Esc kapatır, Enter açar, oklar sonraki dosyaya geçer, F11 tam ekran. Görsel, metin, PDF, video ve ses, Office (önizleyici yüklüyse), klasör; diğer dosyalar için bilgi kartı. Varsayılan kapalı: qiT Ayarlar › Modüller'den açılır. macOS'te değişiklik yok."
+    },
     {
       "version": "0.7.16",
       "date": "2026-11-17",
