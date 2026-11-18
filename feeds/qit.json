@@ -1,15 +1,20 @@
 {
-  "version": "0.7.17",
+  "version": "0.7.18",
   "date": "2026-11-18",
-  "notes": "qeeK (yeni modül, yalnız Windows): Gezgin'de ya da masaüstünde bir dosya seçip Space'e basınca dosyayı açmadan önizler. Space ya da Esc kapatır, Enter açar, oklar sonraki dosyaya geçer, F11 tam ekran. Görsel, metin, PDF, video ve ses, Office (önizleyici yüklüyse), klasör; diğer dosyalar için bilgi kartı. Varsayılan kapalı: qiT Ayarlar › Modüller'den açılır. macOS'te değişiklik yok.",
+  "notes": "qeeK (yalnız Windows): önizleme penceresi artık her zaman en üstte açılıyor; Gezgin'in ve diğer pencerelerin arkasında kalmıyor. Başlıktaki raptiye düğmesi ve \"Her zaman üstte\" ayarı kaldırıldı. macOS'te değişiklik yok.",
   "macos": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.17/qiT-macOS-0.7.17.zip",
-    "sha256": "ea49879db6f0f8ef54b0a01fd5fd7e6db73a3833559aa43afda049c19fe91085",
-    "size": 17080962,
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.18/qiT-macOS-0.7.18.zip",
+    "sha256": "5353b5f91ec19ffbef8dc83f17b2bde4d59f2951b8205dd49217e1cda041e435",
+    "size": 17081022,
     "minimumSystemVersion": "15.2",
-    "signature": "993a98081d0257e425b0dfbdddf1677c69aebbff4c7d06daa97a07c3bfd9328b0735590d7852643b93f5ebda779db1412ec4bfabf54673c11834f79d2b9f8d04"
+    "signature": "a9a70cc75ace1dae6f663da3b12a7ab2e0973d994c30421477b73bf66b9f10e3bb2b1a8ef54b0bcf45085e022d94d6bc6776edc8f5957f3bd3759a42a93f5304"
   },
   "history": [
+    {
+      "version": "0.7.18",
+      "date": "2026-11-18",
+      "notes": "qeeK (yalnız Windows): önizleme penceresi artık her zaman en üstte açılıyor; Gezgin'in ve diğer pencerelerin arkasında kalmıyor. Başlıktaki raptiye düğmesi ve \"Her zaman üstte\" ayarı kaldırıldı. macOS'te değişiklik yok."
+    },
     {
       "version": "0.7.17",
       "date": "2026-11-18",
