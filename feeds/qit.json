@@ -1,15 +1,20 @@
 {
-  "version": "0.7.20",
+  "version": "0.7.21",
   "date": "2026-11-19",
-  "notes": "qliP: Düzenleyici son kullandığın aracı, rengi ve kalınlığı hatırlar; sonraki ekran görüntüsü ve qiT yeniden açıldığında da aynısıyla açılır. \"Seç ve taşı\" hatırlanmaz.",
+  "notes": "qocK: Dock önizlemesi ve pencere değiştirici için ayrı önizleme boyutu: Küçük, Orta (varsayılan), Büyük ya da Özel. Çok pencere açıkken Küçük seçince değiştirici ekrana sığar. Dock: qocK Ayarlar › Dock önizlemesi › Düzen. Değiştirici (⌘⇥ eki dahil): Değiştirici › Yerleşim. Kaydırıcıyla boyu değiştirmiş olanlarda boy Özel olarak korunur.",
   "macos": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.20/qiT-macOS-0.7.20.zip",
-    "sha256": "b48be4e964ee36d878670dcd778fa4ba9d453415ea01621ff53492410f5b0bc2",
-    "size": 17088254,
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.21/qiT-macOS-0.7.21.zip",
+    "sha256": "a9a8dae035900db935fb6f8f8268a7d62d03829bdd06bf2c779420b148106301",
+    "size": 17100796,
     "minimumSystemVersion": "15.2",
-    "signature": "e8e8e0808ef03b7ecd0d04aad403c9e961e93104bb8d65e817bb2610b14cc3f68d44135f9efccd741f0caeed8a302d4c933bb2b3cf5095d96e562d1283968200"
+    "signature": "e3f204bac3c0e7454d9946f83d38a4da4f4c0b5ef2d6f2d509505db7819bb4ef9727417b70716b55e811374f16048267e8c52be35cfaa7d607d451fe5dec0402"
   },
   "history": [
+    {
+      "version": "0.7.21",
+      "date": "2026-11-19",
+      "notes": "qocK: Dock önizlemesi ve pencere değiştirici için ayrı önizleme boyutu: Küçük, Orta (varsayılan), Büyük ya da Özel. Çok pencere açıkken Küçük seçince değiştirici ekrana sığar. Dock: qocK Ayarlar › Dock önizlemesi › Düzen. Değiştirici (⌘⇥ eki dahil): Değiştirici › Yerleşim. Kaydırıcıyla boyu değiştirmiş olanlarda boy Özel olarak korunur."
+    },
     {
       "version": "0.7.20",
       "date": "2026-11-19",
