@@ -1,15 +1,20 @@
 {
-  "version": "0.7.19",
-  "date": "2026-11-18",
-  "notes": "qeeK (yalnız Windows): önizleme penceresi açılırken büyüyerek belirir, kapanırken küçülerek solar; içerik yüklenince pencere yeni boyutuna yumuşakça geçer. Windows'ta Animasyon efektleri kapalıysa animasyon yok. macOS'te değişiklik yok.",
-  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-v0.7.19",
+  "version": "0.7.20",
+  "date": "2026-11-19",
+  "notes": "qliP: Düzenleyici son kullandığın aracı, rengi ve kalınlığı hatırlar; sonraki ekran görüntüsü ve qiT yeniden açıldığında da aynısıyla açılır. \"Seç ve taşı\" hatırlanmaz.",
+  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-v0.7.20",
   "windows": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.19/qiT-Setup-x64.exe",
-    "sha256": "688ce6f97e49da46ecc5c5fc623b31ba59711f2eef5939ae29a122ca6b2e8920",
-    "size": 6103418,
-    "signature": "d6a9a9fc8f0b4c2a259446b76174865c4db34d2883b98dc984dbc5e88f0f922a9bece1ba85dceced03dd2694e7db64c82f60d2eaf9c79e055fd28271e5feca07"
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.20/qiT-Setup-x64.exe",
+    "sha256": "4f07bddd386ca6be751f363cccd91524d9df7d072b2db5079b48e640dc99d87c",
+    "size": 6103646,
+    "signature": "9ea304efcf538767014cacf1dea27ebe3b72e0fc66fb21a105f75bfa504cf3778edee91ba6e80d8a72ae87e4dca190f3e714c5cd548d94dbe1fbb4bff1157e0b"
   },
   "history": [
+    {
+      "version": "0.7.20",
+      "date": "2026-11-19",
+      "notes": "qliP: Düzenleyici son kullandığın aracı, rengi ve kalınlığı hatırlar; sonraki ekran görüntüsü ve qiT yeniden açıldığında da aynısıyla açılır. \"Seç ve taşı\" hatırlanmaz."
+    },
     {
       "version": "0.7.19",
       "date": "2026-11-18",
