@@ -1,15 +1,20 @@
 {
-  "version": "0.7.22",
-  "date": "2026-11-19",
-  "notes": "qocK: Pencere değiştirici artık ekran genişliğinin %90'ına kadar açılır (önce %80), satıra daha çok kart sığar. Küçük önizleme boyutu küçüldü: 14 ve 13 inç ekranda bir satıra 6 pencere sığar.",
+  "version": "0.7.23",
+  "date": "2026-11-20",
+  "notes": "qocK: Küçük önizleme boyunda Dock önizlemesi düzeltildi. Panel karta sarılır (sağda boş alan kalmaz), başlık ve trafik ışığı hapları küçük karta göre küçülür, pencere başlığına daha çok yer kalır.",
   "macos": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.22/qiT-macOS-0.7.22.zip",
-    "sha256": "6896c9accd0d90ac2780d7762e173f25536f3a85b8b26a9f8d23a48eab381ed5",
-    "size": 17100722,
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.23/qiT-macOS-0.7.23.zip",
+    "sha256": "442b00c0c79210c33829cf41fe453eb51ae5148aa142923462bf5f0224d38abf",
+    "size": 17111240,
     "minimumSystemVersion": "15.2",
-    "signature": "8c174906b574bf5908f02e0ebd6cd3ac0f2495dce2691d36bfe3b2c3366a1527ab64e466a42827cbb38c19e43b913920fc016644ad2d3b27a31a93083b92d108"
+    "signature": "070459f90b20ef57f6d774239cfe40d192bcfd812080361ad3b8d72cf9ddec46da2b2d14f423e8bf5219c08ce7a6e33e762cd1f1b66d45515715b78ec5bae90b"
   },
   "history": [
+    {
+      "version": "0.7.23",
+      "date": "2026-11-20",
+      "notes": "qocK: Küçük önizleme boyunda Dock önizlemesi düzeltildi. Panel karta sarılır (sağda boş alan kalmaz), başlık ve trafik ışığı hapları küçük karta göre küçülür, pencere başlığına daha çok yer kalır."
+    },
     {
       "version": "0.7.22",
       "date": "2026-11-19",
