@@ -1,15 +1,20 @@
 {
-  "version": "0.7.25",
+  "version": "0.7.26",
   "date": "2026-11-21",
-  "notes": "qeeK (Windows): önizleme penceresi Windows'un kendi açılış/kapanış animasyonuyla açılır (akıcı ölçek + solma, sistem animasyon ayarına uyar). Windows'un açamadığı videolar (iPhone HEVC .mov, ProRes vb.) için isteğe bağlı gelişmiş oynatıcı: önizleme kartında veya qeeK ayarlarında 'Oynatıcıyı indir' (mpv, 56 MB, LGPL); indirince bu videolar doğrudan oynar. Video açılamazsa kodek adı yazılır.",
-  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-v0.7.25",
+  "notes": "qeeK (Windows): videoda çubuğa ya da görüntüye tıkladıktan sonra Space önizlemeyi yine kapatır.",
+  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-v0.7.26",
   "windows": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.25/qiT-Setup-x64.exe",
-    "sha256": "83415b9cf92c70865dbfe1114ddbab318334fec86effde0dd86bcc63ac90d0f3",
-    "size": 6123710,
-    "signature": "cacd0e2f44e266228a72e8feac5a052ea50d637af5b3a52f40d0077b602ec291882e67af3e5fc93f782de3aef41ac678ca0d98e75da9a545a6689b727fb38201"
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.26/qiT-Setup-x64.exe",
+    "sha256": "fd0a7fb6a96f1109d0e7226ee47b4baee24928d37aa8402f2463b779abbbde28",
+    "size": 6125973,
+    "signature": "e41bc162bfab568b825cd40c4db8e50d2ee5f5785da9a77db31c30cde57df64dfd038805843d60892d0f44915b52846cb5fe60177700f12d3455478f0696fc01"
   },
   "history": [
+    {
+      "version": "0.7.26",
+      "date": "2026-11-21",
+      "notes": "qeeK (Windows): videoda çubuğa ya da görüntüye tıkladıktan sonra Space önizlemeyi yine kapatır."
+    },
     {
       "version": "0.7.25",
       "date": "2026-11-21",

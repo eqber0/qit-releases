@@ -1,15 +1,20 @@
 {
-  "version": "0.7.25",
+  "version": "0.7.26",
   "date": "2026-11-21",
-  "notes": "qeeK (Windows): önizleme penceresi Windows'un kendi açılış/kapanış animasyonuyla açılır (akıcı ölçek + solma, sistem animasyon ayarına uyar). Windows'un açamadığı videolar (iPhone HEVC .mov, ProRes vb.) için isteğe bağlı gelişmiş oynatıcı: önizleme kartında veya qeeK ayarlarında 'Oynatıcıyı indir' (mpv, 56 MB, LGPL); indirince bu videolar doğrudan oynar. Video açılamazsa kodek adı yazılır.",
+  "notes": "qeeK (Windows): videoda çubuğa ya da görüntüye tıkladıktan sonra Space önizlemeyi yine kapatır.",
   "macos": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.25/qiT-macOS-0.7.25.zip",
-    "sha256": "f80c18681a5250eee2e2703417e171a8d6cefe4371f42e472699c68646ce379e",
-    "size": 17111665,
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.26/qiT-macOS-0.7.26.zip",
+    "sha256": "3c0f0f6ae993cd335b76942bcee1b3cbee0235f5d9c9f002208f40155a6d08cb",
+    "size": 17111726,
     "minimumSystemVersion": "15.2",
-    "signature": "234d71c890b0bce318c01a47faf6d16aa4e5854a68ed8b6a16bc0ed1dc13f1671853af824845a86723165bd0de9091390966e18787867dd4b6fd355bf830c00c"
+    "signature": "9bd9d0d3c81d536aded68c453ff904c2bda5107ffd7905e2f7d9d62946988df824961982ffc9259ea8fbb3fa4089bb815016efa55925b125b4b3584767b22106"
   },
   "history": [
+    {
+      "version": "0.7.26",
+      "date": "2026-11-21",
+      "notes": "qeeK (Windows): videoda çubuğa ya da görüntüye tıkladıktan sonra Space önizlemeyi yine kapatır."
+    },
     {
       "version": "0.7.25",
       "date": "2026-11-21",
