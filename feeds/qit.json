@@ -1,15 +1,20 @@
 {
-  "version": "0.7.24",
+  "version": "0.7.25",
   "date": "2026-11-21",
-  "notes": "qeeK (Windows): önizleme penceresi akıcı açılır ve kapanır (içerik hazır olunca son boyutunda solarak belirir, takılma yok). Video çubuğunda ilerleme ve ses sürüklenerek ayarlanır. Windows'ta kodeği olmayan videolarda (iPhone HEVC .mov, ProRes vb.) nedeni yazılır, HEVC/VP9/AV1/MPEG-2 için Microsoft Store'da aç düğmesi çıkar.",
+  "notes": "qeeK (Windows): önizleme penceresi Windows'un kendi açılış/kapanış animasyonuyla açılır (akıcı ölçek + solma, sistem animasyon ayarına uyar). Windows'un açamadığı videolar (iPhone HEVC .mov, ProRes vb.) için isteğe bağlı gelişmiş oynatıcı: önizleme kartında veya qeeK ayarlarında 'Oynatıcıyı indir' (mpv, 56 MB, LGPL); indirince bu videolar doğrudan oynar. Video açılamazsa kodek adı yazılır.",
   "macos": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.24/qiT-macOS-0.7.24.zip",
-    "sha256": "ce0a56f42fd2fd56be25122795c394a780d2447fd0dc1ed3e481acbf92c4d62d",
-    "size": 17111249,
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.25/qiT-macOS-0.7.25.zip",
+    "sha256": "f80c18681a5250eee2e2703417e171a8d6cefe4371f42e472699c68646ce379e",
+    "size": 17111665,
     "minimumSystemVersion": "15.2",
-    "signature": "8495b5ab7105804d991aa47ecd9fae2cfdf8d760e0b580e3cfe7abb2c8b36ee85b5ae97225ac26d9d5ee414a773e450c41abc9fae6c4cfb63bd4e3c3f9aa4d04"
+    "signature": "234d71c890b0bce318c01a47faf6d16aa4e5854a68ed8b6a16bc0ed1dc13f1671853af824845a86723165bd0de9091390966e18787867dd4b6fd355bf830c00c"
   },
   "history": [
+    {
+      "version": "0.7.25",
+      "date": "2026-11-21",
+      "notes": "qeeK (Windows): önizleme penceresi Windows'un kendi açılış/kapanış animasyonuyla açılır (akıcı ölçek + solma, sistem animasyon ayarına uyar). Windows'un açamadığı videolar (iPhone HEVC .mov, ProRes vb.) için isteğe bağlı gelişmiş oynatıcı: önizleme kartında veya qeeK ayarlarında 'Oynatıcıyı indir' (mpv, 56 MB, LGPL); indirince bu videolar doğrudan oynar. Video açılamazsa kodek adı yazılır."
+    },
     {
       "version": "0.7.24",
       "date": "2026-11-21",

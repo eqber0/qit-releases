@@ -1,15 +1,20 @@
 {
-  "version": "0.7.24",
+  "version": "0.7.25",
   "date": "2026-11-21",
-  "notes": "qeeK (Windows): önizleme penceresi akıcı açılır ve kapanır (içerik hazır olunca son boyutunda solarak belirir, takılma yok). Video çubuğunda ilerleme ve ses sürüklenerek ayarlanır. Windows'ta kodeği olmayan videolarda (iPhone HEVC .mov, ProRes vb.) nedeni yazılır, HEVC/VP9/AV1/MPEG-2 için Microsoft Store'da aç düğmesi çıkar.",
-  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-v0.7.24",
+  "notes": "qeeK (Windows): önizleme penceresi Windows'un kendi açılış/kapanış animasyonuyla açılır (akıcı ölçek + solma, sistem animasyon ayarına uyar). Windows'un açamadığı videolar (iPhone HEVC .mov, ProRes vb.) için isteğe bağlı gelişmiş oynatıcı: önizleme kartında veya qeeK ayarlarında 'Oynatıcıyı indir' (mpv, 56 MB, LGPL); indirince bu videolar doğrudan oynar. Video açılamazsa kodek adı yazılır.",
+  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-v0.7.25",
   "windows": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.24/qiT-Setup-x64.exe",
-    "sha256": "480f89c582f5eea115eae0fa90a3a0c0aaced4e5256ed59b9e1b07f7a1f0eae1",
-    "size": 6107210,
-    "signature": "5584b7f29507946d76f9c93fadd061546bd80bfebd11268ef40a147703649d519f64d2cb55c4514a1bc9102f187789190ba0abfe20a1edb3e7b5814143921e05"
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.25/qiT-Setup-x64.exe",
+    "sha256": "83415b9cf92c70865dbfe1114ddbab318334fec86effde0dd86bcc63ac90d0f3",
+    "size": 6123710,
+    "signature": "cacd0e2f44e266228a72e8feac5a052ea50d637af5b3a52f40d0077b602ec291882e67af3e5fc93f782de3aef41ac678ca0d98e75da9a545a6689b727fb38201"
   },
   "history": [
+    {
+      "version": "0.7.25",
+      "date": "2026-11-21",
+      "notes": "qeeK (Windows): önizleme penceresi Windows'un kendi açılış/kapanış animasyonuyla açılır (akıcı ölçek + solma, sistem animasyon ayarına uyar). Windows'un açamadığı videolar (iPhone HEVC .mov, ProRes vb.) için isteğe bağlı gelişmiş oynatıcı: önizleme kartında veya qeeK ayarlarında 'Oynatıcıyı indir' (mpv, 56 MB, LGPL); indirince bu videolar doğrudan oynar. Video açılamazsa kodek adı yazılır."
+    },
     {
       "version": "0.7.24",
       "date": "2026-11-21",
