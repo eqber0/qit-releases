@@ -1,15 +1,20 @@
 {
-  "version": "0.7.26",
+  "version": "0.7.27",
   "date": "2026-11-21",
-  "notes": "qeeK (Windows): videoda çubuğa ya da görüntüye tıkladıktan sonra Space önizlemeyi yine kapatır.",
+  "notes": "qolT (Windows): Corsair kablosuz kulaklıkların pili (Void/HS70, HS80, Void v2, Virtuoso XT/SE/MAX). Royal Kludge 2.4G alıcılı klavyeler için deneysel pil okuma. Ayarlar › Sorun giderme › Aygıt raporu oluştur: görünmeyen cihazlar için rapor dosyası (seri ve adresler gizli).",
   "macos": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.26/qiT-macOS-0.7.26.zip",
-    "sha256": "3c0f0f6ae993cd335b76942bcee1b3cbee0235f5d9c9f002208f40155a6d08cb",
-    "size": 17111726,
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.27/qiT-macOS-0.7.27.zip",
+    "sha256": "bc6a465fa61cadf08ed94f360f3be2abcee8a8042ca4641b641aa65eabdc7c9d",
+    "size": 17111877,
     "minimumSystemVersion": "15.2",
-    "signature": "9bd9d0d3c81d536aded68c453ff904c2bda5107ffd7905e2f7d9d62946988df824961982ffc9259ea8fbb3fa4089bb815016efa55925b125b4b3584767b22106"
+    "signature": "9c55d87339c6ddcb7ca5277fc7b449da62b1ca41effab83854f04b3285fe0d2d00a8a5059e67631b8f137f867a637e6e7672b180524fb29ee31c3d33b6776e0a"
   },
   "history": [
+    {
+      "version": "0.7.27",
+      "date": "2026-11-21",
+      "notes": "qolT (Windows): Corsair kablosuz kulaklıkların pili (Void/HS70, HS80, Void v2, Virtuoso XT/SE/MAX). Royal Kludge 2.4G alıcılı klavyeler için deneysel pil okuma. Ayarlar › Sorun giderme › Aygıt raporu oluştur: görünmeyen cihazlar için rapor dosyası (seri ve adresler gizli)."
+    },
     {
       "version": "0.7.26",
       "date": "2026-11-21",
