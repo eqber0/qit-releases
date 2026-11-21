@@ -1,15 +1,20 @@
 {
-  "version": "0.7.23",
-  "date": "2026-11-20",
-  "notes": "qocK: Küçük önizleme boyunda Dock önizlemesi düzeltildi. Panel karta sarılır (sağda boş alan kalmaz), başlık ve trafik ışığı hapları küçük karta göre küçülür, pencere başlığına daha çok yer kalır.",
+  "version": "0.7.24",
+  "date": "2026-11-21",
+  "notes": "qeeK (Windows): önizleme penceresi akıcı açılır ve kapanır (içerik hazır olunca son boyutunda solarak belirir, takılma yok). Video çubuğunda ilerleme ve ses sürüklenerek ayarlanır. Windows'ta kodeği olmayan videolarda (iPhone HEVC .mov, ProRes vb.) nedeni yazılır, HEVC/VP9/AV1/MPEG-2 için Microsoft Store'da aç düğmesi çıkar.",
   "macos": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.23/qiT-macOS-0.7.23.zip",
-    "sha256": "442b00c0c79210c33829cf41fe453eb51ae5148aa142923462bf5f0224d38abf",
-    "size": 17111240,
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.24/qiT-macOS-0.7.24.zip",
+    "sha256": "ce0a56f42fd2fd56be25122795c394a780d2447fd0dc1ed3e481acbf92c4d62d",
+    "size": 17111249,
     "minimumSystemVersion": "15.2",
-    "signature": "070459f90b20ef57f6d774239cfe40d192bcfd812080361ad3b8d72cf9ddec46da2b2d14f423e8bf5219c08ce7a6e33e762cd1f1b66d45515715b78ec5bae90b"
+    "signature": "8495b5ab7105804d991aa47ecd9fae2cfdf8d760e0b580e3cfe7abb2c8b36ee85b5ae97225ac26d9d5ee414a773e450c41abc9fae6c4cfb63bd4e3c3f9aa4d04"
   },
   "history": [
+    {
+      "version": "0.7.24",
+      "date": "2026-11-21",
+      "notes": "qeeK (Windows): önizleme penceresi akıcı açılır ve kapanır (içerik hazır olunca son boyutunda solarak belirir, takılma yok). Video çubuğunda ilerleme ve ses sürüklenerek ayarlanır. Windows'ta kodeği olmayan videolarda (iPhone HEVC .mov, ProRes vb.) nedeni yazılır, HEVC/VP9/AV1/MPEG-2 için Microsoft Store'da aç düğmesi çıkar."
+    },
     {
       "version": "0.7.23",
       "date": "2026-11-20",

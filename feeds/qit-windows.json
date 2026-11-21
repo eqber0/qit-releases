@@ -1,15 +1,20 @@
 {
-  "version": "0.7.20",
-  "date": "2026-11-19",
-  "notes": "qliP: Düzenleyici son kullandığın aracı, rengi ve kalınlığı hatırlar; sonraki ekran görüntüsü ve qiT yeniden açıldığında da aynısıyla açılır. \"Seç ve taşı\" hatırlanmaz.",
-  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-v0.7.20",
+  "version": "0.7.24",
+  "date": "2026-11-21",
+  "notes": "qeeK (Windows): önizleme penceresi akıcı açılır ve kapanır (içerik hazır olunca son boyutunda solarak belirir, takılma yok). Video çubuğunda ilerleme ve ses sürüklenerek ayarlanır. Windows'ta kodeği olmayan videolarda (iPhone HEVC .mov, ProRes vb.) nedeni yazılır, HEVC/VP9/AV1/MPEG-2 için Microsoft Store'da aç düğmesi çıkar.",
+  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-v0.7.24",
   "windows": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.20/qiT-Setup-x64.exe",
-    "sha256": "4f07bddd386ca6be751f363cccd91524d9df7d072b2db5079b48e640dc99d87c",
-    "size": 6103646,
-    "signature": "9ea304efcf538767014cacf1dea27ebe3b72e0fc66fb21a105f75bfa504cf3778edee91ba6e80d8a72ae87e4dca190f3e714c5cd548d94dbe1fbb4bff1157e0b"
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.24/qiT-Setup-x64.exe",
+    "sha256": "480f89c582f5eea115eae0fa90a3a0c0aaced4e5256ed59b9e1b07f7a1f0eae1",
+    "size": 6107210,
+    "signature": "5584b7f29507946d76f9c93fadd061546bd80bfebd11268ef40a147703649d519f64d2cb55c4514a1bc9102f187789190ba0abfe20a1edb3e7b5814143921e05"
   },
   "history": [
+    {
+      "version": "0.7.24",
+      "date": "2026-11-21",
+      "notes": "qeeK (Windows): önizleme penceresi akıcı açılır ve kapanır (içerik hazır olunca son boyutunda solarak belirir, takılma yok). Video çubuğunda ilerleme ve ses sürüklenerek ayarlanır. Windows'ta kodeği olmayan videolarda (iPhone HEVC .mov, ProRes vb.) nedeni yazılır, HEVC/VP9/AV1/MPEG-2 için Microsoft Store'da aç düğmesi çıkar."
+    },
     {
       "version": "0.7.20",
       "date": "2026-11-19",
