@@ -1,15 +1,20 @@
 {
-  "version": "0.7.29",
+  "version": "0.7.30",
   "date": "2026-11-22",
-  "notes": "qriD: kısayol kısıtlaması kalktı; Ctrl/Alt/Win olmadan da (F5, tek tuş vb.) kısayol atanabilir. 'Klavye kısayolu kısıtlamalarını kaldır' ayarı artık yok (macOS ve Windows).",
-  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-v0.7.29",
+  "notes": "qriD (Windows): iki tuşlu kısayollar; A+D ya da Ctrl+A+D gibi iki normal tuşla kısayol atanabilir (kaydederken ilk tuşu basılı tutup ikinciye basın; kullanırken ikisine birlikte basın). macOS'ta iki tuşlu kısayol henüz yok, sonraki sürümde.",
+  "url": "https://github.com/eqber0/qit-releases/releases/tag/qit-v0.7.30",
   "windows": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.29/qiT-Setup-x64.exe",
-    "sha256": "e45e8bf6d9a3cb074da0c8d1db1b500a883ce238b11c27bfe6c81b3092e8fba1",
-    "size": 6141013,
-    "signature": "00c16e0af50b230aa0f60c5755c77adb74fae208add43ecb166858aa6fbe8c44660c9494f8a9582b6cdb35217774d4f04c38a3e4387c02200983dd74782f2507"
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.30/qiT-Setup-x64.exe",
+    "sha256": "b0bbb0787c64ffa07a57c3f7a41043cfe43922c6a151a71fa8d335da024e6603",
+    "size": 6146893,
+    "signature": "44e44a0ade0b4a6e53023cc746ad2600a9b766d4ce5c4d1daae10293289e2d759c3c48eb782a6609fbe6ac85fddfd138f2f0fdce1788620944a610ee12fe3e07"
   },
   "history": [
+    {
+      "version": "0.7.30",
+      "date": "2026-11-22",
+      "notes": "qriD (Windows): iki tuşlu kısayollar; A+D ya da Ctrl+A+D gibi iki normal tuşla kısayol atanabilir (kaydederken ilk tuşu basılı tutup ikinciye basın; kullanırken ikisine birlikte basın). macOS'ta iki tuşlu kısayol henüz yok, sonraki sürümde."
+    },
     {
       "version": "0.7.29",
       "date": "2026-11-22",

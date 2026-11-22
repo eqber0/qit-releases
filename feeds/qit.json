@@ -1,15 +1,20 @@
 {
-  "version": "0.7.29",
+  "version": "0.7.30",
   "date": "2026-11-22",
-  "notes": "qriD: kısayol kısıtlaması kalktı; Ctrl/Alt/Win olmadan da (F5, tek tuş vb.) kısayol atanabilir. 'Klavye kısayolu kısıtlamalarını kaldır' ayarı artık yok (macOS ve Windows).",
+  "notes": "qriD (Windows): iki tuşlu kısayollar; A+D ya da Ctrl+A+D gibi iki normal tuşla kısayol atanabilir (kaydederken ilk tuşu basılı tutup ikinciye basın; kullanırken ikisine birlikte basın). macOS'ta iki tuşlu kısayol henüz yok, sonraki sürümde.",
   "macos": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.29/qiT-macOS-0.7.29.zip",
-    "sha256": "7975e8e5b34f145fc6623009060a6c6b76fef068a6ff0254ab9c83ecf803574b",
-    "size": 17103247,
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.30/qiT-macOS-0.7.30.zip",
+    "sha256": "d5989dc3d0b930990d29cdd43d96ad508aace75581fc7e534657691cebfbcbbb",
+    "size": 17103297,
     "minimumSystemVersion": "15.2",
-    "signature": "6e8a339edda61ae587806cf6b4100dfee2f26f786ba58d3eda69427bfc440b86295e21e70bdf05feafbd0edebbf07db98a0061d2431416e62ac9c507e7d38f05"
+    "signature": "8b63c5e3e117983545cda98c09ad555e6a9cdc16c4d6f103bd3a071ab02442ba45eba9579bd37f38da4864dce47233dcffbafab77b230d4e3bd441e727d2a10e"
   },
   "history": [
+    {
+      "version": "0.7.30",
+      "date": "2026-11-22",
+      "notes": "qriD (Windows): iki tuşlu kısayollar; A+D ya da Ctrl+A+D gibi iki normal tuşla kısayol atanabilir (kaydederken ilk tuşu basılı tutup ikinciye basın; kullanırken ikisine birlikte basın). macOS'ta iki tuşlu kısayol henüz yok, sonraki sürümde."
+    },
     {
       "version": "0.7.29",
       "date": "2026-11-22",
