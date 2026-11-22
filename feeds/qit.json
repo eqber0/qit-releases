@@ -1,15 +1,20 @@
 {
-  "version": "0.7.27",
-  "date": "2026-11-21",
-  "notes": "qolT (Windows): Corsair kablosuz kulaklıkların pili (Void/HS70, HS80, Void v2, Virtuoso XT/SE/MAX). Royal Kludge 2.4G alıcılı klavyeler için deneysel pil okuma. Ayarlar › Sorun giderme › Aygıt raporu oluştur: görünmeyen cihazlar için rapor dosyası (seri ve adresler gizli).",
+  "version": "0.7.28",
+  "date": "2026-11-22",
+  "notes": "qriD (Windows): kısayol değiştirme düzeldi; Ctrl/Alt/Win ile kaydedilen kısayol artık 'değiştirici gerekli' uyarısıyla reddedilmiyor.",
   "macos": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.27/qiT-macOS-0.7.27.zip",
-    "sha256": "bc6a465fa61cadf08ed94f360f3be2abcee8a8042ca4641b641aa65eabdc7c9d",
-    "size": 17111877,
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.28/qiT-macOS-0.7.28.zip",
+    "sha256": "9fdc78c062637b682134c57777c56773e4913a4ccbf27a431e5b237b958126fc",
+    "size": 17111803,
     "minimumSystemVersion": "15.2",
-    "signature": "9c55d87339c6ddcb7ca5277fc7b449da62b1ca41effab83854f04b3285fe0d2d00a8a5059e67631b8f137f867a637e6e7672b180524fb29ee31c3d33b6776e0a"
+    "signature": "5805052656e477551562e9ffd566af97d9116dff0d26cd7fbdee4645612973a2fb1967af2d273c9779f3995c35151f676fe703e87aba8c5260c11fb5ef86eb07"
   },
   "history": [
+    {
+      "version": "0.7.28",
+      "date": "2026-11-22",
+      "notes": "qriD (Windows): kısayol değiştirme düzeldi; Ctrl/Alt/Win ile kaydedilen kısayol artık 'değiştirici gerekli' uyarısıyla reddedilmiyor."
+    },
     {
       "version": "0.7.27",
       "date": "2026-11-21",
