@@ -1,15 +1,20 @@
 {
-  "version": "0.7.28",
+  "version": "0.7.29",
   "date": "2026-11-22",
-  "notes": "qriD (Windows): kısayol değiştirme düzeldi; Ctrl/Alt/Win ile kaydedilen kısayol artık 'değiştirici gerekli' uyarısıyla reddedilmiyor.",
+  "notes": "qriD: kısayol kısıtlaması kalktı; Ctrl/Alt/Win olmadan da (F5, tek tuş vb.) kısayol atanabilir. 'Klavye kısayolu kısıtlamalarını kaldır' ayarı artık yok (macOS ve Windows).",
   "macos": {
-    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.28/qiT-macOS-0.7.28.zip",
-    "sha256": "9fdc78c062637b682134c57777c56773e4913a4ccbf27a431e5b237b958126fc",
-    "size": 17111803,
+    "url": "https://github.com/eqber0/qit-releases/releases/download/qit-v0.7.29/qiT-macOS-0.7.29.zip",
+    "sha256": "7975e8e5b34f145fc6623009060a6c6b76fef068a6ff0254ab9c83ecf803574b",
+    "size": 17103247,
     "minimumSystemVersion": "15.2",
-    "signature": "5805052656e477551562e9ffd566af97d9116dff0d26cd7fbdee4645612973a2fb1967af2d273c9779f3995c35151f676fe703e87aba8c5260c11fb5ef86eb07"
+    "signature": "6e8a339edda61ae587806cf6b4100dfee2f26f786ba58d3eda69427bfc440b86295e21e70bdf05feafbd0edebbf07db98a0061d2431416e62ac9c507e7d38f05"
   },
   "history": [
+    {
+      "version": "0.7.29",
+      "date": "2026-11-22",
+      "notes": "qriD: kısayol kısıtlaması kalktı; Ctrl/Alt/Win olmadan da (F5, tek tuş vb.) kısayol atanabilir. 'Klavye kısayolu kısıtlamalarını kaldır' ayarı artık yok (macOS ve Windows)."
+    },
     {
       "version": "0.7.28",
       "date": "2026-11-22",
